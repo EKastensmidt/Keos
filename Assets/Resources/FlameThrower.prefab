@@ -3751,11 +3751,11 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 1024
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -3766,7 +3766,7 @@ ParticleSystem:
     collisionShape3: {fileID: 0}
     collisionShape4: {fileID: 0}
     collisionShape5: {fileID: 0}
-    inside: 1
+    inside: 0
     outside: 0
     enter: 0
     exit: 0
@@ -4785,3 +4785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c9da4add318d9242b87cf17ee4c98e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  hitMaterial: {fileID: 2100000, guid: da176d7a6fff635478214c7c23756930, type: 2}
+  defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
