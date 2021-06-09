@@ -117,6 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16eeb30f21d4f4e49812c4772dc58a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  damage: 25
+  hitMaterial: {fileID: 2100000, guid: da176d7a6fff635478214c7c23756930, type: 2}
+  defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   _speed: 6.5
 --- !u!58 &-4068456078302934947
 CircleCollider2D:

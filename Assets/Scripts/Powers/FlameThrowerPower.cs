@@ -5,6 +5,12 @@ using UnityEngine;
 public class FlameThrowerPower : MonoBehaviour
 {
     private PlayerController _playerController;
+<<<<<<< HEAD
+=======
+    private float hitCd;
+    private float hitRate = 0.1f;
+
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     private void Start()
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
@@ -32,6 +38,18 @@ public class FlameThrowerPower : MonoBehaviour
 
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
     {
+<<<<<<< HEAD
         return Mathf.Atan2(b.y - a.y, b.x - a.x) * Mathf.Rad2Deg;
+=======
+        if (other.layer == 10)
+        {
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (hitCd <= Time.time)
+            {
+                enemy.CurrHealth -= Damage;
+                hitCd = Time.time + hitRate;
+            }
+        }
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     }
 }

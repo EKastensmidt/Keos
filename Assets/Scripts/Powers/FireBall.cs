@@ -6,6 +6,11 @@ public class FireBall : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
+<<<<<<< HEAD
+=======
+    private float spawnCd;
+    private float spawnRate = 0.5f;
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     public FireBall(Transform Emmiter) : base(Elements.fire, Elements.wind)
     {
         prefab = Resources.Load("FireBall") as GameObject;

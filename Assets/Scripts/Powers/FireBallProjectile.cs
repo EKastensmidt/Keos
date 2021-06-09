@@ -26,7 +26,16 @@ public class FireBallProjectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+<<<<<<< HEAD
 
+=======
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy.gameObject.name == "GroundVine")
+            {
+                enemy.CurrHealth -= 1;
+            }
+            else enemy.CurrHealth -= Damage;
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
         }
         Destroy(gameObject);
     }
