@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireBallProjectile : MonoBehaviour
+public class FireBallProjectile : Projectile
 {
     [SerializeField] private float _speed;
     public float Speed { get => _speed; }
@@ -24,21 +24,17 @@ public class FireBallProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.layer == 10)
         {
-<<<<<<< HEAD
-
-=======
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            if (enemy.gameObject.name == "GroundVine")
+            if (enemy != null)
             {
-                enemy.CurrHealth -= 1;
+                if (enemy.gameObject.name == "GroundVine")
+                {
+                    enemy.CurrHealth -= 1;
+                }
+                else enemy.CurrHealth -= Damage;
             }
-            else enemy.CurrHealth -= Damage;
-<<<<<<< HEAD
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-=======
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
         }
         Destroy(gameObject);
     }

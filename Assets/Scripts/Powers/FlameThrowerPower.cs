@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlameThrowerPower : MonoBehaviour
+public class FlameThrowerPower : Projectile
 {
     private PlayerController _playerController;
-<<<<<<< HEAD
-=======
     private float hitCd;
-    private float hitRate = 0.1f;
+    private float hitRate = 0.2f;
 
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     private void Start()
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
@@ -28,28 +25,21 @@ public class FlameThrowerPower : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-
-        }
-    }
-
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
     {
-<<<<<<< HEAD
         return Mathf.Atan2(b.y - a.y, b.x - a.x) * Mathf.Rad2Deg;
-=======
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
         if (other.layer == 10)
         {
             Enemy enemy = other.GetComponent<Enemy>();
-            if (hitCd <= Time.time)
+            if (enemy != null && hitCd <= Time.time)
             {
                 enemy.CurrHealth -= Damage;
                 hitCd = Time.time + hitRate;
             }
         }
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     }
 }
