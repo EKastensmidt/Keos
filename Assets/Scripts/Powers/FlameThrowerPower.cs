@@ -6,7 +6,7 @@ public class FlameThrowerPower : Projectile
 {
     private PlayerController _playerController;
     private float hitCd;
-    private float hitRate = 0.1f;
+    private float hitRate = 0.2f;
 
     private void Start()
     {
@@ -35,7 +35,7 @@ public class FlameThrowerPower : Projectile
         if (other.layer == 10)
         {
             Enemy enemy = other.GetComponent<Enemy>();
-            if (hitCd <= Time.time)
+            if (enemy != null && hitCd <= Time.time)
             {
                 enemy.CurrHealth -= Damage;
                 hitCd = Time.time + hitRate;

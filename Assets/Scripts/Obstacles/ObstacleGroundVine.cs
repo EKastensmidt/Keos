@@ -4,18 +4,8 @@ using UnityEngine;
 
 public class ObstacleGroundVine : Enemy
 {
-    public override void Update()
+    public override void FixedUpdate()
     {
-        base.Update();
-        if(CurrHealth != Previoushealth)
-        {
-            Previoushealth = CurrHealth;
-            StartCoroutine(HitEffect());
-        }
-
-        if (CurrHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+        base.FixedUpdate();
     }
 }
