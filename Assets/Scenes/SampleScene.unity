@@ -123,6 +123,9 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 --- !u!1 &12464489
@@ -203,8 +206,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &169486111
 =======
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
@@ -219,6 +225,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1423339242}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> parent of 97e685c (powers interact with stuff)
@@ -237,6 +244,9 @@ Transform:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 =======
+=======
+--- !u!1 &272098745
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 --- !u!1 &272098745
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -322,7 +332,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &337477797
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 96a00e7 (Final 1er nivel)
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 GameObject:
@@ -333,10 +346,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 272098746}
   - component: {fileID: 272098747}
   m_Layer: 0
   m_Name: BackGround (4)
+=======
+  - component: {fileID: 337477798}
+  m_Layer: 0
+  m_Name: Obstacles
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - component: {fileID: 337477798}
   m_Layer: 0
@@ -348,7 +367,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &272098746
+=======
+--- !u!4 &337477798
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 --- !u!4 &337477798
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -357,6 +380,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 272098745}
@@ -369,11 +393,14 @@ Transform:
 =======
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_GameObject: {fileID: 337477797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.291707, y: 1.0764505, z: -2.5800781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 2127884900}
   - {fileID: 1783663411}
@@ -440,6 +467,13 @@ SpriteRenderer:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519036551
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - {fileID: 568351332}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &519036551
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -448,15 +482,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 272098746}
   - component: {fileID: 272098747}
   m_Layer: 0
   m_Name: BackGround (4)
 =======
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   - component: {fileID: 519036552}
   - component: {fileID: 519036553}
   m_Layer: 0
   m_Name: BackGround (1)
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +504,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &272098746
+=======
+--- !u!4 &519036552
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 --- !u!4 &519036552
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -473,6 +517,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 272098745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -498,13 +543,28 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &519036553
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  m_GameObject: {fileID: 519036551}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.717, y: 0.3605013, z: 4.7871094}
+  m_LocalScale: {x: 13, y: 13, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1695735511}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &519036553
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 272098745}
+=======
+  m_GameObject: {fileID: 519036551}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_GameObject: {fileID: 519036551}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -556,6 +616,7 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &183270252
 =======
 --- !u!4 &268066132 stripped
@@ -565,6 +626,9 @@ Transform:
   m_PrefabInstance: {fileID: 1423339242}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &272098745
+=======
+--- !u!1 &519420028
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 --- !u!1 &519420028
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -594,6 +658,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 272098745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
@@ -606,6 +671,8 @@ AudioListener:
   m_Father: {fileID: 1695735511}
   m_RootOrder: 4
 =======
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
 --- !u!114 &519420030
@@ -684,6 +751,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -694,6 +764,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -743,6 +814,8 @@ MonoBehaviour:
 --- !u!1 &337477797
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22a4a106fe9eb584287bacaee370079f, type: 3}
   m_Name: 
@@ -845,6 +918,9 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ee8e770cae09b94288c0ff5699dd4c2, type: 3}
 --- !u!1 &551693683
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +932,8 @@ GameObject:
   - component: {fileID: 551693684}
   m_Layer: 8
   m_Name: ElementOne
+<<<<<<< HEAD
+=======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,17 +970,82 @@ GameObject:
   - component: {fileID: 691619182}
   m_Layer: 0
   m_Name: Emmiter
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &551693684
+=======
 --- !u!4 &691619182
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 551693683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1243777766}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &568351332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4045276562803211394, guid: 1ee8e770cae09b94288c0ff5699dd4c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 542597963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &691619181
+=======
+  m_GameObject: {fileID: 691619181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.579, y: 0.309, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1243777766}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &726617291
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 691619182}
+  m_Layer: 0
+  m_Name: Emmiter
+=======
+  - component: {fileID: 726617292}
+  - component: {fileID: 726617293}
+  m_Layer: 0
+  m_Name: BackGround (2)
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &691619182
+=======
+--- !u!4 &726617292
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 691619181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.579, y: 0.309, z: 0}
@@ -927,10 +1070,73 @@ Transform:
 =======
 --- !u!114 &519420033
 MonoBehaviour:
+=======
+  m_GameObject: {fileID: 726617291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.656, y: 0.361, z: 4.7871094}
+  m_LocalScale: {x: 13, y: 13, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1695735511}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &726617293
+SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726617291}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1293981795
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 50aab7798c8505f44a9e7e735d0805c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.9375, y: 0.5625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &731482410
+GameObject:
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -985,11 +1191,20 @@ GameObject:
   m_Layer: 0
   m_Name: BackGround (2)
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731482411}
+  - component: {fileID: 731482412}
+  m_Layer: 0
+  m_Name: BackGround (5)
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1007,11 +1222,15 @@ GameObject:
 =======
 --- !u!4 &726617292
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+--- !u!4 &731482411
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1033,12 +1252,18 @@ Transform:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_LocalPosition: {x: 13.717, y: 0.3605013, z: 4.7871094}
+=======
+  m_GameObject: {fileID: 731482410}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 50.24, y: 0.3605013, z: 4.7871094}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_LocalScale: {x: 13, y: 13, z: 1}
 >>>>>>> parent of 96a00e7 (Final 1er nivel)
   m_Children: []
   m_Father: {fileID: 1695735511}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!212 &519036553
 =======
@@ -1051,6 +1276,9 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &726617293
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+--- !u!212 &731482412
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 SpriteRenderer:
 =======
@@ -1113,10 +1341,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 519036551}
 <<<<<<< HEAD
 =======
   m_GameObject: {fileID: 726617291}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  m_GameObject: {fileID: 731482410}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_Enabled: 1
   m_CastShadows: 0
@@ -1174,6 +1406,7 @@ Transform:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &519420028
@@ -1280,6 +1513,9 @@ SpriteRenderer:
 =======
 --- !u!1 &731482410
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+--- !u!1 &820315000
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1287,21 +1523,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 731482411}
   - component: {fileID: 731482412}
   m_Layer: 0
   m_Name: BackGround (5)
+=======
+  - component: {fileID: 820315003}
+  - component: {fileID: 820315002}
+  - component: {fileID: 820315001}
+  m_Layer: 0
+  m_Name: EventSystem
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &731482411
 Transform:
+=======
+--- !u!114 &820315001
+MonoBehaviour:
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 731482410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.24, y: 0.3605013, z: 4.7871094}
@@ -1312,10 +1562,28 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &731482412
 SpriteRenderer:
+=======
+  m_GameObject: {fileID: 820315000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &820315002
+MonoBehaviour:
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 731482410}
   m_Enabled: 1
 <<<<<<< HEAD
@@ -1370,18 +1638,35 @@ SpriteRenderer:
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &848233723
+=======
+  m_GameObject: {fileID: 820315000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &820315003
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 848233721}
+=======
+  m_GameObject: {fileID: 820315000}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 925115686}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925115685
@@ -3363,6 +3648,40 @@ SpriteRenderer:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &825906204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825906205}
+  m_Layer: 8
+  m_Name: ElementTwo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &825906205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825906204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1243777766}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 --- !u!1 &848233721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3730,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865826010
@@ -3444,6 +3764,9 @@ Transform:
   - {fileID: 199212138}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+=======
+  m_RootOrder: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_RootOrder: 3
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -3550,6 +3873,7 @@ Tilemap:
   m_Enabled: 1
   m_Tiles:
   - first: {x: -14, y: -5, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8084,6 +8408,8 @@ Tilemap:
 =======
   - first: {x: 4, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8104,10 +8430,14 @@ Tilemap:
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 24, y: -3, z: 0}
 =======
   - first: {x: 5, y: -3, z: 0}
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - first: {x: -13, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
 <<<<<<< HEAD
@@ -8126,6 +8456,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 13, y: -2, z: 0}
 =======
   - first: {x: 5, y: -2, z: 0}
@@ -8135,6 +8466,9 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 25, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -12, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -8151,6 +8485,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8176,6 +8511,9 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 26, y: -3, z: 0}
+=======
+  - first: {x: -11, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8192,6 +8530,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8219,6 +8558,9 @@ Tilemap:
   - first: {x: 27, y: -3, z: 0}
 =======
   - first: {x: 5, y: -4, z: 0}
+=======
+  - first: {x: -10, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8227,7 +8569,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 6, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -9, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -8242,7 +8588,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 7, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -8, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -8253,6 +8603,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8281,6 +8632,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 8, y: -4, z: 0}
+=======
+  - first: {x: -7, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8289,7 +8643,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 9, y: -4, z: 0}
+  - first: {x: -6, y: -5, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8299,6 +8653,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8332,6 +8687,45 @@ Tilemap:
       m_TileSpriteIndex: 7
 =======
   - first: {x: 10, y: -4, z: 0}
+=======
+  - first: {x: -5, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -4, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -3, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8341,6 +8735,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 30, y: -3, z: 0}
@@ -8363,6 +8758,8 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 11, y: -4, z: 0}
+=======
+  - first: {x: 0, y: -5, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8371,7 +8768,21 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 12, y: -4, z: 0}
+=======
+  - first: {x: 2, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8386,6 +8797,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 25, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -8393,10 +8805,14 @@ Tilemap:
       m_TileSpriteIndex: 0
 =======
   - first: {x: 19, y: -2, z: 0}
+=======
+  - first: {x: 3, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 36, y: -2, z: 0}
@@ -8413,6 +8829,13 @@ Tilemap:
       m_TileSpriteIndex: 7
 =======
   - first: {x: 13, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 4, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8422,6 +8845,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 32, y: -3, z: 0}
@@ -8435,6 +8859,9 @@ Tilemap:
       m_TileSpriteIndex: 7
 =======
   - first: {x: 14, y: -4, z: 0}
+=======
+  - first: {x: 5, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8444,6 +8871,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 33, y: -3, z: 0}
@@ -8460,6 +8888,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 15, y: -4, z: 0}
+=======
+  - first: {x: 6, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8474,11 +8905,16 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 26, y: -2, z: 0}
+=======
+  - first: {x: 7, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 20, y: -2, z: 0}
     second:
@@ -8502,6 +8938,13 @@ Tilemap:
       m_TileSpriteIndex: 7
 =======
   - first: {x: 16, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 8, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8511,6 +8954,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 35, y: -3, z: 0}
@@ -8533,6 +8977,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 17, y: -4, z: 0}
+=======
+  - first: {x: 9, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8547,11 +8994,16 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 27, y: -2, z: 0}
+=======
+  - first: {x: 10, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 25, y: -2, z: 0}
 =======
@@ -8572,6 +9024,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 18, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 11, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8581,6 +9040,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8603,6 +9063,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 19, y: -4, z: 0}
+=======
+  - first: {x: 12, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8617,12 +9080,16 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 28, y: -2, z: 0}
 =======
   - first: {x: 19, y: -3, z: 0}
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 20, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 13, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -8646,12 +9113,17 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 50, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 14, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 39, y: -3, z: 0}
@@ -8669,6 +9141,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 21, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 15, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8683,6 +9162,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 36, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -8690,10 +9170,14 @@ Tilemap:
       m_TileSpriteIndex: 1
 =======
   - first: {x: -14, y: -1, z: 0}
+=======
+  - first: {x: 16, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 40, y: -3, z: 0}
     second:
@@ -8710,6 +9194,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 22, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 17, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8722,11 +9213,16 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -13, y: -1, z: 0}
+=======
+  - first: {x: 18, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 41, y: -3, z: 0}
     second:
@@ -8743,6 +9239,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 23, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 19, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8751,7 +9254,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 24, y: -4, z: 0}
+=======
+  - first: {x: 20, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8764,11 +9271,16 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -12, y: -1, z: 0}
+=======
+  - first: {x: 21, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 42, y: -3, z: 0}
@@ -8786,6 +9298,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 25, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 22, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8794,7 +9313,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 26, y: -4, z: 0}
+=======
+  - first: {x: 23, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8804,6 +9327,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8824,6 +9348,9 @@ Tilemap:
 =======
   - first: {x: 27, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 24, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -8832,6 +9359,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8849,6 +9377,9 @@ Tilemap:
   - first: {x: -10, y: -1, z: 0}
 =======
   - first: {x: 28, y: -4, z: 0}
+=======
+  - first: {x: 25, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8857,7 +9388,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 29, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 26, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -8884,7 +9419,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 30, y: -4, z: 0}
+=======
+  - first: {x: 27, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8894,6 +9433,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8930,6 +9470,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 31, y: -4, z: 0}
+=======
+  - first: {x: 28, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8938,7 +9481,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 32, y: -4, z: 0}
+=======
+  - first: {x: 29, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8948,6 +9495,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8983,6 +9531,18 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 33, y: -4, z: 0}
+=======
+  - first: {x: 30, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 31, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -8995,14 +9555,19 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -7, y: -1, z: 0}
 =======
   - first: {x: 47, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 32, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 28, y: -3, z: 0}
@@ -9013,6 +9578,13 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 34, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 33, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9022,6 +9594,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9042,6 +9615,9 @@ Tilemap:
       m_TileSpriteIndex: 5
 =======
   - first: {x: 35, y: -4, z: 0}
+=======
+  - first: {x: 34, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9051,6 +9627,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9071,6 +9648,9 @@ Tilemap:
       m_TileSpriteIndex: 1
 =======
   - first: {x: 36, y: -4, z: 0}
+=======
+  - first: {x: 35, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9080,6 +9660,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9101,6 +9682,9 @@ Tilemap:
 =======
   - first: {x: 37, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 36, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9109,6 +9693,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9127,6 +9712,9 @@ Tilemap:
 =======
   - first: {x: 38, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 37, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9144,7 +9732,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 39, y: -4, z: 0}
+=======
+  - first: {x: 38, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9154,6 +9746,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9169,10 +9762,14 @@ Tilemap:
 =======
   - first: {x: -10, y: -2, z: 0}
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - first: {x: 39, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 5, y: -1, z: 0}
     second:
@@ -9182,6 +9779,13 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 40, y: -4, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 40, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9191,6 +9795,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9215,6 +9820,9 @@ Tilemap:
       m_TileSpriteIndex: 6
 =======
   - first: {x: 41, y: -4, z: 0}
+=======
+  - first: {x: 41, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9224,6 +9832,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9248,6 +9857,9 @@ Tilemap:
       m_TileSpriteIndex: 1
 =======
   - first: {x: 42, y: -4, z: 0}
+=======
+  - first: {x: 42, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9257,6 +9869,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9278,6 +9891,9 @@ Tilemap:
 =======
   - first: {x: 43, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 43, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9286,6 +9902,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9314,6 +9931,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 44, y: -4, z: 0}
+=======
+  - first: {x: 44, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9323,6 +9943,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9347,6 +9968,9 @@ Tilemap:
       m_TileSpriteIndex: 1
 =======
   - first: {x: 45, y: -4, z: 0}
+=======
+  - first: {x: 45, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9356,6 +9980,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9377,6 +10002,9 @@ Tilemap:
 =======
   - first: {x: 46, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 46, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9385,6 +10013,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9406,6 +10035,9 @@ Tilemap:
   - first: {x: -8, y: -2, z: 0}
 =======
   - first: {x: 47, y: -4, z: 0}
+=======
+  - first: {x: 47, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9414,7 +10046,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 48, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 48, y: -5, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -9436,6 +10072,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 2, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -9453,6 +10090,9 @@ Tilemap:
 =======
   - first: {x: 49, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 49, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9469,6 +10109,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9496,6 +10137,9 @@ Tilemap:
 =======
   - first: {x: 50, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 50, y: -5, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9505,6 +10149,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9533,6 +10178,9 @@ Tilemap:
 =======
   - first: {x: -14, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -14, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9542,6 +10190,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9566,6 +10215,9 @@ Tilemap:
       m_TileSpriteIndex: 9
 =======
   - first: {x: -13, y: -3, z: 0}
+=======
+  - first: {x: -13, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9575,6 +10227,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9606,6 +10259,9 @@ Tilemap:
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: -12, y: -3, z: 0}
+=======
+  - first: {x: -12, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9614,7 +10270,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: -11, y: -3, z: 0}
+=======
+  - first: {x: -11, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9624,6 +10284,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9654,6 +10315,8 @@ Tilemap:
       m_TileSpriteIndex: 0
 =======
   - first: {x: -10, y: -3, z: 0}
+=======
+  - first: {x: -10, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9662,7 +10325,8 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: -9, y: -3, z: 0}
+  - first: {x: -9, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9671,7 +10335,16 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: -8, y: -3, z: 0}
+  - first: {x: -8, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -7, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9682,6 +10355,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 19, y: -2, z: 0}
 >>>>>>> parent of 97e685c (powers interact with stuff)
     second:
@@ -9691,6 +10365,9 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -7, y: -3, z: 0}
+=======
+  - first: {x: -6, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9700,6 +10377,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9729,10 +10407,18 @@ Tilemap:
       m_TileIndex: 6
       m_TileSpriteIndex: 4
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -5, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9766,10 +10452,18 @@ Tilemap:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - first: {x: -4, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9801,29 +10495,41 @@ Tilemap:
 =======
   - first: {x: 24, y: -2, z: 0}
 =======
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -3, y: -3, z: 0}
+=======
+  - first: {x: -3, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -2, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: -2, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -1, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 25, y: -2, z: 0}
     second:
@@ -9838,10 +10544,18 @@ Tilemap:
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 0, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9876,6 +10590,9 @@ Tilemap:
 =======
   - first: {x: 0, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 1, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -9885,6 +10602,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9929,10 +10647,18 @@ Tilemap:
       m_TileIndex: 6
       m_TileSpriteIndex: 4
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 2, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9965,18 +10691,25 @@ Tilemap:
 =======
   - first: {x: 2, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 3, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -11, y: -1, z: 0}
 =======
   - first: {x: 3, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 4, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -9987,6 +10720,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10023,6 +10757,9 @@ Tilemap:
 =======
   - first: {x: 4, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 5, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -10032,9 +10769,13 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -9, y: -1, z: 0}
 =======
   - first: {x: 5, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 6, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -10045,6 +10786,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10071,39 +10813,59 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 19, y: -2, z: 0}
+=======
+  - first: {x: 7, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -8, y: -1, z: 0}
 =======
   - first: {x: 6, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 4
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 7, y: -3, z: 0}
+  - first: {x: 8, y: -4, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -7, y: -1, z: 0}
+  - first: {x: 7, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 9, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -7, y: -1, z: 0}
+=======
+  - first: {x: 10, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
   - first: {x: 8, y: -3, z: 0}
@@ -10112,10 +10874,22 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 11, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10163,10 +10937,54 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 12, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 13, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 14, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 15, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 16, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 25, y: -2, z: 0}
@@ -10181,16 +10999,46 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 17, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 18, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 26, y: -2, z: 0}
+=======
+  - first: {x: 19, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 20, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 11, y: -3, z: 0}
@@ -10199,10 +11047,22 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 21, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10245,10 +11105,36 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 22, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 23, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 24, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10286,10 +11172,27 @@ Tilemap:
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 25, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 26, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10320,10 +11223,45 @@ Tilemap:
       m_TileIndex: 6
       m_TileSpriteIndex: 4
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 27, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 28, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 29, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 30, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10345,10 +11283,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 31, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10367,10 +11313,18 @@ Tilemap:
       m_TileIndex: 4
       m_TileSpriteIndex: 6
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 32, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: -14, y: 0, z: 0}
@@ -10404,29 +11358,49 @@ Tilemap:
       m_TileSpriteIndex: 1
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: 17, y: -3, z: 0}
+=======
+  - first: {x: 33, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 17, y: -3, z: 0}
+=======
+  - first: {x: 34, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 18, y: -3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 35, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10460,10 +11434,45 @@ Tilemap:
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 36, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 37, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 38, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 39, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10481,14 +11490,18 @@ Tilemap:
 =======
   - first: {x: 20, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 40, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10506,14 +11519,18 @@ Tilemap:
 =======
   - first: {x: 21, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 41, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10528,14 +11545,18 @@ Tilemap:
 =======
   - first: {x: 22, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 42, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10549,10 +11570,14 @@ Tilemap:
 =======
   - first: {x: -14, y: -1, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 43, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 23, y: -3, z: 0}
     second:
@@ -10560,10 +11585,22 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 44, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10578,10 +11615,14 @@ Tilemap:
 =======
   - first: {x: -13, y: -1, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 45, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 =======
   - first: {x: 24, y: -3, z: 0}
     second:
@@ -10589,10 +11630,22 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 46, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10607,14 +11660,18 @@ Tilemap:
 =======
   - first: {x: 25, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 47, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10636,13 +11693,24 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -11, y: -1, z: 0}
+=======
+  - first: {x: 48, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 26, y: -3, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 49, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -10652,6 +11720,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10669,13 +11738,24 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -10, y: -1, z: 0}
+=======
+  - first: {x: 50, y: -4, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 27, y: -3, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -14, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -10685,6 +11765,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10714,10 +11795,18 @@ Tilemap:
       m_TileIndex: 6
       m_TileSpriteIndex: 4
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -13, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10751,10 +11840,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -12, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10776,10 +11873,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -11, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10811,10 +11916,27 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -10, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -9, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10841,10 +11963,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -8, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10862,10 +11992,18 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 4
       m_TileSpriteIndex: 6
+=======
+  - first: {x: -7, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10890,6 +12028,18 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 34, y: -3, z: 0}
+=======
+  - first: {x: -6, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -5, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -10899,6 +12049,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10919,6 +12070,9 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 35, y: -3, z: 0}
+=======
+  - first: {x: -4, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -10928,6 +12082,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10946,10 +12101,18 @@ Tilemap:
 =======
   - first: {x: 6, y: -1, z: 0}
 =======
+=======
+  - first: {x: -3, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 37, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
@@ -10957,10 +12120,18 @@ Tilemap:
       m_TileIndex: 4
       m_TileSpriteIndex: 6
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -2, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 36, y: 1, z: 0}
@@ -10977,15 +12148,40 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 38, y: -3, z: 0}
+=======
+  - first: {x: -1, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 6
       m_TileSpriteIndex: 4
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 37, y: 1, z: 0}
@@ -11002,6 +12198,27 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 39, y: -3, z: 0}
+=======
+  - first: {x: 2, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 3, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 4, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -11013,7 +12230,11 @@ Tilemap:
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 38, y: 1, z: 0}
+=======
+  - first: {x: 5, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -11039,6 +12260,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 39, y: 1, z: 0}
 =======
   - first: {x: 50, y: 0, z: 0}
@@ -11060,10 +12282,18 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 6, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 4
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11157,10 +12387,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 7, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 50, y: 1, z: 0}
@@ -11181,10 +12419,18 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 8, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 36, y: 2, z: 0}
@@ -11202,10 +12448,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 9, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 37, y: 2, z: 0}
@@ -11227,10 +12481,18 @@ Tilemap:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 10, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 50, y: 2, z: 0}
@@ -11252,10 +12514,18 @@ Tilemap:
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 11, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 36, y: 3, z: 0}
@@ -11273,10 +12543,18 @@ Tilemap:
       m_TileIndex: 9
       m_TileSpriteIndex: 9
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 12, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 37, y: 3, z: 0}
@@ -11294,10 +12572,27 @@ Tilemap:
       m_TileIndex: 1
       m_TileSpriteIndex: 1
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 13, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 14, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 4
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 42, y: 3, z: 0}
@@ -11315,10 +12610,18 @@ Tilemap:
       m_TileIndex: 2
       m_TileSpriteIndex: 2
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 15, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 50, y: 3, z: 0}
@@ -11328,14 +12631,18 @@ Tilemap:
 =======
   - first: {x: 50, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 16, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 36, y: 4, z: 0}
@@ -11349,10 +12656,18 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
+=======
+  - first: {x: 17, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 37, y: 4, z: 0}
 =======
@@ -11362,14 +12677,25 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 4
       m_TileSpriteIndex: 6
+=======
+  - first: {x: 18, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 40, y: 4, z: 0}
 =======
   - first: {x: -12, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 19, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -11380,9 +12706,13 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 41, y: 4, z: 0}
 =======
   - first: {x: -11, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 20, y: -3, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -11392,6 +12722,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 42, y: 4, z: 0}
 =======
@@ -11404,10 +12735,18 @@ Tilemap:
 <<<<<<< HEAD
       m_TileIndex: 4
       m_TileSpriteIndex: 6
+=======
+  - first: {x: 21, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 50, y: 4, z: 0}
 =======
@@ -11425,10 +12764,27 @@ Tilemap:
       m_TileIndex: 9
       m_TileSpriteIndex: 9
 >>>>>>> parent of 96a00e7 (Final 1er nivel)
+=======
+  - first: {x: 22, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 23, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_AnimatedTiles: {}
@@ -12013,6 +13369,26 @@ Tilemap:
   - first: {x: -14, y: 0, z: 0}
 =======
   - first: {x: -7, y: -2, z: 0}
+=======
+  - first: {x: 24, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 25, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 26, y: -3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -12021,7 +13397,439 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 27, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 28, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 29, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: -6, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+=======
+  - first: {x: 30, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 31, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -13, y: 0, z: 0}
+=======
+  - first: {x: -1, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 32, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -12, y: 0, z: 0}
+=======
+  - first: {x: 0, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 33, y: -3, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+<<<<<<< HEAD
+=======
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+<<<<<<< HEAD
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 34, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 35, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 36, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 37, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 38, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 39, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 40, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 41, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 42, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 43, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 44, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 45, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 46, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 47, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 48, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 49, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 50, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -14, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -11, y: 0, z: 0}
+=======
+  - first: {x: 1, y: -2, z: 0}
+=======
+  - first: {x: -13, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 2, y: -2, z: 0}
+=======
+  - first: {x: -12, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 3, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -11, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -10, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+=======
+  - first: {x: 4, y: -2, z: 0}
+=======
+  - first: {x: -10, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -9, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+=======
+  - first: {x: 5, y: -2, z: 0}
+=======
+  - first: {x: -9, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -8, y: 0, z: 0}
+=======
+  - first: {x: 6, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -8, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -7, y: 0, z: 0}
+=======
+  - first: {x: 13, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -7, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -6, y: 0, z: 0}
+=======
+  - first: {x: 14, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
+=======
+  - first: {x: -6, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: 41, y: 0, z: 0}
+=======
+  - first: {x: 18, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+=======
+  - first: {x: -1, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 19, y: -2, z: 0}
+=======
+  - first: {x: 0, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 20, y: -2, z: 0}
+=======
+  - first: {x: 1, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -12032,46 +13840,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -13, y: 0, z: 0}
-=======
-  - first: {x: -1, y: -2, z: 0}
+  - first: {x: 25, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: -12, y: 0, z: 0}
 =======
-  - first: {x: 0, y: -2, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-<<<<<<< HEAD
-=======
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: -11, y: 0, z: 0}
-=======
-  - first: {x: 1, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
   - first: {x: 2, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -12080,6 +13853,12 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: 42, y: 0, z: 0}
+=======
+  - first: {x: 26, y: -2, z: 0}
+=======
   - first: {x: 3, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
@@ -12091,28 +13870,29 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -10, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+  - first: {x: 27, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 4, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -9, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: 43, y: 0, z: 0}
+=======
+  - first: {x: 28, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
 =======
   - first: {x: 5, y: -2, z: 0}
     second:
@@ -12125,20 +13905,31 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -8, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: 48, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+=======
+  - first: {x: 36, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
 =======
   - first: {x: 6, y: -2, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 5
       m_TileSpriteIndex: 5
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -7, y: 0, z: 0}
+  - first: {x: 37, y: -2, z: 0}
 =======
   - first: {x: 13, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -12151,7 +13942,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -6, y: 0, z: 0}
+  - first: {x: 38, y: -2, z: 0}
 =======
   - first: {x: 14, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -12164,49 +13955,78 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: 41, y: 0, z: 0}
+  - first: {x: 46, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
 =======
   - first: {x: 18, y: -2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: 19, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: 20, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: 25, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: 42, y: 0, z: 0}
+  - first: {x: 47, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+=======
+  - first: {x: 19, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 48, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+=======
+  - first: {x: 20, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 49, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+=======
+  - first: {x: 25, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 50, y: -2, z: 0}
 =======
   - first: {x: 26, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -12215,35 +14035,59 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -14, y: -1, z: 0}
+=======
   - first: {x: 27, y: -2, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: 43, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: 49, y: 0, z: 0}
+=======
+  - first: {x: -13, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
 =======
   - first: {x: 28, y: -2, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 5
       m_TileSpriteIndex: 5
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: 48, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: 50, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+>>>>>>> parent of 96a00e7 (Final 1er nivel)
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+=======
+  - first: {x: -12, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 36, y: -2, z: 0}
     second:
@@ -12259,11 +14103,21 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 7
       m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -11, y: 0, z: 0}
+=======
+  - first: {x: -11, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
   - first: {x: 38, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 4
@@ -12272,7 +14126,18 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -10, y: 0, z: 0}
+=======
+  - first: {x: 2, y: -1, z: 0}
+>>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - first: {x: -10, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
   - first: {x: 46, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -12281,7 +14146,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -9, y: -1, z: 0}
+=======
   - first: {x: 47, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 2
@@ -12290,7 +14159,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -8, y: -1, z: 0}
+=======
   - first: {x: 48, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -12299,7 +14172,11 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -7, y: -1, z: 0}
+=======
   - first: {x: 49, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -12308,15 +14185,31 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -6, y: -1, z: 0}
+=======
   - first: {x: 50, y: -2, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: 41, y: 0, z: 0}
+=======
+  - first: {x: 2, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+=======
   - first: {x: -14, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -12328,116 +14221,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: 49, y: 0, z: 0}
-=======
-  - first: {x: -13, y: -1, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: 50, y: 0, z: 0}
-    second:
-      serializedVersion: 2
->>>>>>> parent of 96a00e7 (Final 1er nivel)
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-=======
-  - first: {x: -12, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - first: {x: -11, y: 0, z: 0}
-=======
-  - first: {x: -11, y: -1, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: -10, y: 0, z: 0}
-=======
-  - first: {x: 2, y: -1, z: 0}
->>>>>>> parent of 97e685c (powers interact with stuff)
-=======
-  - first: {x: -10, y: -1, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -9, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -8, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -6, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - first: {x: 41, y: 0, z: 0}
-=======
-  - first: {x: 2, y: -1, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
 <<<<<<< HEAD
   - first: {x: 42, y: 0, z: 0}
 =======
@@ -12450,10 +14233,18 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
+=======
+  - first: {x: -13, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 43, y: 0, z: 0}
@@ -12466,24 +14257,45 @@ Tilemap:
       m_TileSpriteIndex: 8
 =======
   - first: {x: 4, y: -1, z: 0}
+=======
+  - first: {x: -12, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -11, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 5, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -10, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 48, y: 0, z: 0}
@@ -12504,11 +14316,19 @@ Tilemap:
       m_TileIndex: 4
       m_TileSpriteIndex: 6
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -9, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
 <<<<<<< HEAD
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 16, y: 0, z: 0}
@@ -12522,33 +14342,49 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
+=======
+  - first: {x: -8, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 19, y: -1, z: 0}
+=======
+  - first: {x: -7, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
   - first: {x: 20, y: -1, z: 0}
 <<<<<<< HEAD
 >>>>>>> parent of 97e685c (powers interact with stuff)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -6, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12558,6 +14394,9 @@ Tilemap:
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 25, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 2, y: -1, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -12576,9 +14415,13 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 49, y: 0, z: 0}
 =======
   - first: {x: 26, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 3, y: -1, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
@@ -12588,6 +14431,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
 <<<<<<< HEAD
   - first: {x: 50, y: 0, z: 0}
 =======
@@ -13969,11 +15813,15 @@ MonoBehaviour:
 =======
   - first: {x: 28, y: -1, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 4, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13994,29 +15842,29 @@ MonoBehaviour:
       serializedVersion: 2
       m_TileIndex: 10
       m_TileSpriteIndex: 10
-      m_TileMatrixIndex: 0
+=======
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 42, y: -1, z: 0}
+  - first: {x: 5, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 43, y: -1, z: 0}
+  - first: {x: 6, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 47, y: -1, z: 0}
+  - first: {x: 18, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -14025,6 +15873,164 @@ MonoBehaviour:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 19, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 20, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 25, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 42, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
+=======
+  - first: {x: 26, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 43, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+=======
+  - first: {x: 27, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 47, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+=======
+  - first: {x: 28, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 48, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+=======
+  - first: {x: 41, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 49, y: -1, z: 0}
+=======
+  - first: {x: 42, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: 50, y: -1, z: 0}
+=======
+  - first: {x: 43, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -14, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+<<<<<<< HEAD
+>>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: 47, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: 16, y: 0, z: 0}
+=======
+  - first: {x: 25, y: -1, z: 0}
+>>>>>>> parent of 97e685c (powers interact with stuff)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
+=======
+  - first: {x: -13, y: 0, z: 0}
+=======
   - first: {x: 48, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -14035,14 +16041,27 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
   - first: {x: 49, y: -1, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
+<<<<<<< HEAD
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: 17, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+=======
+  - first: {x: -12, y: 0, z: 0}
+=======
   - first: {x: 50, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -14059,47 +16078,6 @@ MonoBehaviour:
       m_TileIndex: 7
       m_TileSpriteIndex: 7
 <<<<<<< HEAD
->>>>>>> parent of 97e685c (powers interact with stuff)
-=======
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - first: {x: 16, y: 0, z: 0}
-=======
-  - first: {x: 25, y: -1, z: 0}
->>>>>>> parent of 97e685c (powers interact with stuff)
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
-=======
-  - first: {x: -13, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
-      m_TileMatrixIndex: 0
-<<<<<<< HEAD
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: 17, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-=======
-  - first: {x: -12, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -14120,6 +16098,13 @@ MonoBehaviour:
   - first: {x: -14, y: 0, z: 0}
 =======
   - first: {x: -11, y: 0, z: 0}
+=======
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -13, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -14128,6 +16113,44 @@ MonoBehaviour:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+  - first: {x: -10, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -12, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -13, y: 0, z: 0}
+=======
+  - first: {x: -9, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - first: {x: -11, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - first: {x: -12, y: 0, z: 0}
+=======
+  - first: {x: -8, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
   - first: {x: -10, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
@@ -14139,7 +16162,11 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -13, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -11, y: 0, z: 0}
+=======
+  - first: {x: -7, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -9, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14152,20 +16179,32 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -12, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -10, y: 0, z: 0}
+=======
+  - first: {x: -6, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
 =======
   - first: {x: -8, y: 0, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 7
       m_TileSpriteIndex: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -11, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -9, y: 0, z: 0}
+=======
+  - first: {x: 41, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -7, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14178,10 +16217,13 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -10, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -8, y: 0, z: 0}
+=======
+  - first: {x: 42, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: -6, y: 0, z: 0}
->>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
       m_TileIndex: 4
@@ -14190,9 +16232,6 @@ MonoBehaviour:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: -9, y: 0, z: 0}
-=======
   - first: {x: 41, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
@@ -14204,20 +16243,25 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -8, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -7, y: 0, z: 0}
+=======
+  - first: {x: 43, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 42, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 4
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
-  - first: {x: -7, y: 0, z: 0}
+<<<<<<< HEAD
+  - first: {x: -6, y: 0, z: 0}
 =======
   - first: {x: 43, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14225,29 +16269,33 @@ MonoBehaviour:
       serializedVersion: 2
       m_TileIndex: 4
       m_TileSpriteIndex: 6
+<<<<<<< HEAD
+=======
+=======
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-<<<<<<< HEAD
-  - first: {x: -6, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
-=======
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   - first: {x: 48, y: 0, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 16, y: 0, z: 0}
+=======
+  - first: {x: 49, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 49, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14260,7 +16308,11 @@ MonoBehaviour:
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 17, y: 0, z: 0}
+=======
+  - first: {x: 50, y: 0, z: 0}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - first: {x: 50, y: 0, z: 0}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14281,6 +16333,7 @@ MonoBehaviour:
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: cd430a5276716c046b2c1bcbf3164a03, type: 2}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 121
     m_Data: {fileID: 11400000, guid: 23f435bd52177b741a748ac0d2570f21, type: 2}
   - m_RefCount: 6
@@ -14290,6 +16343,17 @@ MonoBehaviour:
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: cf9b24d0f946a1e42aa41dc5690d445a, type: 2}
   - m_RefCount: 34
+=======
+  - m_RefCount: 177
+    m_Data: {fileID: 11400000, guid: 23f435bd52177b741a748ac0d2570f21, type: 2}
+  - m_RefCount: 8
+    m_Data: {fileID: 11400000, guid: 00f44c49c6fda1942b3c0ea3ec9781d1, type: 2}
+  - m_RefCount: 5
+    m_Data: {fileID: 11400000, guid: 0ecd20150e58ac64a9a541c7290aa093, type: 2}
+  - m_RefCount: 7
+    m_Data: {fileID: 11400000, guid: cf9b24d0f946a1e42aa41dc5690d445a, type: 2}
+  - m_RefCount: 50
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - m_RefCount: 177
     m_Data: {fileID: 11400000, guid: 23f435bd52177b741a748ac0d2570f21, type: 2}
@@ -14320,6 +16384,9 @@ MonoBehaviour:
 =======
     m_Data: {fileID: 11400000, guid: 2e7f6ec6cb35b4f48847b948c4e0b4a4, type: 2}
   m_TileSpriteArray:
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   - m_RefCount: 3
     m_Data: {fileID: -7165137587744279949, guid: 7441f5db4b423a0458ede573279cea38,
@@ -14329,6 +16396,7 @@ MonoBehaviour:
       type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 61894587540000967, guid: 4c86264fc899d9548a0459bd138e69de, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - m_RefCount: 121
     m_Data: {fileID: -3141930437684457256, guid: 7441f5db4b423a0458ede573279cea38,
@@ -14340,11 +16408,18 @@ MonoBehaviour:
       type: 3}
   - m_RefCount: 7
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
+  - m_RefCount: 177
+    m_Data: {fileID: -3141930437684457256, guid: 7441f5db4b423a0458ede573279cea38,
+      type: 3}
+  - m_RefCount: 7
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
     m_Data: {fileID: 8787015689714547084, guid: 4c86264fc899d9548a0459bd138e69de,
       type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 6384796160751912703, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - m_RefCount: 6
     m_Data: {fileID: 5607400963371633184, guid: 7441f5db4b423a0458ede573279cea38,
@@ -14367,6 +16442,19 @@ MonoBehaviour:
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -9211286745592220182, guid: 7441f5db4b423a0458ede573279cea38,
+=======
+  - m_RefCount: 8
+    m_Data: {fileID: 5607400963371633184, guid: 7441f5db4b423a0458ede573279cea38,
+      type: 3}
+  - m_RefCount: 50
+    m_Data: {fileID: -7264895971467923053, guid: 7441f5db4b423a0458ede573279cea38,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -9211286745592220182, guid: 7441f5db4b423a0458ede573279cea38,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 2813120955426761354, guid: 7441f5db4b423a0458ede573279cea38,
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2813120955426761354, guid: 7441f5db4b423a0458ede573279cea38,
@@ -14375,10 +16463,14 @@ MonoBehaviour:
   m_TileMatrixArray:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 4
 =======
   - m_RefCount: 185
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - m_RefCount: 272
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - m_RefCount: 272
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14414,8 +16506,12 @@ MonoBehaviour:
   - m_RefCount: 0
     m_Data: {r: 2.3699e-41, g: 2.3699e-41, b: 2.3699e-41, a: 2.3699e-41}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 185
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  - m_RefCount: 272
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   - m_RefCount: 272
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -14425,12 +16521,17 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Origin: {x: 0, y: -1, z: 0}
   m_Size: {x: 18, y: 2, z: 1}
 =======
   m_Origin: {x: -14, y: -5, z: 0}
   m_Size: {x: 43, y: 8, z: 1}
 >>>>>>> parent of 97e685c (powers interact with stuff)
+=======
+  m_Origin: {x: -14, y: -5, z: 0}
+  m_Size: {x: 65, y: 8, z: 1}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_Origin: {x: -14, y: -5, z: 0}
   m_Size: {x: 65, y: 8, z: 1}
@@ -14807,6 +16908,7 @@ PrefabInstance:
   m_GameObject: {fileID: 931232459}
   m_CullTransparentMesh: 0
 --- !u!1 &1057566410
+<<<<<<< HEAD
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 GameObject:
   m_ObjectHideFlags: 0
@@ -14922,6 +17024,9 @@ MonoBehaviour:
   m_DynamicPixelsPerUnit: 1
 --- !u!223 &1612584051
 Canvas:
+=======
+GameObject:
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15062,6 +17167,9 @@ Transform:
   - {fileID: 12464490}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1815427660
@@ -15795,6 +17903,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c8abd15a8ceef45b532e684285738f, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 --- !u!1 &1612584048
 >>>>>>> parent of 97e685c (powers interact with stuff)
@@ -16707,6 +18818,9 @@ Transform:
   - {fileID: 1968294877}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787839162
@@ -16789,6 +18903,9 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -16853,10 +18970,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
   m_Color: {r: 0, g: 0, b: 0, a: 1}
 >>>>>>> 96a00e7ba201ff983d0268026b2a603f2823eb12
+=======
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_Color: {r: 0, g: 0, b: 0, a: 1}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -17125,7 +19246,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 62.41, y: 0.3605013, z: 4.7871094}
+=======
+  m_LocalPosition: {x: 62.43, y: 0.3605013, z: 4.7871094}
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_LocalPosition: {x: 62.43, y: 0.3605013, z: 4.7871094}
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
@@ -17197,7 +19322,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingLayer: -2
+=======
+  m_SortingLayer: -1
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
 =======
   m_SortingLayer: -1
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)

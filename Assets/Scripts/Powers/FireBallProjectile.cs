@@ -35,6 +35,9 @@ public class FireBallProjectile : MonoBehaviour
                 enemy.CurrHealth -= 1;
             }
             else enemy.CurrHealth -= Damage;
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
         }
         Destroy(gameObject);

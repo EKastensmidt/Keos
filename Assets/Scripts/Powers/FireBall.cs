@@ -10,6 +10,9 @@ public class FireBall : Powers
 =======
     private float spawnCd;
     private float spawnRate = 0.5f;
+<<<<<<< HEAD
+>>>>>>> parent of d9aff8e (hit detection fix & enemies)
+=======
 >>>>>>> parent of d9aff8e (hit detection fix & enemies)
     public FireBall(Transform Emmiter) : base(Elements.fire, Elements.wind)
     {
