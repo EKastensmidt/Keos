@@ -11,8 +11,10 @@ public class ObstacleCielingVine : Enemy
         platformRb = GetComponentInParent<Rigidbody2D>();
     }
 
-    public override void FixedUpdate()
+    public override void Update()
     {
+        base.Update();
+
         if (CurrHealth != Previoushealth)
         {
             Previoushealth = CurrHealth;

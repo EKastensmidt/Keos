@@ -7,7 +7,7 @@ public class FireBall : Powers
     private GameObject prefab;
     private Transform SpawnPoint;
     private float spawnCd;
-    private float spawnRate = 0.25f;
+    private float spawnRate = 0.5f;
     public FireBall(Transform Emmiter) : base(Elements.fire, Elements.wind)
     {
         prefab = Resources.Load("FireBall") as GameObject;
