@@ -13,17 +13,16 @@ public class ObstacleCielingVine : Enemy
 
     public override void FixedUpdate()
     {
-        if (CurrHealth != Previoushealth)
-        {
-            Previoushealth = CurrHealth;
-            StartCoroutine(HitEffect());
-        }
+        
+    }
 
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
         if (CurrHealth <= 0)
         {
             platformRb.gravityScale += 1;
-            Destroy(gameObject);
+
         }
     }
-
 }

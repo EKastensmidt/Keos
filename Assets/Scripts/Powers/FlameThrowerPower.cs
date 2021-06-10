@@ -37,7 +37,7 @@ public class FlameThrowerPower : Projectile
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null && hitCd <= Time.time)
             {
-                enemy.CurrHealth -= Damage;
+                enemy.TakeDamage(Damage);
                 hitCd = Time.time + hitRate;
             }
         }

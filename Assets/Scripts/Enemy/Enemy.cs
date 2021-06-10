@@ -32,16 +32,7 @@ public class Enemy : MonoBehaviour
 
     public virtual void FixedUpdate()
     {
-        if (CurrHealth != Previoushealth)
-        {
-            Previoushealth = CurrHealth;
-            StartCoroutine(HitEffect());
-        }
-
-        if (CurrHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     public IEnumerator HitEffect()
@@ -49,5 +40,20 @@ public class Enemy : MonoBehaviour
         myRenderer.material = hitMaterial;
         yield return new WaitForSeconds(hitTimer);
         myRenderer.material = auxMaterial;
+    }
+
+    public virtual void TakeDamage(int damage)
+    {
+        currHealth -= damage;
+        if (CurrHealth != Previoushealth)
+        {
+            Previoushealth = CurrHealth;
+            StartCoroutine(HitEffect());
+        }
+
+        if (currHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

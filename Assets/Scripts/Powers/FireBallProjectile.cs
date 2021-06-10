@@ -29,11 +29,7 @@ public class FireBallProjectile : Projectile
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
             {
-                if (enemy.gameObject.name == "GroundVine")
-                {
-                    enemy.CurrHealth -= 1;
-                }
-                else enemy.CurrHealth -= Damage;
+                enemy.TakeDamage(Damage);
             }
         }
         Destroy(gameObject);
