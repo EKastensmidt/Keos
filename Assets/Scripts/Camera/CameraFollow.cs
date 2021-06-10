@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private float smoothSpeed = 0.125f;
-    [SerializeField] private Vector3 offset = new Vector3(0, 0, -1);
+    [SerializeField] private float moveRange = 0.125f;
+    [SerializeField] private Vector3 offset = new Vector3(0, 0, 0);
     [SerializeField] private GameObject player;
     private Vector3 mousePosition;
     private Vector3 playerPosition;
@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
         playerPosition = player.transform.position;
         Vector3 newPos = FollowMouse(mousePosition, playerPosition);
 
-        transform.position = Vector3.Lerp(newPos, playerPosition + offset, smoothSpeed);
+        transform.position = Vector3.Lerp(newPos, playerPosition + offset, moveRange);
     }
 
     private Vector3 FollowMouse(Vector3 a, Vector3 b) {
