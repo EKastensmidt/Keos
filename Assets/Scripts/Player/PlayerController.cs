@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float characterSpeed = 1;
     [SerializeField] private float jumpForce = 1;
     private bool isPlaying = false;
+    private bool isFacingRight = false;
 
     private Rigidbody2D _rigidbody;
     public Animator animator;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool IsPlaying { get => isPlaying; }
     public Rigidbody2D Rigidbody { get => _rigidbody; set => _rigidbody = value; }
     public float Movement { get => movement; set => movement = value; }
+    public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
 
     private PowerManager _powerManager;
 
@@ -39,10 +41,12 @@ public class PlayerController : MonoBehaviour
         if (delta.x > movement)
         {
             characterScale.x = 1;
+            IsFacingRight = true;
         }
         if (delta.x < movement)
         {
             characterScale.x = -1;
+            isFacingRight = false;
         }
         transform.localScale = characterScale;
 
