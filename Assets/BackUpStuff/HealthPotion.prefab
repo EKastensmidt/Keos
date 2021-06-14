@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2358183530808726906}
   - component: {fileID: 7166824717292293328}
   - component: {fileID: 6271380627879093092}
+  - component: {fileID: 6567361583577786999}
   m_Layer: 0
   m_Name: HealthPotion
   m_TagString: Untagged
@@ -112,3 +113,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healAmmount: 50
+--- !u!111 &6567361583577786999
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7753625957411627497}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ee1db2634d77a9d438a163fe9bccaf1b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ee1db2634d77a9d438a163fe9bccaf1b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
