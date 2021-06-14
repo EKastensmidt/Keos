@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
+    public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -28,6 +30,17 @@ public class PlayerManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void Heal(int heal)
+    {
+        int overHeal = currentHealth + heal;
+        if (overHeal > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
