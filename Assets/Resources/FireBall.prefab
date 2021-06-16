@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 25
   _speed: 7
+  knockbackForce: 3
 --- !u!58 &-4068456078302934947
 CircleCollider2D:
   m_ObjectHideFlags: 0
