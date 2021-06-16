@@ -8,17 +8,15 @@ public class Enemy : MonoBehaviour
     private int currHealth;
     [SerializeField] private int damage;
     [SerializeField] private float speed;
-    [SerializeField] private Material hitMaterial;
     private SpriteRenderer myRenderer;
-    private float hitTimer = 0.3f;
+    private float hitTimer = 0.1f;
     private int previoushealth;
     private Material auxMaterial;
-
+    private Color myColor;
 
     public int CurrHealth { get => currHealth; set => currHealth = value; }
     public int Damage { get => damage; set => damage = value; }
     public float Speed { get => speed; set => speed = value; }
-    public Material Material { get => hitMaterial;  }
     public int Previoushealth { get => previoushealth; set => previoushealth = value; }
     public SpriteRenderer MyRenderer { get => myRenderer; set => myRenderer = value; }
 
@@ -27,7 +25,7 @@ public class Enemy : MonoBehaviour
         currHealth = maxHealth;
         previoushealth = currHealth;
         myRenderer = GetComponent<SpriteRenderer>();
-        auxMaterial = myRenderer.material;
+        myColor = myRenderer.color;
     }
 
     public virtual void FixedUpdate()
@@ -37,9 +35,9 @@ public class Enemy : MonoBehaviour
 
     public IEnumerator HitEffect()
     {
-        myRenderer.material = hitMaterial;
+        myRenderer.color = Color.red;
         yield return new WaitForSeconds(hitTimer);
-        myRenderer.material = auxMaterial;
+        myRenderer.color = myColor;
     }
 
     public virtual void TakeDamage(int damage)

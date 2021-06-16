@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasicEnemy : Enemy
 {
     [SerializeField] private GameObject wallDetect;
-    [SerializeField] private WallDetect wallDetector;
+    private WallDetect wallDetector;
     private float movement;
     private Vector3 localScale;
     private void Start()
