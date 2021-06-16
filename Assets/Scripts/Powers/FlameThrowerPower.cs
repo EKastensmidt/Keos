@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FlameThrowerPower : Projectile
 {
+    [SerializeField] private ParticleSystem _particleSystem;
     private PlayerController _playerController;
     private float hitCd;
     private float hitRate = 0.2f;
@@ -21,7 +22,8 @@ public class FlameThrowerPower : Projectile
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         if (!_playerController.IsPlaying)
         {
-            Destroy(gameObject);
+            _particleSystem.Stop();
+            Destroy(gameObject,1f);
         }
     }
 
