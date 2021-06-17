@@ -336,7 +336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 22.5, y: -0.1000061}
+  m_AnchoredPosition: {x: 22.5, y: -0.099975586}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &106815356
@@ -432,7 +432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 20.63, y: 17.91}
+  m_AnchoredPosition: {x: 20.630005, y: 17.910034}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &307325648
@@ -1009,6 +1009,8 @@ MonoBehaviour:
   moveRange: 0.125
   offset: {x: 0, y: 0, z: -1}
   player: {fileID: 1243777764}
+  deadZone: 0
+  smoothSpeed: 0.125
 --- !u!1 &551693683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 37.37, y: -0.1000061}
+  m_AnchoredPosition: {x: 37.369995, y: -0.099975586}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &616995569
@@ -10577,6 +10579,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 865826011}
     m_Modifications:
+    - target: {fileID: -552158645631873164, guid: ba6d18eadadc66d41be10dafb87ba75f,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -552158645631873164, guid: ba6d18eadadc66d41be10dafb87ba75f,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -552158645631873164, guid: ba6d18eadadc66d41be10dafb87ba75f,
+        type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 277527875494404681, guid: ba6d18eadadc66d41be10dafb87ba75f,
         type: 3}
       propertyPath: m_DrawMode
@@ -10672,6 +10689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8901111581413604800, guid: ba6d18eadadc66d41be10dafb87ba75f,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 79eda90e9c98d8c4eb890522ad9fdd79, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba6d18eadadc66d41be10dafb87ba75f, type: 3}
 --- !u!4 &1434813241 stripped
