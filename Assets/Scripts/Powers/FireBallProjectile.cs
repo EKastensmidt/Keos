@@ -28,18 +28,19 @@ public class FireBallProjectile : Projectile
         if (collision.gameObject.layer == 10)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (enemy != null)
             {
                 enemy.TakeDamage(Damage);
-                if (enemyrb != null)
-                {
-                    Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
-                    Vector2 force = difference * knockbackForce;
-                    enemyrb.AddForce(-force, ForceMode2D.Impulse);
-                }
-            }
+            } 
         }
+        Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
+        if (enemyrb != null)
+        {
+            Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+            Vector2 force = difference * knockbackForce;
+            enemyrb.AddForce(-force, ForceMode2D.Impulse);
+        }
+
         Destroy(gameObject);
     }
 }
