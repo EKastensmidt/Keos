@@ -16,20 +16,15 @@ public class FlameThrowerPower : Projectile
 
     void Update()
     {
-        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
-        Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
-        float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
+        Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 segment = mouseOnScreen - (Vector2)transform.position;
+        float angle = Vector2.SignedAngle(Vector2.right, segment);
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         if (!_playerController.IsPlaying)
         {
             _particleSystem.Stop();
             Destroy(gameObject,1f);
         }
-    }
-
-    float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
-    {
-        return Mathf.Atan2(b.y - a.y, b.x - a.x) * Mathf.Rad2Deg;
     }
 
     private void OnParticleCollision(GameObject other)
