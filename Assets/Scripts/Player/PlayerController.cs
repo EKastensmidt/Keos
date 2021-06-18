@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float characterSpeed = 1;
     [SerializeField] private float jumpForce = 1;
+    
     private bool isPlaying = false;
     private bool isFacingRight = false;
 
@@ -21,14 +22,22 @@ public class PlayerController : MonoBehaviour
     public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
 
     private PowerManager _powerManager;
+    private GroundCheck _groundCheck;
+
+    //[SerializeField] private float coyoteTimeFrames = 20;
+    //private float coyoteTimeTimer;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _powerManager = GetComponent<PowerManager>();
+        _groundCheck = GetComponentInChildren<GroundCheck>();
     }
+
     private void Update()
     {
+        //ResetJumpCount();
+
         //MOVE
         movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
@@ -51,9 +60,12 @@ public class PlayerController : MonoBehaviour
         transform.localScale = characterScale;
 
         //JUMP
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+        if (Input.GetButtonDown("Jump"))
         {
-            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            if (_groundCheck.OnGround /*|| coyoteTimeTimer < coyoteTimeFrames*/)
+            {
+                _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            }
         }
 
         // ATTACK
@@ -90,4 +102,13 @@ public class PlayerController : MonoBehaviour
             _powerManager.GetElement(Elements.earth);
         }
     }
+
+    //private void ResetJumpCount()
+    //{
+    //    if (_groundCheck.OnGround)
+    //    {
+    //        coyoteTimeTimer = 0;
+    //    }
+    //    coyoteTimeTimer++;
+    //}
 }
