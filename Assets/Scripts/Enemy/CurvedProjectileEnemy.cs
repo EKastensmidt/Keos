@@ -10,22 +10,35 @@ public class CurvedProjectileEnemy : Enemy
 
     private GameObject _player;
     private float shootCd;
+    private float entryCd;
     [SerializeField] private float shootRate = 0.25f;
     [SerializeField] private float shootAngle = 30;
     [SerializeField] private float emmiterOffset = 1;
 
+    [SerializeField] private Animator animator;
+
     void Start()
     {
         _player = GameObject.Find("Maguito");
+        entryCd = Time.time;
     }
     void Update()
     {
         float dist = Mathf.Abs(_player.transform.position.x - transform.position.x);
-        if (shootCd <= Time.time && (dist <= maxShootDistance && dist >= minShootDistance))
+        if (dist <= maxShootDistance && dist >= minShootDistance)
         {
-            GameObject ball = Instantiate(prefab, new Vector3(transform.position.x,transform.position.y + emmiterOffset,transform.position.z), Quaternion.identity);
-            ball.gameObject.GetComponent<Rigidbody2D>().velocity = BallisticVel(_player.transform, shootAngle);
-            shootCd = Time.time + shootRate;
+            animator.SetBool("IsInRange", true);
+            if (shootCd <= Time.time && entryCd <= Time.time)
+            {
+                GameObject ball = Instantiate(prefab, new Vector3(transform.position.x, transform.position.y + emmiterOffset, transform.position.z), Quaternion.identity);
+                ball.gameObject.GetComponent<Rigidbody2D>().velocity = BallisticVel(_player.transform, shootAngle);
+                shootCd = Time.time + shootRate;
+            }
+        }
+        else
+        {
+            animator.SetBool("IsInRange", false);
+            entryCd = Time.time + shootRate;
         }
     }
     public Vector3 BallisticVel(Transform target, float angle)
