@@ -60,12 +60,12 @@ public class PlayerController : MonoBehaviour
         transform.localScale = characterScale;
 
         //JUMP
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
         {
-            if (_groundCheck.OnGround /*|| coyoteTimeTimer < coyoteTimeFrames*/)
-            {
-                _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            }
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            //if (_groundCheck.OnGround || coyoteTimeTimer < coyoteTimeFrames*/)
+            //{
+            //}
         }
 
         // ATTACK

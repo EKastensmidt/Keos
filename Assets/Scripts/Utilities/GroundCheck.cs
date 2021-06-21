@@ -15,11 +15,16 @@ public class GroundCheck : MonoBehaviour
             onGround = true;
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            onGround = false;
+            onGround = true;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        onGround = false;
     }
 }
