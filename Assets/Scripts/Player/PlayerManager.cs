@@ -10,9 +10,12 @@ public class PlayerManager : MonoBehaviour
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    private Rigidbody2D rb;
+    [SerializeField] private float knockbackForce = 5;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -30,6 +33,7 @@ public class PlayerManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     public void Heal(int heal)
@@ -52,6 +56,9 @@ public class PlayerManager : MonoBehaviour
             {
                 TakeDamage(enemy.Damage);
             }
+            Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+            Vector2 force = difference * knockbackForce;
+            rb.AddForce(force, ForceMode2D.Impulse);
         }
     }
 }
