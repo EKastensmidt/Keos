@@ -24,8 +24,9 @@ public class CurvedProjectileEnemy : Enemy
     }
     void Update()
     {
-        float dist = Mathf.Abs(_player.transform.position.x - transform.position.x);
-        if (dist <= maxShootDistance && dist >= minShootDistance)
+        float distx = Mathf.Abs(_player.transform.position.x - transform.position.x);
+        float disty = Mathf.Abs(_player.transform.position.y - transform.position.y);
+        if (distx <= maxShootDistance && disty <= maxShootDistance)
         {
             animator.SetBool("IsInRange", true);
             if (shootCd <= Time.time && entryCd <= Time.time)
