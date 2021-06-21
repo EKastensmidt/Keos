@@ -7,6 +7,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private int maxHealth;
     private int currentHealth;
     [SerializeField] private HealthBar healthBar;
+    private Rigidbody2D rb;
+    [SerializeField] private float knockbackForce = 3;
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
@@ -15,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -51,6 +54,13 @@ public class PlayerManager : MonoBehaviour
             if (enemy != null)
             {
                 TakeDamage(enemy.Damage);
+            }
+            Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (enemyrb != null)
+            {
+                Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+                Vector2 force = difference * knockbackForce;
+                rb.AddForce(force, ForceMode2D.Impulse);
             }
         }
     }
