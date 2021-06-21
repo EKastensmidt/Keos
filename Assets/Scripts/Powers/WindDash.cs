@@ -5,26 +5,39 @@ using UnityEngine;
 public class WindDash : Powers
 {
     private PlayerController _playerController;
+    private GameObject _particleObject;
+    private GameObject _particleSpawnPoint;
+
     private float dashDirection;
     private float dashForce = 5;
+    private float dashRate = 1;
+    private float dashCd = 0;
     public WindDash() : base(Elements.wind, Elements.wind)
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
+        _particleSpawnPoint = GameObject.Find("GroundCheck");
+        _particleObject = Resources.Load("WindDash") as GameObject;
     }
 
     public override void Execute()
     {
-        dashDirection = _playerController.Movement;
-        if (dashDirection != 0)
+        if (dashCd <= Time.time)
         {
-            _playerController.Rigidbody.velocity = _playerController.transform.right * dashDirection * dashForce;
-        }
-        else
-        {
-            if (_playerController.IsFacingRight)
-                _playerController.Rigidbody.velocity = _playerController.transform.right * dashForce;
+            dashCd = Time.time + dashRate;
+            GameObject dash = Instantiate(_particleObject, _particleSpawnPoint.transform.position, Quaternion.identity, _particleSpawnPoint.transform);
+            dashDirection = _playerController.Movement;
+            if (dashDirection != 0)
+            {
+                _playerController.Rigidbody.velocity = _playerController.transform.right * dashDirection * dashForce;
+            }
             else
-                _playerController.Rigidbody.velocity = -_playerController.transform.right * dashForce;
+            {
+                if (_playerController.IsFacingRight)
+                    _playerController.Rigidbody.velocity = _playerController.transform.right * dashForce;
+                else
+                    _playerController.Rigidbody.velocity = -_playerController.transform.right * dashForce;
+            }
+            Destroy(dash, 1f);
         }
     }
 }

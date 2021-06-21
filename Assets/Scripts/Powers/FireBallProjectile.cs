@@ -25,16 +25,22 @@ public class FireBallProjectile : Projectile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (collision.gameObject.layer == 10)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
             {
                 enemy.TakeDamage(Damage);
+                if (enemyrb != null)
+                {
+                    Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+                    Vector2 force = difference * knockbackForce;
+                    enemyrb.AddForce(-force, ForceMode2D.Impulse);
+                }
             } 
         }
-        Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
-        if (enemyrb != null)
+        else if (enemyrb != null)
         {
             Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
             Vector2 force = difference * knockbackForce;
