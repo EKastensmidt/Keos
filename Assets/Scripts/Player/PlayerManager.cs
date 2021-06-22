@@ -23,7 +23,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
-        
+       
     }
 
     public void TakeDamage(int damage)

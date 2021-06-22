@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (_playerManager.CurrentHealth <= 0)
         {
-            _player.transform.position = currCheckpoint;
+            _player.transform.position = new Vector3(currCheckpoint.x, currCheckpoint.y, 0);
             _playerManager.CurrentHealth = _playerManager.MaxHealth;
             _playerManager.HealthBar.SetHealth(_playerManager.CurrentHealth);
         }
