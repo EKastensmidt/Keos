@@ -143,7 +143,7 @@ MonoBehaviour:
   shootRate: 2
   shootAngle: 60
   emmiterOffset: 0.6
-  animator: {fileID: 0}
+  animator: {fileID: 3953967890808592732}
 --- !u!95 &3953967890808592732
 Animator:
   serializedVersion: 3
