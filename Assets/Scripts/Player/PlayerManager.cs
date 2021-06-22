@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public HealthBar HealthBar { get => healthBar; set => healthBar = value; }
 
     private void Start()
     {
@@ -29,10 +30,6 @@ public class PlayerManager : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
     public void Heal(int heal)
