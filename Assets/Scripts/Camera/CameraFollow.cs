@@ -17,7 +17,7 @@ public class CameraFollow : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void Update()
     {
         //transform.position = Vector3.Lerp(transform.position, target.position + offset, smoothSpeed);
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

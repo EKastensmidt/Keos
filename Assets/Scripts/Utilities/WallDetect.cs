@@ -10,7 +10,7 @@ public class WallDetect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 0)
+        if (collision.gameObject.layer == 15)
         {
             isWall = true;
         }

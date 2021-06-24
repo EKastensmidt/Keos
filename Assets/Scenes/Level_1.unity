@@ -5485,7 +5485,7 @@ GameObject:
   - component: {fileID: 25261583}
   - component: {fileID: 25261582}
   - component: {fileID: 25261581}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29794,6 +29794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSpeed: 4
   jumpForce: 4.5
+  momentum: 0.05
   animator: {fileID: 741179630}
 --- !u!95 &741179630
 Animator:
@@ -33339,7 +33340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445614132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.92, y: -0.84, z: 0}
+  m_LocalPosition: {x: 94.92, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1160157238}
@@ -36346,8 +36347,8 @@ Transform:
   m_Father: {fileID: 741179633}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2125571080
-CircleCollider2D:
+--- !u!61 &2125571080
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -36359,9 +36360,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03793493}
+  m_Offset: {x: 0, y: 0.004394889}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.18315586
+  m_Size: {x: 0.45, y: 0.18987608}
+  m_EdgeRadius: 0
 --- !u!114 &2125571081
 MonoBehaviour:
   m_ObjectHideFlags: 0

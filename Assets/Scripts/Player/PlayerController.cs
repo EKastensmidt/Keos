@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float characterSpeed = 1;
     [SerializeField] private float jumpForce = 1;
+    [SerializeField] private float momentum = 1;
     
     private bool isPlaying = false;
     private bool isFacingRight = false;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private PowerManager _powerManager;
     private GroundCheck _groundCheck;
+    private Collider2D _collider;
 
     //[SerializeField] private float coyoteTimeFrames = 20;
     //private float coyoteTimeTimer;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _powerManager = GetComponent<PowerManager>();
         _groundCheck = GetComponentInChildren<GroundCheck>();
+        _collider = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -39,9 +42,20 @@ public class PlayerController : MonoBehaviour
         //ResetJumpCount();
 
         //MOVE
+
+        //Vector2 velocity = _rigidbody.velocity;
+        //velocity.x = Mathf.Lerp(velocity.x, movement * characterSpeed, momentum);
+        //_rigidbody.velocity = velocity;
         movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(movement));
+        if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground")))
+        {
+
+        }
+        else
+        {
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
+            animator.SetFloat("Speed", Mathf.Abs(movement));
+        }
 
         //FLIP
         Vector2 delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
