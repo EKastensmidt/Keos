@@ -15,11 +15,19 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
-            if(currScene == "Tutorial")
+            switch (currScene)
             {
-                currScene = "Level_1";
-                SceneManager.LoadScene("Level_1");
-            }
+                case "Tutorial":
+                    currScene = "Level_1";
+                    break;
+                case "Level_1":
+                    currScene = "Level_2";
+                    break;
+                case "Level_2":
+                    currScene = "BossFight_1";
+                    break;
+            }           
+            SceneManager.LoadScene(currScene);
         }
     }
 }
