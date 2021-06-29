@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         currHealth -= damage;
+        SoundManagerScript.PlaySound("EnemyHit");
         if (CurrHealth != Previoushealth)
         {
             Previoushealth = CurrHealth;
