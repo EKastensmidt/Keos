@@ -19,7 +19,6 @@ public class SoundManagerScript : MonoBehaviour
         switch (clip)
         {
             case "EnemyHit":
-                audioSource.volume = 0.5f;
                 audioSource.PlayOneShot(enemyHitSound);
                 break;
         }

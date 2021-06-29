@@ -7,6 +7,7 @@ public class ObstacleGroundVine : Enemy
     public override void TakeDamage(int damage)
     {
         CurrHealth -= 1;
+        SoundManagerScript.PlaySound("EnemyHit");
         if (CurrHealth != Previoushealth)
         {
             Previoushealth = CurrHealth;
