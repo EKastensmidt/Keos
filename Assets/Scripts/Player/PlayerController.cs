@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            SoundManagerScript.PlaySound("Jump");
             //if (_groundCheck.OnGround || coyoteTimeTimer < coyoteTimeFrames*/)
             //{
             //}

@@ -8,6 +8,9 @@ public class FlameThrowerPower : Projectile
     private PlayerController _playerController;
     private float hitCd;
     private float hitRate = 0.2f;
+    private float soundCd;
+    private float soundRate = 0.25f;
+    private bool isPlayingSound = true;
 
     private void Start()
     {
@@ -20,8 +23,15 @@ public class FlameThrowerPower : Projectile
         Vector2 segment = mouseOnScreen - (Vector2)transform.position;
         float angle = Vector2.SignedAngle(Vector2.right, segment);
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        if (soundCd < Time.time && isPlayingSound)
+        {
+            SoundManagerScript.PlaySound("FlameThrower");
+            soundCd = Time.time + soundRate;
+            isPlayingSound = true;
+        }
         if (!_playerController.IsPlaying)
         {
+            isPlayingSound = false;
             _particleSystem.Stop();
             Destroy(gameObject,1f);
         }
