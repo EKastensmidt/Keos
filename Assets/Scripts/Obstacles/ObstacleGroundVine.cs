@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ObstacleGroundVine : Enemy
 {
+    private int LockedDamage = 1;
     public override void TakeDamage(int damage)
     {
-        CurrHealth -= 1;
+        CurrHealth -= LockedDamage;
+        DamagePoints(LockedDamage);
         SoundManagerScript.PlaySound("EnemyHit");
         if (CurrHealth != Previoushealth)
         {

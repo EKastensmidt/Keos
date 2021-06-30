@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Enemy : MonoBehaviour
     private int previoushealth;
     private Material auxMaterial;
     private Color myColor;
+    [SerializeField] private GameObject damagePopup;
+    [SerializeField] private float damagePopupOffset = 5f;
 
     public int CurrHealth { get => currHealth; set => currHealth = value; }
     public int Damage { get => damage; set => damage = value; }
@@ -43,7 +46,7 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         currHealth -= damage;
-        SoundManagerScript.PlaySound("EnemyHit");
+        DamagePoints(damage);
         if (CurrHealth != Previoushealth)
         {
             Previoushealth = CurrHealth;
@@ -54,5 +57,12 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void DamagePoints(int damage)
+    {
+        GameObject damagePoints = Instantiate(damagePopup, transform.position, Quaternion.identity);
+        damagePoints.GetComponent<TextMeshPro>().SetText(damage.ToString());
+        SoundManagerScript.PlaySound("EnemyHit");
     }
 }

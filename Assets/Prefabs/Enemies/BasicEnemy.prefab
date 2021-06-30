@@ -122,6 +122,8 @@ MonoBehaviour:
   maxHealth: 100
   damage: 20
   speed: 1
+  damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
+    type: 3}
   wallDetect: {fileID: 3567824171080537455}
 --- !u!70 &3746778816926993491
 CapsuleCollider2D:

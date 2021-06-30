@@ -137,6 +137,8 @@ MonoBehaviour:
   maxHealth: 100
   damage: 0
   speed: 0
+  damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
+    type: 3}
   prefab: {fileID: 1550296294153564376, guid: 0b17c786de42a1041a6e6f3a6b18d428, type: 3}
   maxShootDistance: 5
   minShootDistance: 2
