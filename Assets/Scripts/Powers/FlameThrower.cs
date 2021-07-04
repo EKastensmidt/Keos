@@ -13,7 +13,7 @@ public class FlameThrower : Powers
     }
 
     public override void Execute()
-    {
-        GameObject projectile = Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);
+    {     
+        GameObject projectile = Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);   
     }
 }

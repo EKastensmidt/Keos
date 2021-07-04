@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip enemyHitSound, flameThrowerSound, fireBallSound, jumpSound;
+    public static AudioClip enemyHitSound, flameThrowerSound, fireBallSound, jumpSound, elementSelectSound, consumableSound,
+        windDashSound;
     private static AudioSource audioSource;
 
     void Start()
     {
-        enemyHitSound = Resources.Load<AudioClip>("Sounds/SFX/EnemyHit");
-        flameThrowerSound = Resources.Load<AudioClip>("Sounds/SFX/FlameThrower");
-        fireBallSound = Resources.Load<AudioClip>("Sounds/SFX/FireBall");
-        jumpSound = Resources.Load<AudioClip>("Sounds/SFX/Jump");
-
-
+        InitiateSounds();
         audioSource = GetComponent<AudioSource>();
     }
+    
 
     public static void PlaySound(string clip)
     {
@@ -34,6 +31,25 @@ public class SoundManagerScript : MonoBehaviour
             case "Jump":
                 audioSource.PlayOneShot(jumpSound);
                 break;
+            case "ElementSelect":
+                audioSource.PlayOneShot(elementSelectSound);
+                break;
+            case "Consumable":
+                audioSource.PlayOneShot(consumableSound);
+                break;
+            case "WindDash":
+                audioSource.PlayOneShot(windDashSound);
+                break;
         }
+    }
+    private void InitiateSounds()
+    {
+        enemyHitSound = Resources.Load<AudioClip>("Sounds/SFX/EnemyHit");
+        flameThrowerSound = Resources.Load<AudioClip>("Sounds/SFX/FlameThrower");
+        fireBallSound = Resources.Load<AudioClip>("Sounds/SFX/FireBall");
+        jumpSound = Resources.Load<AudioClip>("Sounds/SFX/Jump");
+        elementSelectSound = Resources.Load<AudioClip>("Sounds/SFX/ElementSelect");
+        consumableSound = Resources.Load<AudioClip>("Sounds/SFX/Consumable");
+        windDashSound = Resources.Load<AudioClip>("Sounds/SFX/WindDash");
     }
 }

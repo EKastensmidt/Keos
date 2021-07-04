@@ -46,6 +46,7 @@ public class PowerManager : MonoBehaviour
             }
             firstElement = element;
             UpdateElemetBalls(element);
+            SoundManagerScript.PlaySound("ElementSelect");
         }
     }
 
