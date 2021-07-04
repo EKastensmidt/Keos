@@ -15227,7 +15227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 62205921}
-  knockbackForce: 3
+  knockbackForce: 4
 --- !u!114 &1243777772
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class FlameThrower : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
+    private float cd;
+    private float timer = 0.15f;
     public FlameThrower(Transform Emmiter): base(Elements.fire, Elements.fire)
     {
         prefab = Resources.Load("FlameThrower") as GameObject;
@@ -13,7 +15,7 @@ public class FlameThrower : Powers
     }
 
     public override void Execute()
-    {     
-        GameObject projectile = Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);   
+    {   
+        GameObject projectile = Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);         
     }
 }

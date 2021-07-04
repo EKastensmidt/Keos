@@ -29882,7 +29882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 1242078392}
-  knockbackForce: 3
+  knockbackForce: 4
 --- !u!114 &741179628
 MonoBehaviour:
   m_ObjectHideFlags: 0
