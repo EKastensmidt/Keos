@@ -51,14 +51,14 @@ public class PlayerManager : MonoBehaviour
             if (enemy != null)
             {
                 TakeDamage(enemy.Damage);
-            }
-            Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (enemyrb != null)
-            {
-                Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
-                Vector2 force = difference * knockbackForce;
-                rb.AddForce(force, ForceMode2D.Impulse);
-            }
+                Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
+                if (enemyrb != null && enemy.Damage != 0)
+                {
+                    Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+                    Vector2 force = difference * knockbackForce;
+                    rb.AddForce(force, ForceMode2D.Impulse);
+                }
+            }   
         }
     }
 }
