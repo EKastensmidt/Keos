@@ -6,7 +6,7 @@ public class FlameThrowerPower : Projectile
 {
     [SerializeField] private ParticleSystem _particleSystem;
     private PlayerController _playerController;
-    private float hitCd;
+    private static float hitCd;
     private float hitRate = 0.15f;
     private float soundCd;
     private float soundRate = 0.25f;
