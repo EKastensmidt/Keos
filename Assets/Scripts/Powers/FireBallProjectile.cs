@@ -10,16 +10,20 @@ public class FireBallProjectile : Projectile
 
     private Rigidbody2D rb;
     private Vector3 direction;
+    private SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; 
+        direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         rb.velocity = direction * _speed;
+        transform.Rotate(Vector3.forward * 3);
         Destroy(gameObject, 1.5f);
     }
 
