@@ -10,14 +10,11 @@ public class FireBallProjectile : Projectile
 
     private Rigidbody2D rb;
     private Vector3 direction;
-    private SpriteRenderer spriteRenderer;
-
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -50,7 +47,6 @@ public class FireBallProjectile : Projectile
             Vector2 force = difference * knockbackForce;
             enemyrb.AddForce(-force, ForceMode2D.Impulse);
         }
-
         Destroy(gameObject);
     }
 }
