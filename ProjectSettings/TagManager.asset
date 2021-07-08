@@ -46,8 +46,14 @@ TagManager:
   - name: TileBackground
     uniqueID: 3915619125
     locked: 0
+  - name: TileSecret
+    uniqueID: 4237016077
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: TileFront
+    uniqueID: 4213542713
     locked: 0
   - name: Player
     uniqueID: 235530557
