@@ -26,9 +26,10 @@ public class WindDash : Powers
             dashCd = Time.time + dashRate;
             GameObject dash = Instantiate(_particleObject, _particleSpawnPoint.transform.position, Quaternion.identity, _particleSpawnPoint.transform);
             dashDirection = _playerController.Movement;
+            //Vector3 velocity = _playerController.Rigidbody.velocity;
             if (dashDirection != 0)
             {
-                _playerController.Rigidbody.velocity = _playerController.transform.right * dashDirection * dashForce;
+                _playerController.Rigidbody.velocity = _playerController.transform.right * dashDirection * dashForce; //+ velocity;
             }
             else
             {

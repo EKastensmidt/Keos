@@ -29907,7 +29907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpeed: 4
-  jumpForce: 4.5
+  jumpForce: 5
   momentum: 0.05
   animator: {fileID: 741179630}
 --- !u!95 &741179630
