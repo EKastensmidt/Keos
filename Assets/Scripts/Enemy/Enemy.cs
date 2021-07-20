@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
     public float Speed { get => speed; set => speed = value; }
     public int Previoushealth { get => previoushealth; set => previoushealth = value; }
     public SpriteRenderer MyRenderer { get => myRenderer; set => myRenderer = value; }
+    public int MaxHealth { get => maxHealth; }
 
     void Awake()
     {

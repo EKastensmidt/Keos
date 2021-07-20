@@ -42,7 +42,7 @@ public class CurvedProjectileEnemy : Enemy
             entryCd = Time.time + shootRate;
         }
     }
-    public Vector3 BallisticVel(Transform target, float angle)
+    private Vector3 BallisticVel(Transform target, float angle)
     {
         Vector3 dir = target.position - transform.position;
         float h = dir.y;  

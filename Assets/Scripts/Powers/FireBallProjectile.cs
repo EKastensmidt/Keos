@@ -41,6 +41,14 @@ public class FireBallProjectile : Projectile
                 }
             } 
         }
+        else if (collision.gameObject.layer == 16)
+        {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(Damage);
+            }
+        }
         else if (enemyrb != null)
         {
             Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
