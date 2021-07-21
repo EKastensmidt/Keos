@@ -7,6 +7,7 @@ public class BossFightEnter : MonoBehaviour
     [SerializeField] private GameObject gate;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private Enemy Boss;
+    [SerializeField] private GameObject BGMusic;
     private Collider2D collider;
     private static bool isStarted = false;
 
@@ -34,6 +35,7 @@ public class BossFightEnter : MonoBehaviour
             collider.enabled = false;
             isStarted = true;
             healthBar.gameObject.SetActive(isStarted);
+            BGMusic.SetActive(isStarted);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : Enemy
 {
@@ -61,6 +62,23 @@ public class Boss : Enemy
                 Instantiate(basicEnemyPrefab, transform.position, Quaternion.identity);
                 spawnTimer = 2.4f;
             }
+        }
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        CurrHealth -= damage;
+        DamagePoints(damage);
+        if (CurrHealth != Previoushealth)
+        {
+            Previoushealth = CurrHealth;
+            StartCoroutine(HitEffect());
+        }
+
+        if (CurrHealth <= 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("EndOfDemo");
         }
     }
 

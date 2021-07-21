@@ -9,7 +9,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     private Rigidbody2D rb;
     private float knockbackForce = 4;
-    
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
