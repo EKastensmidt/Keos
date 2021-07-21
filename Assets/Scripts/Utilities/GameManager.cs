@@ -25,8 +25,25 @@ public class GameManager : MonoBehaviour
         currCheckpoint = _player.transform.position;
     }
 
-    void FixedUpdate()
+    void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
+        else if (Input.GetKeyDown(KeyCode.F2))
+        {
+            SceneManager.LoadScene("Level_1");
+        }
+        else if (Input.GetKeyDown(KeyCode.F3))
+        {
+            SceneManager.LoadScene("Level_2");
+        }
+        else if (Input.GetKeyDown(KeyCode.F4))
+        {
+            SceneManager.LoadScene("BossFight_1");
+        }
+
         if (_playerManager.CurrentHealth <= 0 && isBossFight == false)
         {
             _player.transform.position = new Vector3(currCheckpoint.x, currCheckpoint.y, 0);

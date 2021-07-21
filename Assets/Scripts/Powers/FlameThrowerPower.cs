@@ -39,7 +39,7 @@ public class FlameThrowerPower : Projectile
 
     private void OnParticleCollision(GameObject other)
     {
-        if (other.layer == 10)
+        if (other.layer == 10 || other.layer == 16)
         {
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null && hitCd <= Time.time)
