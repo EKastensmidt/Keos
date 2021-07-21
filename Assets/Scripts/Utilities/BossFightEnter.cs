@@ -9,7 +9,7 @@ public class BossFightEnter : MonoBehaviour
     [SerializeField] private Enemy Boss;
     [SerializeField] private GameObject BGMusic;
     private Collider2D collider;
-    private static bool isStarted = false;
+    private static bool isStarted;
 
     public static bool IsStarted { get => isStarted; set => isStarted = value; }
 
@@ -17,6 +17,7 @@ public class BossFightEnter : MonoBehaviour
     {
         collider = GetComponent<Collider2D>();
         healthBar.SetMaxHealth(Boss.MaxHealth);
+        isStarted = false;
     }
 
     private void Update()

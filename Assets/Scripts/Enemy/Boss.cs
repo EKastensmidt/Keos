@@ -16,11 +16,14 @@ public class Boss : Enemy
     private Transform prevTransform;
     private Transform nextTransform;
     private Transform auxTransform;
+    private SpriteRenderer spriteRenderer;
     private float jumpTimer = 5f;
-    private float spawnTimer = 2.4f;
+    private float spawnTimer = 2.6f;
     private Rigidbody2D rb;
     private int  bossMaxHealth;
     private bool secondStage = false;
+    private bool isFacingRight = false;
+    private float spawnOffset = -1;
 
     void Start()
     {
@@ -28,6 +31,7 @@ public class Boss : Enemy
         nextTransform = platform2.transform;
         transform.position = prevTransform.transform.position;
         bossMaxHealth = CurrHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -37,8 +41,8 @@ public class Boss : Enemy
         {
             jumpTimer -= Time.deltaTime;
             spawnTimer -= Time.deltaTime;
+            Vector3 characterScale = transform.localScale;
 
-            
             if (jumpTimer <= 0)
             {
                 if (CurrHealth <= bossMaxHealth/2 && !secondStage)
@@ -50,17 +54,30 @@ public class Boss : Enemy
                 }
                 else
                 {
+                    
                     JumpToPlatform(nextTransform);
                     auxTransform = prevTransform;
                     prevTransform = nextTransform;
                     nextTransform = auxTransform;
+                    if (isFacingRight)
+                    {
+                        characterScale.x = 1;
+                        isFacingRight = false;
+                    }
+                    else
+                    {
+                        characterScale.x = -1;
+                        isFacingRight = true;
+                    }
+                    spawnOffset *= -1;
+                    transform.localScale = characterScale;
                     jumpTimer = 5f;
                 }
             }
             if (spawnTimer <= 0)
             {
-                Instantiate(basicEnemyPrefab, transform.position, Quaternion.identity);
-                spawnTimer = 2.4f;
+                Instantiate(basicEnemyPrefab, new Vector3(transform.position.x + spawnOffset,transform.position.y), Quaternion.identity);
+                spawnTimer = 2.6f;
             }
         }
     }
@@ -78,6 +95,7 @@ public class Boss : Enemy
         if (CurrHealth <= 0)
         {
             Destroy(gameObject);
+            
             SceneManager.LoadScene("EndOfDemo");
         }
     }
@@ -85,6 +103,7 @@ public class Boss : Enemy
     private void JumpToPlatform(Transform target)
     {
         rb.velocity = BallisticVel(target, jumpAngle);
+        
     }
 
     private Vector3 BallisticVel(Transform target, float angle)

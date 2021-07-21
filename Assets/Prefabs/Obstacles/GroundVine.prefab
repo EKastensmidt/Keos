@@ -126,3 +126,4 @@ MonoBehaviour:
   speed: 0
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
     type: 3}
+  damagePopupOffset: 5

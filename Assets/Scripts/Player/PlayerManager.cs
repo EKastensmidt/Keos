@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     private Rigidbody2D rb;
     private float knockbackForce = 4;
+    private float hitTimer = 1f;
+    private float hitCd;
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
@@ -28,8 +30,12 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (hitCd <= Time.time)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+            hitCd = hitTimer + Time.time;
+        }
     }
 
     public void Heal(int heal)
