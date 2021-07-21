@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         //velocity.x = Mathf.Lerp(velocity.x, movement * characterSpeed, momentum);
         //_rigidbody.velocity = velocity;
         movement = Input.GetAxis("Horizontal");
-        if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground","Default","Enemy")))
+        if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground","Enemy")))
         {
 
         }
