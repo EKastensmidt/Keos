@@ -8,6 +8,7 @@ public class WindDash : Powers
     private GameObject _particleObject;
     private GameObject _particleSpawnPoint;
 
+    private Vector3 dashParticleOffset; 
     private float dashDirection;
     private float dashForce = 5;
     private float dashRate = 1;
@@ -24,7 +25,9 @@ public class WindDash : Powers
         if (dashCd <= Time.time)
         {
             dashCd = Time.time + dashRate;
+            dashParticleOffset = _playerController.IsFacingRight ? dashParticleOffset = new Vector3(0,180,0) : dashParticleOffset = Vector3.zero;
             GameObject dash = Instantiate(_particleObject, _particleSpawnPoint.transform.position, Quaternion.identity, _particleSpawnPoint.transform);
+            dash.transform.Rotate(dashParticleOffset);
             dashDirection = _playerController.Movement;
             //Vector3 velocity = _playerController.Rigidbody.velocity;
             if (dashDirection != 0)
