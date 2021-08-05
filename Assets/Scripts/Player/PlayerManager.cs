@@ -34,7 +34,10 @@ public class PlayerManager : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
-            ScreenShake.instance.StartShake(0.2f, 0.1f);
+            if (damage > 0)
+            {
+                ScreenShake.instance.StartShake(0.2f, 0.1f);
+            }
             hitCd = hitTimer + Time.time;
         }
     }

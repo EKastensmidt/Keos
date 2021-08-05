@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float characterSpeed = 1;
     [SerializeField] private float jumpForce = 1;
     [SerializeField] private float momentum = 1;
-    
+
+
     private bool isPlaying = false;
     private bool isFacingRight = false;
 
@@ -26,9 +27,6 @@ public class PlayerController : MonoBehaviour
     private GroundCheck _groundCheck;
     private Collider2D _collider;
 
-    //[SerializeField] private float coyoteTimeFrames = 20;
-    //private float coyoteTimeTimer;
-
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -39,7 +37,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        //ResetJumpCount();
 
         //MOVE
 
@@ -74,15 +71,16 @@ public class PlayerController : MonoBehaviour
         transform.localScale = characterScale;
 
         //JUMP
+
         if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             SoundManagerScript.PlaySound("Jump");
-            //if (_groundCheck.OnGround || coyoteTimeTimer < coyoteTimeFrames*/)
-            //{
-            //}
         }
-
+        if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
+        {
+            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
+        }
         // ATTACK
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -117,13 +115,4 @@ public class PlayerController : MonoBehaviour
             _powerManager.GetElement(Elements.earth);
         }
     }
-
-    //private void ResetJumpCount()
-    //{
-    //    if (_groundCheck.OnGround)
-    //    {
-    //        coyoteTimeTimer = 0;
-    //    }
-    //    coyoteTimeTimer++;
-    //}
 }
