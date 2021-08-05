@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Boss : Enemy
+public class BossW1 : Enemy
 {
     [SerializeField] private GameObject platform1;
     [SerializeField] private GameObject platform2;

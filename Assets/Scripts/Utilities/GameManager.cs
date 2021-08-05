@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("BossFight_1");
         }
 
-        if (_playerManager.CurrentHealth <= 0 && isBossFight == false)
+        if (_playerManager.CurrentHealth <= 0 && !isBossFight)
         {
             _player.transform.position = new Vector3(currCheckpoint.x, currCheckpoint.y, 0);
             _playerManager.CurrentHealth = _playerManager.MaxHealth;
