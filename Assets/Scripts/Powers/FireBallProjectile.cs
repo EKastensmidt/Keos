@@ -6,6 +6,7 @@ public class FireBallProjectile : Projectile
 {
     [SerializeField] private float _speed;
     [SerializeField] private float knockbackForce = 2f;
+    [SerializeField] private ParticleSystem deathExplotion;
     public float Speed { get => _speed; }
 
     private Rigidbody2D rb;
@@ -55,6 +56,12 @@ public class FireBallProjectile : Projectile
             Vector2 force = difference * knockbackForce;
             enemyrb.AddForce(-force, ForceMode2D.Impulse);
         }
+        OnDeath();
+    }
+
+    private void OnDeath()
+    {
+        Instantiate(deathExplotion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
