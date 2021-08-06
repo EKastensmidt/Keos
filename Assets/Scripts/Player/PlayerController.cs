@@ -105,12 +105,12 @@ public class PlayerController : MonoBehaviour
             _powerManager.GetElement(Elements.wind);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && GameManager.IsWaterUnlocked)
         {
             _powerManager.GetElement(Elements.water);
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && GameManager.IsEarthUnlocked)
         {
             _powerManager.GetElement(Elements.earth);
         }

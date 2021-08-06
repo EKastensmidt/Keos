@@ -458,7 +458,6 @@ MonoBehaviour:
   characterSpeed: 4
   jumpForce: 5
   momentum: 0.05
-  jumpBufferLength: 0.15
   animator: {fileID: 222141988}
 --- !u!95 &222141988
 Animator:

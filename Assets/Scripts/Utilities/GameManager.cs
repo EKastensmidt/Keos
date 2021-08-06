@@ -8,41 +8,31 @@ public class GameManager : MonoBehaviour
     private GameObject _player;
     private PlayerManager _playerManager;
 
-    private bool isBossFight = false;
+    private static bool isBossFight = false;
+    private static bool isWaterUnlocked = false;
+    private static bool isEarthUnlocked = false;
+
 
     private Vector3 currCheckpoint;
+    private string currScene;
 
     public Vector3 CurrCheckpoint { get => currCheckpoint; set => currCheckpoint = value; }
+    public static bool IsWaterUnlocked { get => isWaterUnlocked; set => isWaterUnlocked = value; }
+    public static bool IsEarthUnlocked { get => isEarthUnlocked; set => isEarthUnlocked = value; }
+    public static bool IsBossFight { get => isBossFight; set => isBossFight = value; }
 
     void Start()
     {
+        currScene = SceneManager.GetActiveScene().name;
+        StageCheck.Check(currScene);
         _player = GameObject.Find("Maguito");
         _playerManager = _player.GetComponent<PlayerManager>();
-        if (SceneManager.GetActiveScene().name == "BossFight_1")
-        {
-            isBossFight = true;
-        }
         currCheckpoint = _player.transform.position;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1))
-        {
-            SceneManager.LoadScene("Tutorial");
-        }
-        else if (Input.GetKeyDown(KeyCode.F2))
-        {
-            SceneManager.LoadScene("Level_1");
-        }
-        else if (Input.GetKeyDown(KeyCode.F3))
-        {
-            SceneManager.LoadScene("Level_2");
-        }
-        else if (Input.GetKeyDown(KeyCode.F4))
-        {
-            SceneManager.LoadScene("BossFight_1");
-        }
+        StageCheck.SceneInputs();
 
         if (_playerManager.CurrentHealth <= 0 && !isBossFight)
         {

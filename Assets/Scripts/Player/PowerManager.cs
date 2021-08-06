@@ -34,6 +34,7 @@ public class PowerManager : MonoBehaviour
         powers.Add(new FlameThrower(Emmiter.transform));
         powers.Add(new FireBall(Emmiter.transform));
         powers.Add(new WindDash());
+        powers.Add(new SnowBall(Emmiter.transform));
     }
 
     public void GetElement(Elements element)
