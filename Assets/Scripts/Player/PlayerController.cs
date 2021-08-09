@@ -22,10 +22,12 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D Rigidbody { get => _rigidbody; set => _rigidbody = value; }
     public float Movement { get => movement; set => movement = value; }
     public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
+    public Vector2 Delta { get => delta;}
 
     private PowerManager _powerManager;
     private GroundCheck _groundCheck;
     private Collider2D _collider;
+    private Vector2 delta;
 
     private void Start()
     {
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //FLIP
-        Vector2 delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         Vector3 characterScale = transform.localScale;
 
         if (delta.x > movement)
@@ -114,5 +116,7 @@ public class PlayerController : MonoBehaviour
         {
             _powerManager.GetElement(Elements.earth);
         }
+
+
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5549845794330844161}
   - component: {fileID: 8688425769550793400}
   - component: {fileID: 2780443142838466441}
+  - component: {fileID: 4232433839116495878}
   m_Layer: 0
   m_Name: FireBallExplotion
   m_TagString: Untagged
@@ -4812,3 +4813,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4232433839116495878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3906588629629365474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b866d7dc86f4564fac48dfc314b9a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 1
