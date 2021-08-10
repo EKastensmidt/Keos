@@ -8,7 +8,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private GameObject dBox;
     [SerializeField] private TMP_Text dText;
     public bool dialogActive = false;
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && dialogActive == false)

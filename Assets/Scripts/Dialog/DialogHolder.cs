@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogHolder : MonoBehaviour
 {
     [SerializeField] private string dialogue;
+    [SerializeField] private bool needsF;
     private DialogManager dHolder;
     private GameObject maguito;
     private GameObject fButton;
@@ -21,12 +22,20 @@ public class DialogHolder : MonoBehaviour
     {
         if (collision.gameObject.name == "Maguito")
         {
-            fButton.SetActive(true);
-            if (dHolder.dialogActive)
+            if (!needsF)
             {
                 dHolder.ShowBox(dialogue);
-                fButton.SetActive(false);
             }
+            else
+            {
+                fButton.SetActive(true);
+                if (dHolder.dialogActive)
+                {
+                    dHolder.ShowBox(dialogue);
+                    fButton.SetActive(false);
+                }
+            }
+            
         }
     }
 

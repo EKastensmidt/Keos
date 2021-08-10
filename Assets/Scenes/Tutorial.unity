@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: '[LMB] to Cast Magic'
+  needsF: 0
 --- !u!212 &1746421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,7 +1221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad16c84dacf260142ad96c8f423840e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: My Master's grave... Thanks for everything.
+  dialogue: My Teachers's grave... Thanks for everything.
+  needsF: 1
 --- !u!1 &433583865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: '[A] - [D] To move'
+  needsF: 0
 --- !u!212 &641931570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13735,8 +13738,8 @@ Tilemap:
   - first: {x: -3, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -13744,8 +13747,8 @@ Tilemap:
   - first: {x: -2, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -13753,8 +13756,8 @@ Tilemap:
   - first: {x: -1, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -13771,8 +13774,8 @@ Tilemap:
   - first: {x: 1, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 4
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -13780,8 +13783,8 @@ Tilemap:
   - first: {x: 2, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -14479,7 +14482,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: -1, y: -2, z: 0}
+  - first: {x: -3, y: -2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -14488,7 +14491,7 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: -2, z: 0}
+  - first: {x: -2, y: -2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 7
@@ -14497,11 +14500,29 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -1, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 1, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 6
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -14509,8 +14530,8 @@ Tilemap:
   - first: {x: 2, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -14902,11 +14923,29 @@ Tilemap:
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 2, y: -1, z: 0}
+  - first: {x: 0, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 2, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -15606,21 +15645,21 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 8
+  - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: eb3b36428f7dc3a40984d2eda083fbfb, type: 2}
   - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: d5714f95dd3a2a34b984f4bca15521a8, type: 2}
   - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: cd430a5276716c046b2c1bcbf3164a03, type: 2}
-  - m_RefCount: 797
+  - m_RefCount: 803
     m_Data: {fileID: 11400000, guid: 23f435bd52177b741a748ac0d2570f21, type: 2}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 00f44c49c6fda1942b3c0ea3ec9781d1, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 0ecd20150e58ac64a9a541c7290aa093, type: 2}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: cf9b24d0f946a1e42aa41dc5690d445a, type: 2}
-  - m_RefCount: 81
+  - m_RefCount: 82
     m_Data: {fileID: 11400000, guid: a9666f44328837b49b2edc7f8091e4b9, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -15631,7 +15670,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 8
+  - m_RefCount: 7
     m_Data: {fileID: -7165137587744279949, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
   - m_RefCount: 9
@@ -15639,18 +15678,18 @@ Tilemap:
       type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 61894587540000967, guid: 4c86264fc899d9548a0459bd138e69de, type: 3}
-  - m_RefCount: 797
+  - m_RefCount: 803
     m_Data: {fileID: -3141930437684457256, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 8787015689714547084, guid: 4c86264fc899d9548a0459bd138e69de,
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 5607400963371633184, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
-  - m_RefCount: 81
+  - m_RefCount: 82
     m_Data: {fileID: -7264895971467923053, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
   - m_RefCount: 0
@@ -15663,7 +15702,7 @@ Tilemap:
     m_Data: {fileID: 6384796160751912703, guid: 7441f5db4b423a0458ede573279cea38,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 930
+  - m_RefCount: 934
     m_Data:
       e00: 1
       e01: 0
@@ -15692,7 +15731,7 @@ Tilemap:
     m_Data: {r: 2.3699e-41, g: 2.3699e-41, b: 2.3699e-41, a: 2.3699e-41}
   - m_RefCount: 0
     m_Data: {r: 2.3699e-41, g: 2.3699e-41, b: 2.3699e-41, a: 2.3699e-41}
-  - m_RefCount: 930
+  - m_RefCount: 934
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -15861,6 +15900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Use WindDash to reach further away places [W + W] + [LMB]
+  needsF: 0
 --- !u!212 &957386894
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16437,6 +16477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: '[SPACE] to Jump'
+  needsF: 0
 --- !u!212 &1162050968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17385,6 +17426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Use FireBall to deal the most damage [Q + W] + [LMB]
+  needsF: 0
 --- !u!212 &1437778418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18434,6 +18476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Use FlameThrower to burn the plant [Q + Q] + [LMB]
+  needsF: 0
 --- !u!212 &1942286844
 SpriteRenderer:
   m_ObjectHideFlags: 0
