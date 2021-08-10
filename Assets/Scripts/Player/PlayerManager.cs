@@ -67,6 +67,7 @@ public class PlayerManager : MonoBehaviour
                     Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
                     Vector2 force = difference * knockbackForce;
                     rb.AddForce(force, ForceMode2D.Impulse);
+                    enemyrb.AddForce(-difference * knockbackForce, ForceMode2D.Impulse);
                 }
             }   
         }
