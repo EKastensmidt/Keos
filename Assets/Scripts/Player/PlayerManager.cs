@@ -37,6 +37,7 @@ public class PlayerManager : MonoBehaviour
             if (damage > 0)
             {
                 ScreenShake.instance.StartShake(0.2f, 0.1f);
+                SoundManagerScript.PlaySound("PlayerHit");
             }
             hitCd = hitTimer + Time.time;
         }

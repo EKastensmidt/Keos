@@ -35,6 +35,7 @@ public class PowerManager : MonoBehaviour
         powers.Add(new FireBall(Emmiter.transform));
         powers.Add(new WindDash());
         powers.Add(new SnowBall(Emmiter.transform));
+        powers.Add(new SteamCloud());
     }
 
     public void GetElement(Elements element)

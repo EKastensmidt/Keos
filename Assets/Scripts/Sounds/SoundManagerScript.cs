@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManagerScript : MonoBehaviour
 {
     public static AudioClip enemyHitSound, flameThrowerSound, fireBallSound, jumpSound, elementSelectSound, consumableSound,
-        windDashSound;
+        windDashSound, playerHitSound;
     private static AudioSource audioSource;
 
     void Start()
@@ -40,6 +40,9 @@ public class SoundManagerScript : MonoBehaviour
             case "WindDash":
                 audioSource.PlayOneShot(windDashSound);
                 break;
+            case "PlayerHit":
+                audioSource.PlayOneShot(playerHitSound);
+                break;
         }
     }
     private void InitiateSounds()
@@ -50,6 +53,7 @@ public class SoundManagerScript : MonoBehaviour
         jumpSound = Resources.Load<AudioClip>("Sounds/SFX/Jump");
         elementSelectSound = Resources.Load<AudioClip>("Sounds/SFX/ElementSelect");
         consumableSound = Resources.Load<AudioClip>("Sounds/SFX/Consumable");
-        windDashSound = Resources.Load<AudioClip>("Sounds/SFX/WindDash");
+        windDashSound = Resources.Load<AudioClip>("Sounds/SFX/WindDash"); 
+        playerHitSound = Resources.Load<AudioClip>("Sounds/SFX/PlayerHit");
     }
 }
