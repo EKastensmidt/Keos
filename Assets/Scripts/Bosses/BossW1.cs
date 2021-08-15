@@ -12,6 +12,7 @@ public class BossW1 : Enemy
     [SerializeField] private float jumpAngle = 60;
     [SerializeField] private GameObject basicEnemyPrefab;
     [SerializeField] private GameObject secondPhaseSpawns;
+    [SerializeField] private int maxEnemies = 5;
 
     private Transform prevTransform;
     private Transform nextTransform;
@@ -24,7 +25,9 @@ public class BossW1 : Enemy
     private bool secondStage = false;
     private bool isFacingRight = false;
     private float spawnOffset = -1;
-
+    private List<GameObject> enemies = new List<GameObject>();
+    private bool spawnReady = true;
+    
     void Start()
     {
         prevTransform = platform1.transform;
@@ -74,11 +77,29 @@ public class BossW1 : Enemy
                     jumpTimer = 5f;
                 }
             }
-            if (spawnTimer <= 0)
+
+            if (spawnTimer <= 0 && spawnReady)
             {
-                Instantiate(basicEnemyPrefab, new Vector3(transform.position.x + spawnOffset,transform.position.y), Quaternion.identity);
+                var enemy =  Instantiate(basicEnemyPrefab, new Vector3(transform.position.x + spawnOffset,transform.position.y), Quaternion.identity);
+                enemies.Add(enemy);
                 spawnTimer = 2.6f;
+                if (enemies.Count > 5)
+                {
+                    spawnReady = false;
+                }
             }
+
+            if (!spawnReady)
+            {
+                for (int i = 0; i < enemies.Count; i++)
+                {
+                    if (enemies[i] == null)
+                    {
+                        enemies.RemoveAt(i);
+                        spawnReady = true;
+                    }
+                }
+            }    
         }
     }
 
@@ -103,7 +124,6 @@ public class BossW1 : Enemy
     private void JumpToPlatform(Transform target)
     {
         rb.velocity = BallisticVel(target, jumpAngle);
-        
     }
 
     private Vector3 BallisticVel(Transform target, float angle)
