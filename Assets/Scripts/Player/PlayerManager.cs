@@ -11,10 +11,12 @@ public class PlayerManager : MonoBehaviour
     private float knockbackForce = 4;
     private float hitTimer = 1f;
     private float hitCd;
+    private bool isBubble = false;
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
     public HealthBar HealthBar { get => healthBar; set => healthBar = value; }
+    public bool IsBubble { get => isBubble; set => isBubble = value; }
 
     private void Start()
     {
@@ -30,7 +32,7 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (hitCd <= Time.time)
+        if (hitCd <= Time.time && !IsBubble)
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);

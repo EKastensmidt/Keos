@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isPlaying = false;
     private bool isFacingRight = false;
+    private bool isAbleMove = true;
 
     private Rigidbody2D _rigidbody;
     public Animator animator;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public float Movement { get => movement; set => movement = value; }
     public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
     public Vector2 Delta { get => delta;}
+    public bool IsAbleMove { get => isAbleMove; set => isAbleMove = value; }
 
     private PowerManager _powerManager;
     private GroundCheck _groundCheck;
@@ -39,23 +41,35 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
-        //MOVE
-
-        //Vector2 velocity = _rigidbody.velocity;
-        //velocity.x = Mathf.Lerp(velocity.x, movement * characterSpeed, momentum);
-        //_rigidbody.velocity = velocity;
-        movement = Input.GetAxis("Horizontal");
-        if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground","Enemy")))
+        if (isAbleMove)
         {
+            //MOVE
 
-        }
-        else
-        {
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
-            animator.SetFloat("Speed", Mathf.Abs(movement));
-        }
+            //Vector2 velocity = _rigidbody.velocity;
+            //velocity.x = Mathf.Lerp(velocity.x, movement * characterSpeed, momentum);
+            //_rigidbody.velocity = velocity;
+            movement = Input.GetAxis("Horizontal");
+            if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground", "Enemy")))
+            {
 
+            }
+            else
+            {
+                transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
+                animator.SetFloat("Speed", Mathf.Abs(movement));
+            }
+            //JUMP
+
+            if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
+            {
+                _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+                SoundManagerScript.PlaySound("Jump");
+            }
+            if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
+            {
+                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
+            }
+        }
         //FLIP
         delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         Vector3 characterScale = transform.localScale;
@@ -72,17 +86,7 @@ public class PlayerController : MonoBehaviour
         }
         transform.localScale = characterScale;
 
-        //JUMP
 
-        if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
-        {
-            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            SoundManagerScript.PlaySound("Jump");
-        }
-        if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
-        {
-            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
-        }
         // ATTACK
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
