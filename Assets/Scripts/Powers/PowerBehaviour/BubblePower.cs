@@ -15,12 +15,10 @@ public class BubblePower : MonoBehaviour
     }
     void Update()
     {
-        _playerController.IsAbleMove = false;
         _playerManager.IsBubble = true;
         gameObject.transform.position = _player.transform.position;
         if (!_playerController.IsPlaying)
         {
-            _playerController.IsAbleMove = true;
             _playerManager.IsBubble = false;
             Destroy(gameObject);
         }
