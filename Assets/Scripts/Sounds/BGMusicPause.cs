@@ -6,6 +6,9 @@ public class BGMusicPause : MonoBehaviour
 {
     private void Start()
     {
-        BGMusicScript.Instance.gameObject.GetComponent<AudioSource>().Pause();
+        if (BGMusicScript.Instance != null)
+        {
+            BGMusicScript.Instance.gameObject.GetComponent<AudioSource>().Pause();
+        }
     }
 }
