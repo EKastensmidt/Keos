@@ -8,7 +8,7 @@ public class SnowBall : Powers
     private Transform SpawnPoint;
     private float spawnCd;
     private float spawnRate = 0.4f;
-    private float speed = 420;
+    private float speed = 500;
     private Vector3 direction;
     public SnowBall(Transform Emmiter) : base(Elements.water, Elements.wind)
     {
