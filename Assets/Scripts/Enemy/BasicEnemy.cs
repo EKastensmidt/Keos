@@ -8,6 +8,9 @@ public class BasicEnemy : Enemy
     private WallDetect wallDetector;
     private float movement;
     private Vector3 localScale;
+
+    public WallDetect WallDetector { get => wallDetector; set => wallDetector = value; }
+
     private void Start()
     {
         wallDetector = wallDetect.GetComponent<WallDetect>();

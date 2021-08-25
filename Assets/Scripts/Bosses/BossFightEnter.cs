@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossFightEnter : MonoBehaviour
 {
-    [SerializeField] private GameObject gate;
+    [SerializeField] private GameObject gate, gate2;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private Enemy Boss;
     [SerializeField] private GameObject BGMusic;
@@ -33,10 +33,17 @@ public class BossFightEnter : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             gate.transform.position = new Vector3(gate.transform.position.x, gate.transform.position.y - 2f, gate.transform.position.z);
+            gate2.transform.position = new Vector3(gate2.transform.position.x, gate2.transform.position.y - 2f, gate2.transform.position.z);
             collider.enabled = false;
             isStarted = true;
             healthBar.gameObject.SetActive(isStarted);
             BGMusic.SetActive(isStarted);
         }
+    }
+    public void ReOpenGates()
+    {
+        gate.SetActive(false);
+        gate2.SetActive(false);
+        healthBar.gameObject.SetActive(false);
     }
 }
