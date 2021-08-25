@@ -5,14 +5,17 @@ using UnityEngine;
 public class EnemyFlying : Enemy
 {
     private GameObject target;
-    [SerializeField] private float xMove = 3f, detectDistance = 4f;
+    private Animator animator;
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private float xMove = 3f, detectDistance = 4f, fireRate = 1f;
     private bool isInRange = false;
-    private float randcd;
+    private float randcd, fireCD = 0;
     private int posMultiplier = 1;
 
     void Start()
     {
         target = GameObject.Find("Maguito");
+        animator = GetComponent<Animator>();
         randcd = Random.Range(1.5f, 2.5f);
     }
 
@@ -34,6 +37,13 @@ public class EnemyFlying : Enemy
             }
             float movement = -transform.right.x * Speed * Time.deltaTime;
             transform.position += new Vector3(movement, 0, 0);
+
+            if(fireCD <= Time.time)
+            {
+                animator.SetBool("isAttack", true);
+                GameObject enemyProjectile = Instantiate(projectile, transform.position, Quaternion.identity);
+                fireCD = Time.time + fireRate;
+            }
         }
     }
 }
