@@ -9,6 +9,8 @@ public class SnowBallProjectile : Projectile
     private static float damageScale = 0.05f;
     private static int defaultDamage;
     private static int progressiveDamage;
+    [SerializeField] private float knockbackForce = 2f;
+
     private void Start()
     {
         defaultDamage = Damage;
@@ -36,7 +38,22 @@ public class SnowBallProjectile : Projectile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 16)
+        Rigidbody2D enemyrb = collision.gameObject.GetComponent<Rigidbody2D>();
+        if (collision.gameObject.layer == 10)
+        {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(progressiveDamage);
+                if (enemyrb != null)
+                {
+                    Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+                    Vector2 force = difference * knockbackForce;
+                    enemyrb.AddForce(-force, ForceMode2D.Impulse);
+                }
+            }
+        }
+        else if (collision.gameObject.layer == 16)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
@@ -44,6 +61,12 @@ public class SnowBallProjectile : Projectile
                 enemy.TakeDamage(progressiveDamage);
             }
         }
-        Destroy(gameObject);
+        else if (enemyrb != null)
+        {
+            Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
+            Vector2 force = difference * knockbackForce;
+            enemyrb.AddForce(-force, ForceMode2D.Impulse);
+        }
+        Destroy(this.gameObject);
     }
 }

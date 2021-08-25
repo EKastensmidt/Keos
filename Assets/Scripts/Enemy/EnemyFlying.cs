@@ -11,15 +11,17 @@ public class EnemyFlying : Enemy
     private bool isInRange = false;
     private float randcd, fireCD = 0;
     private int posMultiplier = 1;
+    private Rigidbody2D rb;
 
     void Start()
     {
         target = GameObject.Find("Maguito");
         animator = GetComponent<Animator>();
         randcd = Random.Range(1.5f, 2.5f);
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         randcd -= Time.deltaTime;
         float distx = Mathf.Abs(target.transform.position.x - transform.position.x);
@@ -35,8 +37,10 @@ public class EnemyFlying : Enemy
                 Speed = Speed * -1;
                 randcd = Random.Range(1f, 2f);
             }
-            float movement = -transform.right.x * Speed * Time.deltaTime;
-            transform.position += new Vector3(movement, 0, 0);
+            
+            float movement = -transform.right.x * Speed * Time.fixedDeltaTime;
+            rb.MovePosition((Vector2)transform.position + new Vector2(movement, 0));
+            //transform.position += new Vector3(movement, 0, 0);
 
             if(fireCD <= Time.time)
             {

@@ -17,9 +17,13 @@ public class HealthPotion : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
-            _playerManager.Heal(healAmmount);
-            SoundManagerScript.PlaySound("Consumable");
-            Destroy(gameObject);
+            if (_playerManager.CurrentHealth < _playerManager.MaxHealth)
+            {
+                _playerManager.Heal(healAmmount);
+                SoundManagerScript.PlaySound("Consumable");
+                Destroy(gameObject);
+
+            }   
         }
     }
 }
