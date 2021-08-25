@@ -6,7 +6,6 @@ public class CurvedProjectileEnemy : Enemy
 {
     [SerializeField] private GameObject prefab;
     [SerializeField] private float maxShootDistance = 4;
-    [SerializeField] private float minShootDistance = 1;
 
     private GameObject _player;
     private float shootCd;
