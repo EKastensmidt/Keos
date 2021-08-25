@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BGMusicPause : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
         if (BGMusicScript.Instance != null)
         {
-            BGMusicScript.Instance.gameObject.GetComponent<AudioSource>().Pause();
+            Destroy(BGMusicScript.Instance.gameObject);
         }
     }
 }

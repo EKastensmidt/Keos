@@ -37,7 +37,7 @@ public class BossFightEnter : MonoBehaviour
             collider.enabled = false;
             isStarted = true;
             healthBar.gameObject.SetActive(isStarted);
-            BGMusic.SetActive(isStarted);
+            BGMusic.gameObject.GetComponent<AudioSource>().Play();
         }
     }
     public void ReOpenGates()

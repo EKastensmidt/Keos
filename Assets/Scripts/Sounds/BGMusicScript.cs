@@ -10,7 +10,7 @@ public class BGMusicScript : MonoBehaviour
         get { return instance; }
     }
 
-    private void Awake()
+    private void Start()
     {
         if (instance != null && instance != this)
         {
