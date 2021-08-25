@@ -21,6 +21,13 @@ public class StageCheck : MonoBehaviour
                 GameManager.IsEarthUnlocked = false;
                 break;
             case "Level_3":
+            case "Level_4":
+            case "Level_5":
+                GameManager.IsWaterUnlocked = true;
+                GameManager.IsEarthUnlocked = false;
+                break;
+            case "BossFight_2":
+                GameManager.IsBossFight = true;
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = false;
                 break;
