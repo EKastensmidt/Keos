@@ -12,6 +12,7 @@ public class StageCheck : MonoBehaviour
             case "Tutorial":
             case "Level_1":
             case "Level_2":
+                GameManager.IsBossFight = false;
                 GameManager.IsWaterUnlocked = false;
                 GameManager.IsEarthUnlocked = false;
                 break;
@@ -23,6 +24,7 @@ public class StageCheck : MonoBehaviour
             case "Level_3":
             case "Level_4":
             case "Level_5":
+                GameManager.IsBossFight = false;
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = false;
                 break;
