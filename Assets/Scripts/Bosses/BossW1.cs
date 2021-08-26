@@ -87,10 +87,11 @@ public class BossW1 : Enemy
                     }
                     spawnOffset *= -1;
                     transform.localScale = characterScale;
-                    if (secondStage)
-                        jumpTimer = 4.5f;
-                    else if (thirdStage)
+
+                    if (thirdStage)
                         jumpTimer = 2.5f;
+                    else if (secondStage)
+                        jumpTimer = 4.5f;
                     else
                         jumpTimer = 6f;
                 }
@@ -105,10 +106,10 @@ public class BossW1 : Enemy
                 }
                 enemies.Add(enemy);
 
-                if (secondStage)
-                    spawnTimer = 2f;
-                else if (thirdStage)
+                if (thirdStage)
                     spawnTimer = 1.3f;
+                else if (secondStage)
+                    spawnTimer = 2f;
                 else
                     spawnTimer = 2.6f;
 
@@ -151,6 +152,8 @@ public class BossW1 : Enemy
                     enemies[i].GetComponent<Enemy>().TakeDamage(100);
                 }
             }
+            thirdPhaseSpawns.SetActive(false);
+            secondPhaseSpawns.SetActive(false);
             bossEnter.ReOpenGates();
             Destroy(gameObject);
         }
