@@ -30,6 +30,9 @@ public class EnemyFlying : Enemy
         if (distx <= detectDistance && disty <= detectDistance)
             isInRange = true;
 
+        else if (distx >= detectDistance * 1.3 && disty >= detectDistance * 1.3) 
+            isInRange = false;
+
         if (isInRange)
         {
             if (randcd <= 0)
@@ -48,6 +51,10 @@ public class EnemyFlying : Enemy
                 GameObject enemyProjectile = Instantiate(projectile, transform.position, Quaternion.identity);
                 fireCD = Time.time + fireRate;
             }
+        }
+        else
+        {
+            animator.SetBool("isAttack", false);
         }
     }
 }
