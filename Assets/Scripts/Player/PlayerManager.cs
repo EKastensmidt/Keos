@@ -74,5 +74,9 @@ public class PlayerManager : MonoBehaviour
                 }
             }   
         }
+        if (collision.gameObject.layer == 20)
+        {
+            IsBubble = false;
+        }
     }
 }

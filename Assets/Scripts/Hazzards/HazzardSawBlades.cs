@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HazzardSpike : MonoBehaviour
+public class HazzardSawBlades : MonoBehaviour
 {
     [SerializeField] private int damage;
     private void OnCollisionEnter2D(Collision2D collision)
@@ -11,6 +11,6 @@ public class HazzardSpike : MonoBehaviour
         if (_player != null)
         {
             _player.TakeDamage(damage);
-        }   
+        }
     }
 }
