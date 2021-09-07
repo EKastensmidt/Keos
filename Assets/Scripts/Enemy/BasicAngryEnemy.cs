@@ -42,13 +42,28 @@ public class BasicAngryEnemy : Enemy
         if (isAngry)
         {
             transform.Translate((_player.position - transform.position).normalized * angrySpeed * Time.deltaTime);
-            if (_player.position.x - transform.position.x > 0)
+
+            if (localScale.x != -1)
             {
-                spriteRenderer.flipX = true;
+                if (_player.position.x - transform.position.x > 0)
+                {
+                    spriteRenderer.flipX = true;
+                }
+                else
+                {
+                    spriteRenderer.flipX = false;
+                }
             }
             else
             {
-                spriteRenderer.flipX = false;
+                if (_player.position.x - transform.position.x > 0)
+                {
+                    spriteRenderer.flipX = false;
+                }
+                else
+                {
+                    spriteRenderer.flipX = true;
+                }
             }
         }
         else
