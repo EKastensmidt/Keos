@@ -31496,7 +31496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad16c84dacf260142ad96c8f423840e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: No hay nada segui caminando y encontras la salida
+  dialogue: Nothing to see here...
   needsF: 0
 --- !u!212 &1456698442
 SpriteRenderer:

@@ -32,7 +32,8 @@ public class DialogHolder : MonoBehaviour
                 if (dHolder.dialogActive)
                 {
                     dHolder.ShowBox(dialogue);
-                    fButton.SetActive(false);
+                    if (fButton != null)
+                        fButton.SetActive(false);
                 }
             }
             
@@ -44,14 +45,16 @@ public class DialogHolder : MonoBehaviour
         if (dHolder.dialogActive)
         {
             dHolder.ShowBox(dialogue);
-            fButton.SetActive(false);
-        }     
+            if (fButton != null)
+                fButton.SetActive(false);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         dHolder.dialogActive = false;
-        fButton.SetActive(false);
+        if (fButton != null)
+            fButton.SetActive(false);
         dHolder.CloseBox();
     }
 
