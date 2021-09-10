@@ -42,7 +42,6 @@ public class WindDash : Powers
                     _playerController.Rigidbody.velocity = -_playerController.transform.right * dashForce;
             }
             SoundManagerScript.PlaySound("WindDash");
-            Destroy(dash, 1f);
         }
     }
 }
