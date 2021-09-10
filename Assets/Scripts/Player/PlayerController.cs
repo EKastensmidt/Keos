@@ -31,12 +31,17 @@ public class PlayerController : MonoBehaviour
     private Collider2D _collider;
     private Vector2 delta;
 
+    [SerializeField] private ParticleSystem footSteps;
+    private ParticleSystem.EmissionModule footStepsEmission;
+
+
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _powerManager = GetComponent<PowerManager>();
         _groundCheck = GetComponentInChildren<GroundCheck>();
         _collider = GetComponent<Collider2D>();
+        footStepsEmission = footSteps.emission;
     }
 
     private void Update()
@@ -57,6 +62,17 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
             animator.SetFloat("Speed", Mathf.Abs(movement));
         }
+
+        //Foot Steps Particles
+        if ((movement > 0 || movement < 0) && _groundCheck.OnGround)
+        {
+            footStepsEmission.rateOverTime = 25f;
+        }
+        else
+        {
+            footStepsEmission.rateOverTime = 0;
+        }
+
         //JUMP
 
         if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
