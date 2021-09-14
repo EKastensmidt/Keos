@@ -10,6 +10,7 @@ public class SnowBallProjectile : Projectile
     private static int defaultDamage;
     private static int progressiveDamage;
     [SerializeField] private float knockbackForce = 2f;
+    [SerializeField] private ParticleSystem deathExplotion;
 
     private void Start()
     {
@@ -67,6 +68,11 @@ public class SnowBallProjectile : Projectile
             Vector2 force = difference * knockbackForce;
             enemyrb.AddForce(-force, ForceMode2D.Impulse);
         }
-        Destroy(this.gameObject);
+        OnDeath();
+    }
+    private void OnDeath()
+    {
+        Instantiate(deathExplotion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
