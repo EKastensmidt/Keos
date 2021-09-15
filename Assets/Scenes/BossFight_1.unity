@@ -1232,7 +1232,7 @@ MonoBehaviour:
     type: 3}
   secondPhaseSpawns: {fileID: 2128391095}
   thirdPhaseSpawns: {fileID: 2013787882}
-  maxEnemies: 5
+  maxEnemies: 4
 --- !u!1 &485495232
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,7 +3048,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

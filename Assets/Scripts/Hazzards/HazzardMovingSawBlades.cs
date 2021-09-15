@@ -21,7 +21,7 @@ public class HazzardMovingSawBlades : MonoBehaviour
 
         if (distanceToTarget <= slowDist)
         {
-            speed = defaultSpeed;
+            speed = defaultSpeed + 1;
         }
         else if (distanceToTarget <=fastDist && distanceToTarget >= slowDist)
         {
