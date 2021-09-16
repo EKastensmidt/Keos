@@ -12,6 +12,8 @@ public class PlayerManager : MonoBehaviour
     private float hitTimer = 1f;
     private float hitCd;
     private bool isBubble = false;
+    private float invincibilty = 0f;
+    private SpriteRenderer renderer;
 
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
@@ -23,17 +25,27 @@ public class PlayerManager : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         rb = GetComponent<Rigidbody2D>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-       
+        if(invincibilty > 0f)
+        {
+            invincibilty -= Time.deltaTime;
+            int alpha = ((int) (Time.time * 1000 )) % 512;
+            if (alpha > 255) alpha = 512 - alpha;
+            float alphaF = alpha / 256f;
+
+            renderer.material.color = new Color (renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, alphaF);
+        } else renderer.material.color = new Color(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, 1f);
     }
 
     public void TakeDamage(int damage)
     {
-        if (hitCd <= Time.time && !IsBubble)
+        if (hitCd <= Time.time && !IsBubble && invincibilty <= 0f)
         {
+            invincibilty = 1.0f;
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
             if (damage > 0)
@@ -58,6 +70,11 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (IsBubble && collision.gameObject.layer != 10)
+        {
+            SoundManagerScript.PlaySound("BubbleBounce");
+        }
+
         if (collision.gameObject.layer == 10)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
@@ -74,9 +91,11 @@ public class PlayerManager : MonoBehaviour
                 }
             }   
         }
+
         if (collision.gameObject.layer == 20)
         {
             IsBubble = false;
         }
     }
+
 }

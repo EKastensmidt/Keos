@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManagerScript : MonoBehaviour
 {
     public static AudioClip enemyHitSound, flameThrowerSound, fireBallSound, jumpSound, elementSelectSound, consumableSound,
-        windDashSound, playerHitSound;
+        windDashSound, playerHitSound, bubbleSound, steamSound, metalHitSound, bubbleBounceSound;
     private static AudioSource audioSource;
 
     void Start()
@@ -43,6 +43,18 @@ public class SoundManagerScript : MonoBehaviour
             case "PlayerHit":
                 audioSource.PlayOneShot(playerHitSound);
                 break;
+            case "Bubble":
+                audioSource.PlayOneShot(bubbleSound);
+                break;
+            case "BubbleBounce":
+                audioSource.PlayOneShot(bubbleBounceSound);
+                break;
+            case "Steam":
+                audioSource.PlayOneShot(steamSound);
+                break;
+            case "MetalHit":
+                audioSource.PlayOneShot(metalHitSound);
+                break;
         }
     }
     private void InitiateSounds()
@@ -55,5 +67,9 @@ public class SoundManagerScript : MonoBehaviour
         consumableSound = Resources.Load<AudioClip>("Sounds/SFX/Consumable");
         windDashSound = Resources.Load<AudioClip>("Sounds/SFX/WindDash"); 
         playerHitSound = Resources.Load<AudioClip>("Sounds/SFX/PlayerHit");
+        bubbleSound = Resources.Load<AudioClip>("Sounds/SFX/Bubble");
+        bubbleBounceSound = Resources.Load<AudioClip>("Sounds/SFX/BubbleBounce");
+        steamSound = Resources.Load<AudioClip>("Sounds/SFX/Steam");
+        metalHitSound = Resources.Load<AudioClip>("Sounds/SFX/MetalHit");
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.U2D;
 public class BossFightEnter : MonoBehaviour
 {
     [SerializeField] private GameObject gate, gate2;
@@ -10,6 +10,7 @@ public class BossFightEnter : MonoBehaviour
     [SerializeField] private GameObject BGMusic;
     private Collider2D collider;
     private static bool isStarted;
+    private PixelPerfectCamera pp;
 
     public static bool IsStarted { get => isStarted; set => isStarted = value; }
 
@@ -18,6 +19,7 @@ public class BossFightEnter : MonoBehaviour
         collider = GetComponent<Collider2D>();
         healthBar.SetMaxHealth(Boss.MaxHealth);
         isStarted = false;
+        pp = GameObject.Find("Main Camera").GetComponent<PixelPerfectCamera>();
     }
 
     private void Update()
@@ -26,6 +28,12 @@ public class BossFightEnter : MonoBehaviour
         {
             healthBar.SetHealth(Boss.CurrHealth);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isStarted && pp.assetsPPU > 24) pp.assetsPPU--;
+        else if (!isStarted && pp.assetsPPU < 32) pp.assetsPPU++;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,6 +52,7 @@ public class BossFightEnter : MonoBehaviour
     {
         gate.SetActive(false);
         gate2.SetActive(false);
+        isStarted = false;
         healthBar.gameObject.SetActive(false);
     }
 }

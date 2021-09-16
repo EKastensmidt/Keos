@@ -13,10 +13,10 @@ public class Parallax : MonoBehaviour
         stratPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
-    void FixedUpdate()
+    void Update()
     {
         float dist = (cam.transform.position.x * parallaxEffect);
-        transform.position = new Vector3(stratPos * dist, transform.position.y, transform.position.z);
+        transform.position = new Vector3(stratPos + dist, transform.position.y, transform.position.z);
 
     }
 }

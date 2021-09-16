@@ -42,6 +42,7 @@ public class FireBallProjectile : Projectile
                 }
             } 
         }
+
         else if (collision.gameObject.layer == 16)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
@@ -50,11 +51,17 @@ public class FireBallProjectile : Projectile
                 enemy.TakeDamage(Damage);
             }
         }
+        
         else if (enemyrb != null)
         {
             Vector2 difference = (transform.position - collision.gameObject.transform.position).normalized;
             Vector2 force = difference * knockbackForce;
             enemyrb.AddForce(-force, ForceMode2D.Impulse);
+        }
+
+        if (collision.gameObject.layer == 21)
+        {
+            SoundManagerScript.PlaySound("MetalHit");
         }
         OnDeath();
     }

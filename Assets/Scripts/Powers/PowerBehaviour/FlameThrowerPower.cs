@@ -23,12 +23,14 @@ public class FlameThrowerPower : Projectile
         Vector2 segment = mouseOnScreen - (Vector2)transform.position;
         float angle = Vector2.SignedAngle(Vector2.right, segment);
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+
         if (soundCd < Time.time && isPlayingSound)
         {
             SoundManagerScript.PlaySound("FlameThrower");
             soundCd = Time.time + soundRate;
             isPlayingSound = true;
         }
+
         if (!_playerController.IsPlaying)
         {
             isPlayingSound = false;
