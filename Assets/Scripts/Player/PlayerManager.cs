@@ -43,9 +43,9 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (hitCd <= Time.time && !IsBubble && invincibilty <= 0f)
+        if (!IsBubble && invincibilty <= 0f)
         {
-            invincibilty = 1.0f;
+            invincibilty = hitTimer;
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
             if (damage > 0)
@@ -53,7 +53,6 @@ public class PlayerManager : MonoBehaviour
                 ScreenShake.instance.StartShake(0.2f, 0.1f);
                 SoundManagerScript.PlaySound("PlayerHit");
             }
-            hitCd = hitTimer + Time.time;
         }
     }
 
