@@ -13175,7 +13175,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
@@ -13654,7 +13654,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
@@ -20344,7 +20344,7 @@ GameObject:
   - component: {fileID: 1216347081}
   - component: {fileID: 1216347080}
   - component: {fileID: 1216347079}
-  m_Layer: 15
+  m_Layer: 13
   m_Name: Lift
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22987,7 +22987,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
