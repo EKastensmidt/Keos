@@ -20,7 +20,7 @@ public class BossW1 : Enemy
     private float jumpTimer = 5f;
     private float spawnTimer = 2.6f;
     private Rigidbody2D rb;
-    private int  bossMaxHealth;
+    private int bossMaxHealth;
     private bool secondStage = false;
     private bool thirdStage = false;
     private bool isFacingRight = false;
@@ -29,7 +29,9 @@ public class BossW1 : Enemy
     private List<GameObject> enemies = new List<GameObject>();
     private bool spawnReady = true;
     private BossFightEnter bossEnter;
-    
+    private Animator animator;
+    private bool isDead = false;
+
     void Start()
     {
         prevTransform = platform1.transform;
@@ -37,10 +39,14 @@ public class BossW1 : Enemy
         bossMaxHealth = CurrHealth;
         rb = GetComponent<Rigidbody2D>();
         bossEnter = GameObject.Find("BossFightEnter").GetComponent<BossFightEnter>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        if (isDead != false)
+            return;
+
         if (BossFightEnter.IsStarted)
         {
             if (!isEntered)
@@ -54,15 +60,17 @@ public class BossW1 : Enemy
 
             if (jumpTimer <= 0)
             {
-                if (CurrHealth <= bossMaxHealth/1.5f && !secondStage)
+                if (CurrHealth <= bossMaxHealth / 1.5f && !secondStage)
                 {
+                    animator.SetInteger("health", CurrHealth);
                     JumpToPlatform(platformMain.transform);
                     secondStage = true;
                     secondPhaseSpawns.SetActive(true);
                     jumpTimer = 5f;
                 }
-                else if (CurrHealth <= bossMaxHealth/3f && !thirdStage)
+                else if (CurrHealth <= bossMaxHealth / 3f && !thirdStage)
                 {
+                    animator.SetInteger("health", CurrHealth);
                     JumpToPlatform(platformMain.transform);
                     thirdStage = true;
                     thirdPhaseSpawns.SetActive(true);
@@ -99,7 +107,8 @@ public class BossW1 : Enemy
 
             if (spawnTimer <= 0 && spawnReady)
             {
-                GameObject enemy =  Instantiate(basicEnemyPrefab, new Vector3(transform.position.x + spawnOffset, transform.position.y), Quaternion.identity);
+                animator.SetBool("SpawnReady", true);
+                GameObject enemy = Instantiate(basicEnemyPrefab, new Vector3(transform.position.x + spawnOffset, transform.position.y), Quaternion.identity);
                 if (isFacingRight && enemy != null)
                 {
                     enemy.gameObject.GetComponentInChildren<WallDetect>().IsWall = true;
@@ -118,6 +127,10 @@ public class BossW1 : Enemy
                     spawnReady = false;
                 }
             }
+            else
+            {
+                animator.SetBool("SpawnReady", false);
+            }
 
             if (!spawnReady)
             {
@@ -129,7 +142,7 @@ public class BossW1 : Enemy
                         spawnReady = true;
                     }
                 }
-            }    
+            }
         }
     }
 
@@ -145,17 +158,20 @@ public class BossW1 : Enemy
 
         if (CurrHealth <= 0)
         {
+            isDead = true;
             for (int i = 0; i < enemies.Count; i++)
             {
-                if(enemies[i] != null)
+                if (enemies[i] != null)
                 {
                     enemies[i].GetComponent<Enemy>().TakeDamage(100);
                 }
             }
+            spawnReady = false;
             thirdPhaseSpawns.SetActive(false);
             secondPhaseSpawns.SetActive(false);
-            bossEnter.ReOpenGates();
-            Destroy(gameObject);
+            animator.SetInteger("Health", CurrHealth);
+            bossEnter.ReOpenGates(7f);
+            StartCoroutine(SpawnParticles(4f));
         }
     }
 
@@ -175,5 +191,12 @@ public class BossW1 : Enemy
         dist += h / Mathf.Tan(a);
         float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
         return vel * dir.normalized;
+    }
+
+    private IEnumerator SpawnParticles(float time)
+    {
+        Destroy(gameObject, time + 0.1f);
+        yield return new WaitForSeconds(time);
+        Instantiate(DeathParticles, transform.position, Quaternion.identity);
     }
 }

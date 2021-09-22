@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     private Color myColor;
     [SerializeField] private GameObject damagePopup;
     [SerializeField] private float damagePopupOffset = 5f;
+    [SerializeField] private ParticleSystem deathParticles;
 
     public int CurrHealth { get => currHealth; set => currHealth = value; }
     public int Damage { get => damage; set => damage = value; }
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
     public int Previoushealth { get => previoushealth; set => previoushealth = value; }
     public SpriteRenderer MyRenderer { get => myRenderer; set => myRenderer = value; }
     public int MaxHealth { get => maxHealth; }
+    public ParticleSystem DeathParticles { get => deathParticles; set => deathParticles = value; }
 
     void Awake()
     {
@@ -56,6 +58,10 @@ public class Enemy : MonoBehaviour
 
         if (currHealth <= 0)
         {
+            if (deathParticles != null)
+            {
+                Instantiate(deathParticles, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }

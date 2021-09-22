@@ -160,6 +160,8 @@ MonoBehaviour:
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
     type: 3}
   damagePopupOffset: 5
+  deathParticles: {fileID: 3099660311460685604, guid: 1f7304572137d544987a7cdc5eb5309f,
+    type: 3}
   projectile: {fileID: 1550296294153564376, guid: 0d9a41cf8af5b34428fe936e1fe45cdf,
     type: 3}
   xMove: 3

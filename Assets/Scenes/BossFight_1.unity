@@ -2452,8 +2452,9 @@ GameObject:
   - component: {fileID: 472091785}
   - component: {fileID: 472091784}
   - component: {fileID: 472091782}
-  - component: {fileID: 472091783}
   - component: {fileID: 472091786}
+  - component: {fileID: 472091787}
+  - component: {fileID: 472091783}
   m_Layer: 16
   m_Name: Boss
   m_TagString: Untagged
@@ -2473,7 +2474,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.8
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2482,8 +2483,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &472091783
-CapsuleCollider2D:
+--- !u!61 &472091783
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2495,9 +2496,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03246808, y: -0.13282388}
-  m_Size: {x: 0.37425184, y: 0.73435223}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.010721207}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.67, y: 1.47}
+  m_EdgeRadius: 0
 --- !u!212 &472091784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2537,7 +2548,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 62e0fe07ff67fc94898a5be17a39f933, type: 3}
+  m_Sprite: {fileID: 2078824244642399569, guid: 4d984ba7e7cce794ca6fbd38a470457d,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2556,7 +2568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472091781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.83, y: 8.17, z: 0}
+  m_LocalPosition: {x: 10.769, y: 8.345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2580,6 +2592,8 @@ MonoBehaviour:
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
     type: 3}
   damagePopupOffset: 5
+  deathParticles: {fileID: 3099660311460685604, guid: 465c7eea42c18194d8e661e6d71958e3,
+    type: 3}
   platform1: {fileID: 1953454572}
   platform2: {fileID: 929305833}
   platformMain: {fileID: 27730832}
@@ -2589,6 +2603,25 @@ MonoBehaviour:
   secondPhaseSpawns: {fileID: 2128391095}
   thirdPhaseSpawns: {fileID: 2013787882}
   maxEnemies: 4
+--- !u!95 &472091787
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472091781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3306c5ecb9fb83f45b244ba723e4b732, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &485495232
 GameObject:
   m_ObjectHideFlags: 0

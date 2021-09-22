@@ -125,6 +125,8 @@ MonoBehaviour:
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
     type: 3}
   damagePopupOffset: 5
+  deathParticles: {fileID: 3099660311460685604, guid: 97291808957eb124d8df0975244ae91c,
+    type: 3}
   wallDetect: {fileID: 3567824171080537455}
 --- !u!70 &3746778816926993491
 CapsuleCollider2D:

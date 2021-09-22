@@ -140,6 +140,8 @@ MonoBehaviour:
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
     type: 3}
   damagePopupOffset: 5
+  deathParticles: {fileID: 3099660311460685604, guid: 97291808957eb124d8df0975244ae91c,
+    type: 3}
   prefab: {fileID: 1550296294153564376, guid: 0b17c786de42a1041a6e6f3a6b18d428, type: 3}
   maxShootDistance: 5
   shootRate: 2

@@ -48,8 +48,13 @@ public class BossFightEnter : MonoBehaviour
             BGMusic.gameObject.GetComponent<AudioSource>().Play();
         }
     }
-    public void ReOpenGates()
+    public void ReOpenGates(float time)
     {
+        StartCoroutine(ReOpenGatesTimer(time));
+    }
+    public IEnumerator ReOpenGatesTimer (float time)
+    {
+        yield return new WaitForSeconds(time);
         gate.SetActive(false);
         gate2.SetActive(false);
         isStarted = false;
