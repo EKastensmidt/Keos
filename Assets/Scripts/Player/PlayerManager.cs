@@ -33,7 +33,7 @@ public class PlayerManager : MonoBehaviour
         if(invincibilty > 0f)
         {
             invincibilty -= Time.deltaTime;
-            int alpha = ((int) (Time.time * 1000 )) % 512;
+            int alpha = ((int) (Time.time * 1000 *2 )) % 512;
             if (alpha > 255) alpha = 512 - alpha;
             float alphaF = alpha / 256f;
 
@@ -43,16 +43,13 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!IsBubble && invincibilty <= 0f)
+        if (!IsBubble && invincibilty <= 0f && damage > 0)
         {
             invincibilty = hitTimer;
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
-            if (damage > 0)
-            {
-                ScreenShake.instance.StartShake(0.2f, 0.1f);
-                SoundManagerScript.PlaySound("PlayerHit");
-            }
+            ScreenShake.instance.StartShake(0.2f, 0.1f);
+            SoundManagerScript.PlaySound("PlayerHit");    
         }
     }
 
