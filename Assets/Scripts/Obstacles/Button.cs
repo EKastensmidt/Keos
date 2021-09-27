@@ -5,6 +5,7 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     private bool isActivated = false;
+    [SerializeField] private bool isOneWay = false;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject gate;
     [SerializeField] private Sprite spriteActivated,spriteDeactivated;
@@ -26,9 +27,13 @@ public class Button : MonoBehaviour
         }
         else
         {
-            spriteRenderer.sprite = spriteDeactivated;
-            gate.transform.position = new Vector3(gate.transform.position.x, gate.transform.position.y - 2f, gate.transform.position.z);
-            isActivated = false;
+            if (!isOneWay)
+            {
+                spriteRenderer.sprite = spriteDeactivated;
+                gate.transform.position = new Vector3(gate.transform.position.x, gate.transform.position.y - 2f, gate.transform.position.z);
+                isActivated = false;
+
+            }   
         }
     }
 }

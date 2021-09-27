@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    private void Start()
-    {
-    }
-
+    [SerializeField] private bool isSecret = false;
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
@@ -22,6 +20,12 @@ public class NextLevel : MonoBehaviour
                     SceneManager.LoadScene("Level_2");
                     break;
                 case "Level_2":
+                    if (isSecret)
+                        SceneManager.LoadScene("SecretLevel_1");
+                    else
+                        SceneManager.LoadScene("BossFight_1");
+                    break;
+                case "SecretLevel_1":
                     SceneManager.LoadScene("BossFight_1");
                     break;
                 case "BossFight_1":
@@ -34,6 +38,12 @@ public class NextLevel : MonoBehaviour
                     SceneManager.LoadScene("Level_5");
                     break;
                 case "Level_5":
+                    if (isSecret)
+                        SceneManager.LoadScene("SecretLevel_2");
+                    else
+                        SceneManager.LoadScene("BossFight_2");
+                    break;
+                case "SecretLevel_2":
                     SceneManager.LoadScene("BossFight_2");
                     break;
             }

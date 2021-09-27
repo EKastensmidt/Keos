@@ -44662,6 +44662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4952ec8a7ae5c4e49bd806efe62a65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSecret: 0
 --- !u!199 &2091122224
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -50002,6 +50003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4952ec8a7ae5c4e49bd806efe62a65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSecret: 1
 --- !u!199 &2124067489
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -50021,7 +50023,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8a7eac7d44d423d4ca45136e17bda4a6, type: 2}
+  - {fileID: 2100000, guid: 609b078ca20e70b4494c02330c297d44, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
