@@ -62,7 +62,7 @@ public class BossW1 : Enemy
             {
                 if (CurrHealth <= bossMaxHealth / 1.5f && !secondStage)
                 {
-                    animator.SetInteger("health", CurrHealth);
+                    animator.SetInteger("Health", CurrHealth);
                     JumpToPlatform(platformMain.transform);
                     secondStage = true;
                     secondPhaseSpawns.SetActive(true);
@@ -70,7 +70,7 @@ public class BossW1 : Enemy
                 }
                 else if (CurrHealth <= bossMaxHealth / 3f && !thirdStage)
                 {
-                    animator.SetInteger("health", CurrHealth);
+                    animator.SetInteger("Health", CurrHealth);
                     JumpToPlatform(platformMain.transform);
                     thirdStage = true;
                     thirdPhaseSpawns.SetActive(true);
