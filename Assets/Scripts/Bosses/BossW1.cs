@@ -31,12 +31,14 @@ public class BossW1 : Enemy
     private BossFightEnter bossEnter;
     private Animator animator;
     private bool isDead = false;
+    private CameraFollow cam;
 
     void Start()
     {
         prevTransform = platform1.transform;
         nextTransform = platform2.transform;
         bossMaxHealth = CurrHealth;
+        cam = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
         rb = GetComponent<Rigidbody2D>();
         bossEnter = GameObject.Find("BossFightEnter").GetComponent<BossFightEnter>();
         animator = GetComponent<Animator>();
@@ -170,7 +172,6 @@ public class BossW1 : Enemy
             thirdPhaseSpawns.SetActive(false);
             secondPhaseSpawns.SetActive(false);
             animator.SetInteger("Health", CurrHealth);
-            bossEnter.ReOpenGates(7f);
             StartCoroutine(SpawnParticles(4f));
         }
     }
@@ -195,6 +196,9 @@ public class BossW1 : Enemy
 
     private IEnumerator SpawnParticles(float time)
     {
+        GameObject _playeraux = cam.Player;
+        cam.Player = this.gameObject;
+        bossEnter.ReOpenGates(7f);
         Destroy(gameObject, time + 0.1f);
         yield return new WaitForSeconds(time);
         Instantiate(DeathParticles, transform.position, Quaternion.identity);

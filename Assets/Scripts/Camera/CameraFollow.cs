@@ -12,6 +12,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float deadZone;
     [SerializeField] private float smoothSpeed = 0.125f;
 
+    public GameObject Player { get => player; set => player = value; }
+
     void Start()
     {
         
@@ -21,6 +23,11 @@ public class CameraFollow : MonoBehaviour
     {
         //transform.position = Vector3.Lerp(transform.position, target.position + offset, smoothSpeed);
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (player == null)
+        {
+            return;
+        }
+
         playerPosition = player.transform.position;
         Vector3 segment = mousePosition - playerPosition;
         if (segment.magnitude < deadZone)

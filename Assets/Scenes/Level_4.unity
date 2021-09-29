@@ -2700,7 +2700,7 @@ SpriteRenderer:
   m_SortingLayerID: 235530557
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2506103704152668553, guid: 15748a6feac2c86418cf0d767cffe4c7,
+  m_Sprite: {fileID: -3603571679637540372, guid: cb453fcf2917bc6419be8187d136dc88,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -27468,6 +27468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4952ec8a7ae5c4e49bd806efe62a65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSecret: 0
 --- !u!199 &765046943
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -36417,7 +36418,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.18987608}
+  m_Size: {x: 0.41, y: 0.18}
   m_EdgeRadius: 0
 --- !u!114 &1286249165
 MonoBehaviour:

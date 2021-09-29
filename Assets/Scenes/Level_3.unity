@@ -14022,7 +14022,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.18987608}
+  m_Size: {x: 0.41, y: 0.18}
   m_EdgeRadius: 0
 --- !u!114 &1062216880
 MonoBehaviour:
@@ -22866,7 +22866,7 @@ SpriteRenderer:
   m_SortingLayerID: 235530557
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2506103704152668553, guid: 15748a6feac2c86418cf0d767cffe4c7,
+  m_Sprite: {fileID: -3603571679637540372, guid: cb453fcf2917bc6419be8187d136dc88,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23202,6 +23202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b1c963901008646a234bccf72214c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOneWay: 0
   gate: {fileID: 788172639}
   spriteActivated: {fileID: 21300000, guid: 5b678e799871ce549a3cea00bbcd8ed9, type: 3}
   spriteDeactivated: {fileID: 21300000, guid: 9451875994708364c8ac3b043b510bd7, type: 3}

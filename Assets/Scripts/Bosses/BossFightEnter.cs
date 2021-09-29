@@ -11,6 +11,9 @@ public class BossFightEnter : MonoBehaviour
     private Collider2D collider;
     private static bool isStarted;
     private PixelPerfectCamera pp;
+    private GameObject cam;
+    private CameraFollow camFoll;
+    private GameObject _player;
 
     public static bool IsStarted { get => isStarted; set => isStarted = value; }
 
@@ -19,7 +22,10 @@ public class BossFightEnter : MonoBehaviour
         collider = GetComponent<Collider2D>();
         healthBar.SetMaxHealth(Boss.MaxHealth);
         isStarted = false;
-        pp = GameObject.Find("Main Camera").GetComponent<PixelPerfectCamera>();
+        _player = GameObject.Find("Maguito");
+        cam = GameObject.Find("Main Camera");
+        pp = cam.GetComponent<PixelPerfectCamera>();
+        camFoll = cam.GetComponent<CameraFollow>();
     }
 
     private void Update()
@@ -55,6 +61,7 @@ public class BossFightEnter : MonoBehaviour
     public IEnumerator ReOpenGatesTimer (float time)
     {
         yield return new WaitForSeconds(time);
+        camFoll.Player = _player;
         gate.SetActive(false);
         gate2.SetActive(false);
         isStarted = false;
