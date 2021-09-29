@@ -12,10 +12,14 @@ public class FireBallProjectile : Projectile
     private Rigidbody2D rb;
     private Vector3 direction;
 
+    private ParticleSystem metalCrateSparks;
+
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        GameObject metalCrate = Resources.Load("Particles/MetalCrateSparks") as GameObject;
+        metalCrateSparks = metalCrate.GetComponent<ParticleSystem>();
     }
 
     void Update()
@@ -62,6 +66,7 @@ public class FireBallProjectile : Projectile
         if (collision.gameObject.layer == 21)
         {
             SoundManagerScript.PlaySound("MetalHit");
+            Instantiate(metalCrateSparks, transform.position, Quaternion.identity);
         }
         OnDeath();
     }
