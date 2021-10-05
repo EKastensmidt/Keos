@@ -23,15 +23,18 @@ public class NextLevel : MonoBehaviour
                     if (isSecret)
                         SceneManager.LoadScene("SecretLevel_1");
                     else
-                        SceneManager.LoadScene("BossFight_1");
+                        SceneManager.LoadScene("Level_3");
                     break;
                 case "SecretLevel_1":
-                    SceneManager.LoadScene("BossFight_1");
-                    break;
-                case "BossFight_1":
                     SceneManager.LoadScene("Level_3");
                     break;
                 case "Level_3":
+                    SceneManager.LoadScene("BossFight_1");
+                    break;
+                case "BossFight_1":
+                    SceneManager.LoadScene("Tutorial_2");
+                    break;
+                case "Tutorial_2":
                     SceneManager.LoadScene("Level_4");
                     break;
                 case "Level_4":
@@ -41,9 +44,12 @@ public class NextLevel : MonoBehaviour
                     if (isSecret)
                         SceneManager.LoadScene("SecretLevel_2");
                     else
-                        SceneManager.LoadScene("BossFight_2");
+                        SceneManager.LoadScene("Level_6");
                     break;
                 case "SecretLevel_2":
+                    SceneManager.LoadScene("Level_6");
+                    break;
+                case "Level_6":
                     SceneManager.LoadScene("BossFight_2");
                     break;
             }
