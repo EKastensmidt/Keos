@@ -6,6 +6,7 @@ public class ReSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> objects;
     private List<Vector3> objectsTransforms = new List<Vector3>();
+    private bool isFirstTime = true;
     void Start()
     {
         if (objects != null)
@@ -24,6 +25,12 @@ public class ReSpawner : MonoBehaviour
 
         if (collision.gameObject.name == "Maguito")
         {
+            if (isFirstTime)
+            {
+                isFirstTime = false;
+                return;
+            }
+            SoundManagerScript.PlaySound("Consumable");
             for (int i = 0; i < objects.Count; i++)
             {
                 objects[i].transform.position = objectsTransforms[i];
