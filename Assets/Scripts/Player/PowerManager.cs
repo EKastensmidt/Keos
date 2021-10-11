@@ -37,6 +37,7 @@ public class PowerManager : MonoBehaviour
         powers.Add(new SnowBall(Emmiter.transform));
         powers.Add(new SteamCloud());
         powers.Add(new Bubble());
+        powers.Add(new RockBall(Emmiter.transform));
     }
 
     public void GetElement(Elements element)

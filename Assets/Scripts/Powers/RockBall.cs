@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnowBall : Powers
+public class RockBall : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
     private float spawnCd;
-    private float spawnRate = 0.4f;
+    private float spawnRate = 0.3f;
     private float speed = 500;
-    public SnowBall(Transform Emmiter) : base(Elements.water, Elements.wind)
+    public RockBall(Transform Emmiter) : base(Elements.earth, Elements.wind)
     {
-        prefab = Resources.Load("SnowBall") as GameObject;
+        prefab = Resources.Load("RockBall") as GameObject;
         this.SpawnPoint = Emmiter;
     }
-
     public override void Execute()
     {
         if (spawnCd <= Time.time)
