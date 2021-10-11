@@ -8,12 +8,13 @@ public class RockBallBehaviour : Projectile
     private Vector3 direction;
 
     private int bounceCount;
-    [SerializeField] private int maxBounces = 4;
+    [SerializeField] private int maxBounces = 4, damageAmplifier = 3;
+    private static int amplifiedDamage;
 
     private void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-        direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        amplifiedDamage = Damage;
+        Destroy(gameObject, 4f);
     }
 
     void Update()
@@ -24,6 +25,7 @@ public class RockBallBehaviour : Projectile
     private void OnCollisionEnter2D(Collision2D collision)
     {
         bounceCount++;
+        amplifiedDamage += damageAmplifier;
         if (bounceCount >= maxBounces)
         {
             Destroy(gameObject);
@@ -34,7 +36,7 @@ public class RockBallBehaviour : Projectile
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(Damage);
+                enemy.TakeDamage(amplifiedDamage);
             }
         }
     }

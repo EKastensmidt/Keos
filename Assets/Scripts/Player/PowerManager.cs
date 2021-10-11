@@ -19,6 +19,7 @@ public class PowerManager : MonoBehaviour
     private List<GameObject> elementBalls = new List<GameObject>();
     private GameObject ele;
     private GameObject eleAux = null;
+    [SerializeField] private List<Sprite> earthMinionSprites;
 
     private void Start()
     {
@@ -38,6 +39,7 @@ public class PowerManager : MonoBehaviour
         powers.Add(new SteamCloud());
         powers.Add(new Bubble());
         powers.Add(new RockBall(Emmiter.transform));
+        powers.Add(new EarthMinion(earthMinionSprites));
     }
 
     public void GetElement(Elements element)
@@ -116,4 +118,13 @@ public class PowerManager : MonoBehaviour
             }
         }
     }
+
+    //private void AddEarthMinionSprites()
+    //{
+    //    earthMinionSprites.Add(Resources.Load("EarthMinionSprites/EarthMinion") as Sprite);
+    //    earthMinionSprites.Add(Resources.Load("EarthMinionSprites/EarthMinionCool") as Sprite);
+    //    earthMinionSprites.Add(Resources.Load("EarthMinionSprites/EarthMinionHappy") as Sprite);
+    //    earthMinionSprites.Add(Resources.Load("EarthMinionSprites/EarthMinionSad") as Sprite);
+    //    earthMinionSprites.Add(Resources.Load("EarthMinionSprites/EarthMinionSadistic") as Sprite);
+    //}
 }

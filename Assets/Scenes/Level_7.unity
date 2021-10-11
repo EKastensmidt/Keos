@@ -815,6 +815,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3102468020ed65c45a60a9199d4e0db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  earthMinionSprites:
+  - {fileID: 21300000, guid: 3c5f40b796093464c834d06d4bbf534e, type: 3}
+  - {fileID: 21300000, guid: 9195f06fab85dc94d9dffce7991fb414, type: 3}
+  - {fileID: 21300000, guid: e0cfa502e1882004a95922b841f2af57, type: 3}
+  - {fileID: 21300000, guid: b4b05df8aef8852449081806f8a61ffa, type: 3}
+  - {fileID: 21300000, guid: 35cd2a226bb455b40a8001e345e51335, type: 3}
 --- !u!114 &695177180
 MonoBehaviour:
   m_ObjectHideFlags: 0
