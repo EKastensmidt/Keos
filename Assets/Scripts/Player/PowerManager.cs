@@ -40,6 +40,7 @@ public class PowerManager : MonoBehaviour
         powers.Add(new Bubble());
         powers.Add(new RockBall(Emmiter.transform));
         powers.Add(new EarthMinion(earthMinionSprites));
+        powers.Add(new MudThrower(Emmiter.transform));
     }
 
     public void GetElement(Elements element)

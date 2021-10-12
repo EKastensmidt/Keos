@@ -49,7 +49,12 @@ public class StageCheck : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            SceneManager.LoadScene("Tutorial");
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                SceneManager.LoadScene("Level_7");
+            }
+            else
+                SceneManager.LoadScene("Tutorial");
         }
         else if (Input.GetKeyDown(KeyCode.F2))
         {
@@ -76,6 +81,10 @@ public class StageCheck : MonoBehaviour
             SceneManager.LoadScene("Level_5");
         }
         else if (Input.GetKeyDown(KeyCode.F8))
+        {
+            SceneManager.LoadScene("Level_6");
+        }
+        else if (Input.GetKeyDown(KeyCode.F9))
         {
             SceneManager.LoadScene("BossFight_2");
         }

@@ -30,7 +30,7 @@ public class CameraPixelChange : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (isInTrigger && pp.assetsPPU > 24) pp.assetsPPU--;
-        else if (!isInTrigger && pp.assetsPPU < pixels) pp.assetsPPU++;
+        if (isInTrigger && pp.assetsPPU > pixels) pp.assetsPPU--;
+        else if (!isInTrigger && pp.assetsPPU < 32) pp.assetsPPU++;
     }
 }

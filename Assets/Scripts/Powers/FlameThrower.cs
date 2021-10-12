@@ -6,8 +6,6 @@ public class FlameThrower : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
-    private float cd;
-    private float timer = 0.15f;
     public FlameThrower(Transform Emmiter): base(Elements.fire, Elements.fire)
     {
         prefab = Resources.Load("FlameThrower") as GameObject;
