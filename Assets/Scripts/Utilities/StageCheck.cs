@@ -66,11 +66,11 @@ public class StageCheck : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.F4))
         {
-            SceneManager.LoadScene("BossFight_1");
+            SceneManager.LoadScene("Level_3");
         }
         else if (Input.GetKeyDown(KeyCode.F5))
         {
-            SceneManager.LoadScene("Level_3");
+            SceneManager.LoadScene("BossFight_1");
         }
         else if (Input.GetKeyDown(KeyCode.F6))
         {
