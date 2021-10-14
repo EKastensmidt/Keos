@@ -49,7 +49,7 @@ public class StageCheck : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 SceneManager.LoadScene("Level_7");
             }

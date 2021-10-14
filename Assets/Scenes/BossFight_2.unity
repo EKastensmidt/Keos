@@ -1113,6 +1113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3102468020ed65c45a60a9199d4e0db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  earthMinionSprites: []
 --- !u!114 &98767372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15837,8 +15838,9 @@ GameObject:
   - component: {fileID: 1116266075}
   - component: {fileID: 1116266078}
   - component: {fileID: 1116266079}
+  - component: {fileID: 1116266080}
   m_Layer: 16
-  m_Name: BOSS1
+  m_Name: BOSS2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15899,7 +15901,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 62e0fe07ff67fc94898a5be17a39f933, type: 3}
+  m_Sprite: {fileID: 3213133908149551309, guid: 758683e238656aa46ad9cd3c3e15bde3,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15944,7 +15947,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!114 &1116266079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15965,6 +15968,25 @@ MonoBehaviour:
   damagePopupOffset: 5
   deathParticles: {fileID: 3099660311460685604, guid: a1d9098fc39014240b1aad0691e622d9,
     type: 3}
+--- !u!95 &1116266080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116266074}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ead8f0f9d9cf8d84eb6972d69c532774, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1136610417
 PrefabInstance:
   m_ObjectHideFlags: 0

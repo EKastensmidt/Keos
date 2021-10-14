@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
     public Vector2 Delta { get => delta;}
     public bool IsAbleMove { get => isAbleMove; set => isAbleMove = value; }
+    public GroundCheck GroundCheck { get => _groundCheck; set => _groundCheck = value; }
 
     private PowerManager _powerManager;
     private GroundCheck _groundCheck;
