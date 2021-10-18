@@ -7,14 +7,11 @@ public class DialogHolder : MonoBehaviour
     [SerializeField] private string dialogue;
     [SerializeField] private bool needsF;
     private DialogManager dHolder;
-    private GameObject maguito;
-    private GameObject fButton;
+    [SerializeField] private GameObject fButton;
 
     private void Start()
     {
         dHolder = FindObjectOfType<DialogManager>();
-        maguito = GameObject.Find("Maguito");
-        fButton = GetChildWithName(maguito, "FButton");
     }
 
     

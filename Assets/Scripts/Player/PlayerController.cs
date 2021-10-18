@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem footSteps;
     private ParticleSystem.EmissionModule footStepsEmission;
 
-
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -47,7 +46,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        
+        if (!isAbleMove)
+            return;
         //MOVE
 
         //Vector2 velocity = _rigidbody.velocity;

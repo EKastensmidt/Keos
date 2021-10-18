@@ -32,6 +32,8 @@ public class BossW1 : Enemy
     private Animator animator;
     private bool isDead = false;
     private CameraFollow cam;
+    private CharacterDialogManager dialogueManager;
+    private bool isMusicOn = false;
 
     void Start()
     {
@@ -42,19 +44,27 @@ public class BossW1 : Enemy
         rb = GetComponent<Rigidbody2D>();
         bossEnter = GameObject.Find("BossFightEnter").GetComponent<BossFightEnter>();
         animator = GetComponent<Animator>();
+        dialogueManager = GameObject.Find("NewDialogueManager").GetComponent<CharacterDialogManager>();
     }
 
     void Update()
     {
         if (isDead != false)
             return;
+        if (!isEntered)
+        {
+            isEntered = true;
+            transform.position = prevTransform.transform.position;
+        }
+        if (dialogueManager.IsInDialogue)
+            return;
 
         if (BossFightEnter.IsStarted)
         {
-            if (!isEntered)
+            if (!isMusicOn)
             {
-                isEntered = true;
-                transform.position = prevTransform.transform.position;
+                bossEnter.QueueMusic();
+                isMusicOn = true;
             }
             jumpTimer -= Time.deltaTime;
             spawnTimer -= Time.deltaTime;

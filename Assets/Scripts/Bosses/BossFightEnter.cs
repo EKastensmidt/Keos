@@ -51,7 +51,6 @@ public class BossFightEnter : MonoBehaviour
             collider.enabled = false;
             isStarted = true;
             healthBar.gameObject.SetActive(isStarted);
-            BGMusic.gameObject.GetComponent<AudioSource>().Play();
         }
     }
     public void ReOpenGates(float time)
@@ -66,5 +65,9 @@ public class BossFightEnter : MonoBehaviour
         gate2.SetActive(false);
         isStarted = false;
         healthBar.gameObject.SetActive(false);
+    }
+    public void QueueMusic()
+    {
+        BGMusic.gameObject.GetComponent<AudioSource>().Play();
     }
 }

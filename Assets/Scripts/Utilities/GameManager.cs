@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     private GameObject _player;
     private PlayerManager _playerManager;
+    private PlayerController _playerController;
+    private CharacterDialogManager dialogueManager;
 
     private static bool isBossFight = false;
     private static bool isWaterUnlocked = false;
@@ -27,11 +29,25 @@ public class GameManager : MonoBehaviour
         StageCheck.Check(currScene);
         _player = GameObject.Find("Maguito");
         _playerManager = _player.GetComponent<PlayerManager>();
+        _playerController = _player.GetComponent<PlayerController>();
         currCheckpoint = _player.transform.position;
+        GameObject newDialogueManager = GameObject.Find("NewDialogueManager");
+        if (newDialogueManager != null)
+            dialogueManager = newDialogueManager.GetComponent<CharacterDialogManager>();
     }
 
     void Update()
     {
+        if (dialogueManager.IsInDialogue)
+            _playerController.IsAbleMove = false;
+        else
+            _playerController.IsAbleMove = true;
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            dialogueManager.PlayNextSentence();
+        }
+        
         StageCheck.SceneInputs();
 
         if (_playerManager.CurrentHealth <= 0 && !isBossFight)

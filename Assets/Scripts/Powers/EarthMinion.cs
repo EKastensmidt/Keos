@@ -8,13 +8,11 @@ public class EarthMinion : Powers
     private GameObject prefab;
     private List<Sprite> _minionSprites;
     private GameObject minion = null;
-    private Tilemap tilemap;
 
     public EarthMinion(List<Sprite> minionSprites) : base(Elements.earth, Elements.earth)
     {
         prefab = Resources.Load("EarthMinion") as GameObject;
         _minionSprites = minionSprites;
-        tilemap = GameObject.Find("Tilemap").GetComponent<Tilemap>();
     }
 
     public override void Execute()
