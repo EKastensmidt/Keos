@@ -38,14 +38,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (dialogueManager.IsInDialogue)
-            _playerController.IsAbleMove = false;
-        else
-            _playerController.IsAbleMove = true;
-
-        if (Input.GetKeyDown(KeyCode.F))
+        if (dialogueManager != null)
         {
-            dialogueManager.PlayNextSentence();
+            if (dialogueManager.IsInDialogue)
+                _playerController.IsAbleMove = false;
+            else
+                _playerController.IsAbleMove = true;
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                dialogueManager.PlayNextSentence();
+            }
         }
         
         StageCheck.SceneInputs();
