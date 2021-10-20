@@ -13,7 +13,7 @@ public class WindDash : Powers
     private float dashForce = 5;
     private float dashRate = 1;
     private float dashCd = 0;
-    public WindDash() : base(Elements.wind, Elements.wind)
+    public WindDash() : base(Elements.wind, Elements.wind,"WindDash")
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
         _particleSpawnPoint = GameObject.Find("GroundCheck");

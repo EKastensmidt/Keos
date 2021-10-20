@@ -6,7 +6,7 @@ public class Bubble : Powers
 {
     private GameObject prefab;
     private GameObject _player;
-    public Bubble() : base(Elements.water, Elements.water)
+    public Bubble() : base(Elements.water, Elements.water,"Bubble")
     {
         prefab = Resources.Load("Bubble") as GameObject;
         _player = GameObject.Find("Maguito");

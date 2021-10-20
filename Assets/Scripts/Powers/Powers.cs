@@ -6,13 +6,17 @@ public abstract class Powers : MonoBehaviour
 {
     protected Elements firstComponent;
     protected Elements secondComponent;
+    private string name;
 
     public Elements FirstComponent { get => firstComponent; set => firstComponent = value; }
     public Elements SecondComponent { get => secondComponent; set => secondComponent = value; }
-    public Powers(Elements firstComponent, Elements secondComponent)
+    public string Name { get => name; set => name = value; }
+
+    public Powers(Elements firstComponent, Elements secondComponent, string name)
     {
         this.firstComponent = firstComponent;
         this.secondComponent = secondComponent;
+        this.name = name;
     }
     public virtual void Execute()
     {

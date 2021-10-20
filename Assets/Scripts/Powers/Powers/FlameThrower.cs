@@ -6,7 +6,7 @@ public class FlameThrower : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
-    public FlameThrower(Transform Emmiter): base(Elements.fire, Elements.fire)
+    public FlameThrower(Transform Emmiter): base(Elements.fire, Elements.fire, "FlameThrower")
     {
         prefab = Resources.Load("FlameThrower") as GameObject;
         this.SpawnPoint = Emmiter;

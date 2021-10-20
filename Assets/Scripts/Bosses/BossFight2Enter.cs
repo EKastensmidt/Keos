@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class BossFight2Enter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject Boss;
+    private Vector2 position;
+    private bool isEntered = false;
+    [SerializeField] private GameObject BGMusic, sawBlades;
+
+    public bool IsEntered { get => isEntered; }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        isEntered = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QueueObjects()
     {
-        
+        BGMusic.SetActive(true);
+        sawBlades.SetActive(true);
     }
 }

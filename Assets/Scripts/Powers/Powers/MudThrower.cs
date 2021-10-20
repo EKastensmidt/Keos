@@ -6,7 +6,7 @@ public class MudThrower : Powers
 {
     private GameObject prefab;
     private Transform SpawnPoint;
-    public MudThrower(Transform Emmiter) : base(Elements.water, Elements.earth)
+    public MudThrower(Transform Emmiter) : base(Elements.water, Elements.earth,"MudThrower")
     {
         prefab = Resources.Load("MudThrower") as GameObject;
         this.SpawnPoint = Emmiter;

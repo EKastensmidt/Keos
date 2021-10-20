@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum Elements { none, fire, water, wind, earth }
 
@@ -20,6 +21,8 @@ public class PowerManager : MonoBehaviour
     private GameObject ele;
     private GameObject eleAux = null;
     [SerializeField] private List<Sprite> earthMinionSprites;
+
+    [SerializeField] TMP_Text powerDisplay;
 
     private void Start()
     {
@@ -74,6 +77,26 @@ public class PowerManager : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        DisplayCurrentPower();
+    }
+
+    public void DisplayCurrentPower()
+    {
+        if (powerDisplay == null)
+            return;
+
+        foreach(var power in powers)
+        {
+            if (power.Equals(firstElement, secondElement))
+            {
+                powerDisplay.text = power.Name;
+            }
+        }
+    }
+
     public void UpdateElemetBalls(Elements element)
     {
         if (elementBalls != null)

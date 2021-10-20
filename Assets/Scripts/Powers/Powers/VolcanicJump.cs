@@ -12,7 +12,7 @@ public class VolcanicJump : Powers
     private float jumpForce = 10;
     private float jumpRate = 2;
     private float jumpCd = 0;
-    public VolcanicJump() : base(Elements.fire, Elements.earth)
+    public VolcanicJump() : base(Elements.fire, Elements.earth,"VolcanicJump")
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
         _particleSpawnPoint = GameObject.Find("GroundCheck");

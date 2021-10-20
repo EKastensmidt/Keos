@@ -9,7 +9,7 @@ public class EarthMinion : Powers
     private List<Sprite> _minionSprites;
     private GameObject minion = null;
 
-    public EarthMinion(List<Sprite> minionSprites) : base(Elements.earth, Elements.earth)
+    public EarthMinion(List<Sprite> minionSprites) : base(Elements.earth, Elements.earth,"EarthMinion")
     {
         prefab = Resources.Load("EarthMinion") as GameObject;
         _minionSprites = minionSprites;
