@@ -187,6 +187,34 @@ public class BossW1 : Enemy
         }
     }
 
+    public override void TakeStatusEffectDamage(int damage)
+    {
+        CurrHealth -= damage;
+        DamagePoints(damage);
+        if (CurrHealth != Previoushealth)
+        {
+            Previoushealth = CurrHealth;
+            StartCoroutine(HitEffect());
+        }
+
+        if (CurrHealth <= 0)
+        {
+            isDead = true;
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i] != null)
+                {
+                    enemies[i].GetComponent<Enemy>().TakeDamage(100);
+                }
+            }
+            spawnReady = false;
+            thirdPhaseSpawns.SetActive(false);
+            secondPhaseSpawns.SetActive(false);
+            animator.SetInteger("Health", CurrHealth);
+            StartCoroutine(SpawnParticles(4f));
+        }
+    }
+
     private void JumpToPlatform(Transform target)
     {
         rb.velocity = BallisticVel(target, jumpAngle);
