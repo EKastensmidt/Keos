@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StageCheck : MonoBehaviour
+public class StageCheck 
 {
     public static void Check(string sceneName)
     {
@@ -37,6 +37,7 @@ public class StageCheck : MonoBehaviour
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = false;
                 break;
+            case "Tutorial_3":
             case "Level_7":
                 GameManager.IsBossFight = false;
                 GameManager.IsWaterUnlocked = true;
@@ -51,14 +52,19 @@ public class StageCheck : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                SceneManager.LoadScene("Level_7");
+                SceneManager.LoadScene("Tutorial_3");
             }
             else
                 SceneManager.LoadScene("Tutorial");
         }
         else if (Input.GetKeyDown(KeyCode.F2))
         {
-            SceneManager.LoadScene("Level_1");
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                SceneManager.LoadScene("Level_7");
+            }
+            else
+                SceneManager.LoadScene("Level_1");
         }
         else if (Input.GetKeyDown(KeyCode.F3))
         {

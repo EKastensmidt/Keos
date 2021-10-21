@@ -52,6 +52,12 @@ public class NextLevel : MonoBehaviour
                 case "Level_6":
                     SceneManager.LoadScene("BossFight_2");
                     break;
+                case "BossFight_2":
+                    SceneManager.LoadScene("Tutorial_3");
+                    break;
+                case "Tutorial_3":
+                    SceneManager.LoadScene("Level_7");
+                    break;
             }
         }
     }

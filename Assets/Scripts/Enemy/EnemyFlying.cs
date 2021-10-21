@@ -21,7 +21,7 @@ public class EnemyFlying : Enemy
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    public override void FixedUpdate()
     {
         randcd -= Time.deltaTime;
         float distx = Mathf.Abs(target.transform.position.x - transform.position.x);

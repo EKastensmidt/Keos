@@ -21,8 +21,9 @@ public class CurvedProjectileEnemy : Enemy
         _player = GameObject.Find("Maguito");
         entryCd = Time.time;
     }
-    void Update()
+    public override void Update()
     {
+        base.Update();
         float distx = Mathf.Abs(_player.transform.position.x - transform.position.x);
         float disty = Mathf.Abs(_player.transform.position.y - transform.position.y);
         if (distx <= maxShootDistance && disty <= maxShootDistance)

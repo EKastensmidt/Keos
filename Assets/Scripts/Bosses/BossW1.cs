@@ -47,7 +47,7 @@ public class BossW1 : Enemy
         dialogueManager = GameObject.Find("NewDialogueManager").GetComponent<CharacterDialogManager>();
     }
 
-    void Update()
+    public override void Update()
     {
         if (isDead != false)
             return;
@@ -58,6 +58,7 @@ public class BossW1 : Enemy
         }
         if (dialogueManager.IsInDialogue)
             return;
+        base.Update();
 
         if (BossFightEnter.IsStarted)
         {

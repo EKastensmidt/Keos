@@ -12,6 +12,10 @@ public class FlameThrowerPower : Projectile
     private float soundRate = 0.25f;
     private bool isPlayingSound = true;
 
+    private float burnDuration = 5f;
+    private int burnDamage = 1;
+    private float burnIntervial = 0.05f;
+
     private void Start()
     {
         _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
@@ -46,6 +50,12 @@ public class FlameThrowerPower : Projectile
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null && hitCd <= Time.time)
             {
+                int rand = Random.Range(1, 10);
+                if (rand == 5)
+                {
+                    if (!enemy.IsBurned)
+                        enemy.ApplyStatusEffect(DamageType, 10f, 1, 0.2f);
+                }
                 enemy.TakeDamage(Damage);
                 hitCd = Time.time + hitRate;
             }
