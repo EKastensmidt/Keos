@@ -13,6 +13,7 @@ public class EarthMinion : Powers
     {
         prefab = Resources.Load("EarthMinion") as GameObject;
         _minionSprites = minionSprites;
+        
     }
 
     public override void Execute()
@@ -32,6 +33,12 @@ public class EarthMinion : Powers
         {
             minion = Instantiate(prefab,(Vector3) hit.point + (Vector3.up / 2), Quaternion.identity);
             minion.transform.position = new Vector3(minion.transform.position.x, minion.transform.position.y, 0);
+
+            GameManager.isEarthMinionActive = true;
+            GameManager.EarthMinionPosition = minion.transform.position;
+
+            Instantiate(Resources.Load("Particles/EarthMinionSpawn") as GameObject, minion.transform.position, Quaternion.identity);
+
             SpriteRenderer spriteRenderer = minion.GetComponent<SpriteRenderer>();
             int randSprite = Random.Range(0, _minionSprites.Count);
             spriteRenderer.sprite = _minionSprites[randSprite];

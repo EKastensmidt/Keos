@@ -11,6 +11,9 @@ public class RockBallBehaviour : Projectile
     [SerializeField] private int maxBounces = 4, damageAmplifier = 3;
     private static int amplifiedDamage;
 
+    [SerializeField] private ParticleSystem deathExplotion;
+
+
     private void Start()
     {
         amplifiedDamage = Damage;
@@ -28,7 +31,7 @@ public class RockBallBehaviour : Projectile
         amplifiedDamage += damageAmplifier;
         if (bounceCount >= maxBounces)
         {
-            Destroy(gameObject);
+            OnDeath();
         }
 
         if (collision.gameObject.layer == 10)
@@ -39,5 +42,11 @@ public class RockBallBehaviour : Projectile
                 enemy.TakeDamage(amplifiedDamage);
             }
         }
+    }
+
+    private void OnDeath()
+    {
+        Instantiate(deathExplotion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

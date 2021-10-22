@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5989950744361778443}
   - component: {fileID: 5989950744361778440}
   - component: {fileID: 5989950744361778441}
-  - component: {fileID: 5989950744361778437}
-  m_Layer: 14
+  - component: {fileID: -1103100802831822433}
+  m_Layer: 22
   m_Name: EarthMinion
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &5989950744361778437
+--- !u!114 &-1103100802831822433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,6 +140,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5989950744361778446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cae5f32982275b4fa8ea844c4ff4789, type: 3}
+  m_Script: {fileID: 11500000, guid: a2331ee48a1099e41a4e484fb11efbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     private static bool isWaterUnlocked = false;
     private static bool isEarthUnlocked = false;
 
+    public static bool isEarthMinionActive;
+    public static Vector3 EarthMinionPosition;
+
 
     private Vector3 currCheckpoint;
     private string currScene;
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
         _playerManager = _player.GetComponent<PlayerManager>();
         _playerController = _player.GetComponent<PlayerController>();
         currCheckpoint = _player.transform.position;
+        isEarthMinionActive = false;
         GameObject newDialogueManager = GameObject.Find("NewDialogueManager");
         if (newDialogueManager != null)
             dialogueManager = newDialogueManager.GetComponent<CharacterDialogManager>();

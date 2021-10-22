@@ -13,7 +13,11 @@ public class FlameThrower : Powers
     }
 
     public override void Execute()
-    {   
-        GameObject projectile = Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);         
+    {
+        if (GameManager.isEarthMinionActive)
+        {
+            Instantiate(prefab, GameManager.EarthMinionPosition, Quaternion.identity);
+        }
+        Instantiate(prefab, SpawnPoint.transform.position, Quaternion.identity, SpawnPoint);         
     }
 }

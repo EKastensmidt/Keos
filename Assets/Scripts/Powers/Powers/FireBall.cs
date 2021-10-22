@@ -18,7 +18,11 @@ public class FireBall : Powers
     {
         if (spawnCd <= Time.time)
         {
-            GameObject projectile = Instantiate(prefab, SpawnPoint.position, Quaternion.identity);
+            if (GameManager.isEarthMinionActive)
+            {
+                Instantiate(prefab, GameManager.EarthMinionPosition, Quaternion.identity);
+            }
+            Instantiate(prefab, SpawnPoint.position, Quaternion.identity);
             SoundManagerScript.PlaySound("FireBall");
             spawnCd = Time.time + spawnRate;
         }
