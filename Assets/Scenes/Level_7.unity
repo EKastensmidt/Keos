@@ -804,7 +804,6 @@ Transform:
   - {fileID: 1428975028}
   - {fileID: 627177040}
   - {fileID: 590728188}
-  - {fileID: 128985804}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -865,12 +864,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7445774, y: 0.6854315}
   m_EdgeRadius: 0
---- !u!4 &128985804 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-    type: 3}
-  m_PrefabInstance: {fileID: 1172741068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144649492
 GameObject:
   m_ObjectHideFlags: 0
@@ -25018,85 +25011,6 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffdb98117105aed4f93cc0cc4656ea59, type: 3}
---- !u!1001 &1172741068
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 104316532}
-    m_Modifications:
-    - target: {fileID: -2791003927400043863, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.1299996
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.690002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371463706552725059, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_Name
-      value: Crate (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371463706552725059, guid: ffdb98117105aed4f93cc0cc4656ea59,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ffdb98117105aed4f93cc0cc4656ea59, type: 3}
 --- !u!1 &1179370498
 GameObject:
   m_ObjectHideFlags: 0
@@ -27845,6 +27759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onGround: 0
+  wasOnGround: 0
 --- !u!4 &1562348174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1838508345411720711, guid: ba6d18eadadc66d41be10dafb87ba75f,

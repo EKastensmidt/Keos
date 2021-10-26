@@ -12,6 +12,9 @@ public class DialogTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (GameManager.skipDialogue)
+            return;
+
         if (collision.gameObject.name != "Maguito")
             return;
 

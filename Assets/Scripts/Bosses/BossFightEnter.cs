@@ -50,7 +50,6 @@ public class BossFightEnter : MonoBehaviour
             gate2.transform.position = new Vector3(gate2.transform.position.x, gate2.transform.position.y - 2f, gate2.transform.position.z);
             collider.enabled = false;
             isStarted = true;
-            healthBar.gameObject.SetActive(isStarted);
         }
     }
     public void ReOpenGates(float time)
@@ -60,6 +59,7 @@ public class BossFightEnter : MonoBehaviour
     public IEnumerator ReOpenGatesTimer (float time)
     {
         yield return new WaitForSeconds(time);
+        SoundManagerScript.PlaySound("BossWin");
         camFoll.Player = _player;
         gate.SetActive(false);
         gate2.SetActive(false);
@@ -69,5 +69,11 @@ public class BossFightEnter : MonoBehaviour
     public void QueueMusic()
     {
         BGMusic.gameObject.GetComponent<AudioSource>().Play();
+        healthBar.gameObject.SetActive(isStarted);
+
+    }
+    public void DeQueueMusic()
+    {
+        BGMusic.gameObject.GetComponent<AudioSource>().Stop();
     }
 }

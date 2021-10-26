@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class BossFight2Enter : MonoBehaviour
 {
-    private GameObject Boss;
+    private BossW2 boss;
     private Vector2 position;
     private bool isEntered = false;
     [SerializeField] private GameObject BGMusic, sawBlades;
 
     public bool IsEntered { get => isEntered; }
 
+    private void Start()
+    {
+        boss = GameObject.Find("BOSS2").GetComponent<BossW2>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (GameManager.skipDialogue)
+            boss.IsFirstPhase = true;
+
         isEntered = true;
     }
 

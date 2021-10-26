@@ -10,10 +10,14 @@ public class BossW2 : Enemy
     private CameraFollow cam;
     private CharacterDialogManager dialogueManager;
     private BossFight2Enter boss2Enter;
+    private BossFight2Exit boss2Exit;
     [SerializeField] private Vector3 escapedPosition;
 
     private bool isFirstPhase = false;
+    private bool isSecondPhase = false;
+    private int dialogueCount = 0;
 
+    public bool IsFirstPhase { get => isFirstPhase; set => isFirstPhase = value; }
 
     void Start()
     {
@@ -21,21 +25,24 @@ public class BossW2 : Enemy
         cam = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
         dialogueManager = GameObject.Find("NewDialogueManager").GetComponent<CharacterDialogManager>();
         boss2Enter = GameObject.Find("BossFight2Enter").GetComponent<BossFight2Enter>();
-
+        boss2Exit = GameObject.Find("BossFight2Exit").GetComponent<BossFight2Exit>();
     }
 
     void Update()
     {
         if (dialogueManager.IsInDialogue)
         {
+            if (!isFirstPhase)
+                dialogueCount++;
+
             isFirstPhase = true;
             return;
-        }
+        }  
 
         if (!isFirstPhase)
             return;
         
-        if (boss2Enter.IsEntered)
+        if (boss2Enter.IsEntered && dialogueCount < 2 && !isSecondPhase)
         {
             boss2Enter.QueueObjects();
             transform.position += Vector3.right * Time.deltaTime * escapeSpeed;
@@ -67,6 +74,7 @@ public class BossW2 : Enemy
         cam.Player = this.gameObject;
         Destroy(gameObject, time + 0.1f);
         yield return new WaitForSeconds(time);
+        SoundManagerScript.PlaySound("BossWin");
         Instantiate(DeathParticles, transform.position, Quaternion.identity);
         cam.Player = _playeraux;
     }
@@ -76,5 +84,6 @@ public class BossW2 : Enemy
         yield return new WaitForSeconds(2f);
         transform.position = escapedPosition;
         isFirstPhase = false;
+        isSecondPhase = true;
     }
 }

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static bool isEarthMinionActive;
     public static Vector3 EarthMinionPosition;
 
+    public static bool skipDialogue = false;
 
     private Vector3 currCheckpoint;
     private string currScene;
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
         }
         else if (_playerManager.CurrentHealth <= 0)
         {
+            skipDialogue = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

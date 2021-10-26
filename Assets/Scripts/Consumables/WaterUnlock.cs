@@ -13,6 +13,7 @@ public class WaterUnlock : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
+            GameManager.skipDialogue = false;
             GameManager.IsWaterUnlocked = true;
             canvasSprite.SetActive(true);
             canvasLetter.SetActive(true);

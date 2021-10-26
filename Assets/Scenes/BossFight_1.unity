@@ -993,6 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onGround: 0
+  wasOnGround: 0
 --- !u!1 &209087662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c95499720749d498aef12db9f2ce07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 1
   damage: 20
   speed: 0
   damagePopup: {fileID: 6403390670072725571, guid: c2490e4f50ad76a418f7b4679970402d,
@@ -20269,7 +20270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.16862746}
+  m_Color: {r: 0.21176471, g: 0.21176471, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

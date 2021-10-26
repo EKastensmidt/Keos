@@ -5,7 +5,8 @@ using UnityEngine;
 public class SoundManagerScript : MonoBehaviour
 {
     public static AudioClip enemyHitSound, flameThrowerSound, fireBallSound, jumpSound, elementSelectSound, consumableSound,
-        windDashSound, playerHitSound, bubbleSound, steamSound, metalHitSound, bubbleBounceSound;
+        windDashSound, playerHitSound, bubbleSound, steamSound, metalHitSound, bubbleBounceSound, bossWinSound, volcanicJumpSound,
+        earthMinionSound;
     private static AudioSource audioSource;
 
     void Start()
@@ -55,6 +56,15 @@ public class SoundManagerScript : MonoBehaviour
             case "MetalHit":
                 audioSource.PlayOneShot(metalHitSound);
                 break;
+            case "BossWin":
+                audioSource.PlayOneShot(bossWinSound);
+                break;
+            case "VolcanicJump":
+                audioSource.PlayOneShot(volcanicJumpSound);
+                break;
+            case "EarthMinion":
+                audioSource.PlayOneShot(earthMinionSound);
+                break;
         }
     }
     private void InitiateSounds()
@@ -71,5 +81,9 @@ public class SoundManagerScript : MonoBehaviour
         bubbleBounceSound = Resources.Load<AudioClip>("Sounds/SFX/BubbleBounce");
         steamSound = Resources.Load<AudioClip>("Sounds/SFX/Steam");
         metalHitSound = Resources.Load<AudioClip>("Sounds/SFX/MetalHit");
+        bossWinSound = Resources.Load<AudioClip>("Sounds/SFX/BossWin");
+        earthMinionSound = Resources.Load<AudioClip>("Sounds/SFX/EarthMinion");
+        volcanicJumpSound = Resources.Load<AudioClip>("Sounds/SFX/VolcanicJump");
+
     }
 }

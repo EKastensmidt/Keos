@@ -179,6 +179,7 @@ public class BossW1 : Enemy
                     enemies[i].GetComponent<Enemy>().TakeDamage(100);
                 }
             }
+            bossEnter.DeQueueMusic();
             spawnReady = false;
             thirdPhaseSpawns.SetActive(false);
             secondPhaseSpawns.SetActive(false);

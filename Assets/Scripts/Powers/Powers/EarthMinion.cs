@@ -31,6 +31,7 @@ public class EarthMinion : Powers
 
         if (hit.collider.gameObject.tag == "Ground" && hit.collider != null)
         {
+            SoundManagerScript.PlaySound("EarthMinion");
             minion = Instantiate(prefab,(Vector3) hit.point + (Vector3.up / 2), Quaternion.identity);
             minion.transform.position = new Vector3(minion.transform.position.x, minion.transform.position.y, 0);
 
