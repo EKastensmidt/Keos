@@ -4787,6 +4787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  damageType: 0
   _particleSystem: {fileID: 5081572748889432802}
 --- !u!61 &4896667884356581219
 BoxCollider2D:

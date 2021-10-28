@@ -14196,6 +14196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onGround: 0
+  wasOnGround: 0
 --- !u!1 &1065529637
 GameObject:
   m_ObjectHideFlags: 0
@@ -20557,7 +20558,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
 --- !u!4 &1216347081
 Transform:
@@ -20616,7 +20617,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3dc0e4257d41c3544affa0378711d190, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7cc8a8a4b679f924d90fcc522df4d1b2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.04
   m_Pitch: 1

@@ -9240,6 +9240,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 690659515}
     m_Modifications:
+    - target: {fileID: -2791003927400043863, guid: ffdb98117105aed4f93cc0cc4656ea59,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3143932632547478469, guid: ffdb98117105aed4f93cc0cc4656ea59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10250,7 +10255,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
 --- !u!1001 &772931296
 PrefabInstance:
@@ -38230,7 +38235,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3dc0e4257d41c3544affa0378711d190, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7cc8a8a4b679f924d90fcc522df4d1b2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.04
   m_Pitch: 1
@@ -40212,6 +40217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onGround: 0
+  wasOnGround: 0
 --- !u!4 &1548193353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1980659032236667870, guid: 72b30618ecd604f4da35e3e62f8bc353,
