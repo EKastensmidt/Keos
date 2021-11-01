@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 1;
     [SerializeField] private float momentum = 1;
 
+    private float jumpLilTimer = 0f;
 
     private bool isPlaying = false;
     private bool isFacingRight = false;
@@ -76,15 +77,17 @@ public class PlayerController : MonoBehaviour
 
         //JUMP
 
-        if (Input.GetButtonDown("Jump") && _groundCheck.OnGround)
+        if (Input.GetButtonDown("Jump") && _groundCheck.OnGround && jumpLilTimer < 0f)
         {
+            jumpLilTimer = 0.3f;
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             SoundManagerScript.PlaySound("Jump");
         }
-        if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
-        {
-            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
-        }
+        jumpLilTimer -= Time.deltaTime;
+        //if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
+        //{
+        //    _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
+        //}
         
         //FLIP
         delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
