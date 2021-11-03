@@ -39,6 +39,8 @@ public class StageCheck
                 break;
             case "Tutorial_3":
             case "Level_7":
+            case "Level_8":
+            case "Level_9":
                 GameManager.IsBossFight = false;
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = true;
