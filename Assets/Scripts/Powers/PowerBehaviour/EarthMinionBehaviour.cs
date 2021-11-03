@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class EarthMinionBehaviour : MonoBehaviour
 {
-    private PlayerController _playerController;
-
+    public float projectileSpawnOffset;
     private void Start()
     {
-        _playerController = GameObject.Find("Maguito").GetComponent<PlayerController>();
     }
 
     private void Update()
     {
-        
+        GameManager.EarthMinionPosition = transform.position;
     }
 }

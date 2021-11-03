@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody;
     public Animator animator;
     private float movement;
+    private bool jumped = false;
+    private bool groundCheckDelay = false;
     public float CharacterSpeed { get => characterSpeed; set => characterSpeed = value; }
     public float JumpForce { get => jumpForce; set => jumpForce = value; }
     public bool IsPlaying { get => isPlaying; }
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 Delta { get => delta;}
     public bool IsAbleMove { get => isAbleMove; set => isAbleMove = value; }
     public GroundCheck GroundCheck { get => _groundCheck; set => _groundCheck = value; }
+    public bool Jumped { get => jumped; set => jumped = value; }
 
     private PowerManager _powerManager;
     private GroundCheck _groundCheck;
@@ -79,10 +82,17 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && _groundCheck.OnGround && jumpLilTimer < 0f)
         {
+            groundCheckDelay = false;
             jumpLilTimer = 0.3f;
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            jumped = true;
+            StartCoroutine(jumpedDelay());
             SoundManagerScript.PlaySound("Jump");
         }
+
+        if (GroundCheck.OnGround && groundCheckDelay)
+            jumped = false;
+
         jumpLilTimer -= Time.deltaTime;
         //if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
         //{
@@ -120,26 +130,30 @@ public class PlayerController : MonoBehaviour
         }
 
         //ELEMENTS
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.U) || Input.GetKeyDown(KeyCode.Alpha1))
         {
             _powerManager.GetElement(Elements.fire);
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Alpha2))
         {
             _powerManager.GetElement(Elements.wind);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && GameManager.IsWaterUnlocked)
+        if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.Alpha3)) && GameManager.IsWaterUnlocked)
         {
             _powerManager.GetElement(Elements.water);
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && GameManager.IsEarthUnlocked)
+        if ((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Alpha4)) && GameManager.IsEarthUnlocked)
         {
             _powerManager.GetElement(Elements.earth);
         }
+    }
 
-
+    IEnumerator jumpedDelay()
+    {
+        yield return new WaitForSeconds(0.3f);
+        groundCheckDelay = true;
     }
 }
