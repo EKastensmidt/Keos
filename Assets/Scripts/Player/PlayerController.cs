@@ -100,15 +100,15 @@ public class PlayerController : MonoBehaviour
         //}
         
         //FLIP
-        delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        delta = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 characterScale = transform.localScale;
 
-        if (delta.x > movement)
+        if (delta.x > transform.position.x)
         {
             characterScale.x = 1;
             IsFacingRight = true;
         }
-        if (delta.x < movement)
+        if (delta.x < transform.position.x)
         {
             characterScale.x = -1;
             isFacingRight = false;
