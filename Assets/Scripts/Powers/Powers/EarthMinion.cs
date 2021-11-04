@@ -24,21 +24,20 @@ public class EarthMinion : Powers
         }
 
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D hit = Physics2D.OverlapCircle(pos, 0.1f);
-        if (hit != null)
-            return;
+        Collider2D hit = Physics2D.OverlapCircle(pos, 0.05f);
+        if (hit == null || hit.name != "Tilemap")
+        {
+            SoundManagerScript.PlaySound("EarthMinion");
+            minion = Instantiate(prefab, pos, Quaternion.identity);
+            minion.transform.position = new Vector3(minion.transform.position.x, minion.transform.position.y, 0);
 
-        SoundManagerScript.PlaySound("EarthMinion");
-        minion = Instantiate(prefab, pos, Quaternion.identity);
-        minion.transform.position = new Vector3(minion.transform.position.x, minion.transform.position.y, 0);
+            GameManager.isEarthMinionActive = true;
+            Instantiate(Resources.Load("Particles/EarthMinionSpawn") as GameObject, minion.transform.position, Quaternion.identity);
 
-        GameManager.isEarthMinionActive = true;
-        Instantiate(Resources.Load("Particles/EarthMinionSpawn") as GameObject, minion.transform.position, Quaternion.identity);
-
-        SpriteRenderer spriteRenderer = minion.GetComponent<SpriteRenderer>();
-        int randSprite = Random.Range(0, _minionSprites.Count);
-        spriteRenderer.sprite = _minionSprites[randSprite];
-
+            SpriteRenderer spriteRenderer = minion.GetComponent<SpriteRenderer>();
+            int randSprite = Random.Range(0, _minionSprites.Count);
+            spriteRenderer.sprite = _minionSprites[randSprite];
+        }
         //RaycastHit2D hit = Physics2D.Raycast(pos, -Vector3.up);
 
         //if (hit == false)

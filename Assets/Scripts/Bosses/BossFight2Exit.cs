@@ -10,5 +10,6 @@ public class BossFight2Exit : MonoBehaviour
     {
         GameManager.skipDialogue = false;
         BGMusic.gameObject.GetComponent<AudioSource>().Stop();
+        Destroy(BGMusicScript.Instance);
     }
 }
