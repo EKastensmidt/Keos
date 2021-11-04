@@ -40,6 +40,14 @@ public class Levels : MonoBehaviour
     {
         SceneManager.LoadScene("Level_7");
     }
+    public void Level8()
+    {
+        SceneManager.LoadScene("Level_8");
+    }
+    public void Level9()
+    {
+        SceneManager.LoadScene("Level_9");
+    }
     public void Bossfight1()
     {
         SceneManager.LoadScene("BossFight_1");
