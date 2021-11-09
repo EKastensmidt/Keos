@@ -8,7 +8,6 @@ public class TurretProjectile : MonoBehaviour
     [SerializeField] private int damage = 20;
     void Update()
     {
-        transform.Rotate(Vector2.down * 5);
         transform.Translate(Vector2.up * Time.deltaTime * speed);
     }
     private void OnTriggerEnter2D(Collider2D collision)

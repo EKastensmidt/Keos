@@ -16,7 +16,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.gameObject.name == "Maguito")
         {
-            _gameManager.CurrCheckpoint = transform.position;
+            GameManager.CurrCheckpoint = transform.position;
         }
     }
 }

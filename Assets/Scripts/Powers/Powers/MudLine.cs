@@ -8,6 +8,7 @@ public class MudLine : Powers
     public MudLine() : base(Elements.earth, Elements.water, "SteamCloud")
     {
         prefab = Resources.Load("MudLine") as GameObject;
+        cooldownTime = 2f;
     }
     public override void Execute()
     {

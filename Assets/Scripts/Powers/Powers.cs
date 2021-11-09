@@ -7,10 +7,12 @@ public abstract class Powers : MonoBehaviour
     protected Elements firstComponent;
     protected Elements secondComponent;
     private string name;
+    protected float cooldownTime = 0;
 
     public Elements FirstComponent { get => firstComponent; set => firstComponent = value; }
     public Elements SecondComponent { get => secondComponent; set => secondComponent = value; }
     public string Name { get => name; set => name = value; }
+    public float CooldownTime { get => cooldownTime; set => cooldownTime = value; }
 
     public Powers(Elements firstComponent, Elements secondComponent, string name)
     {

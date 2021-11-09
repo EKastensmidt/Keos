@@ -19,10 +19,10 @@ public class GameManager : MonoBehaviour
 
     public static bool skipDialogue = false;
 
-    private Vector3 currCheckpoint;
+    private static Vector3 currCheckpoint;
     private string currScene;
 
-    public Vector3 CurrCheckpoint { get => currCheckpoint; set => currCheckpoint = value; }
+    public static Vector3 CurrCheckpoint { get => currCheckpoint; set => currCheckpoint = value; }
     public static bool IsWaterUnlocked { get => isWaterUnlocked; set => isWaterUnlocked = value; }
     public static bool IsEarthUnlocked { get => isEarthUnlocked; set => isEarthUnlocked = value; }
     public static bool IsBossFight { get => isBossFight; set => isBossFight = value; }

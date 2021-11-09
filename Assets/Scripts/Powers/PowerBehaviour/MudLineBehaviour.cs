@@ -12,6 +12,7 @@ public class MudLineBehaviour : MonoBehaviour
 
     private List<Vector2> points;
     private PlayerController _playerController;
+    private bool lineEnded = false;
 
     private void Start()
     {
@@ -20,6 +21,9 @@ public class MudLineBehaviour : MonoBehaviour
 
     private void Update()
     {
+        if (lineEnded)
+            return;
+
         if (_playerController.IsPlaying)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -27,6 +31,7 @@ public class MudLineBehaviour : MonoBehaviour
         }
         else
         {
+            lineEnded = true;
             Destroy(gameObject, 3f);
         }
     }
@@ -59,4 +64,5 @@ public class MudLineBehaviour : MonoBehaviour
         if(points.Count > 1)
             edgeCollider.points = points.ToArray();
     }
+
 }
