@@ -73,6 +73,12 @@ public class SnowBallProjectile : Projectile
     private void OnDeath()
     {
         Instantiate(deathExplotion, transform.position, Quaternion.identity);
+        DetachChild();
+    }
+    public GameObject child;
+    private void DetachChild()
+    {
+        child.transform.parent = null;
         Destroy(gameObject);
     }
 }
