@@ -41,6 +41,7 @@ public class StageCheck
             case "Level_7":
             case "Level_8":
             case "Level_9":
+            case "SecretLevel_3":
                 GameManager.IsBossFight = false;
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = true;

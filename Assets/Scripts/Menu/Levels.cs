@@ -64,6 +64,10 @@ public class Levels : MonoBehaviour
     {
         SceneManager.LoadScene("SecretLevel_2");
     }
+    public void SecretLevel3()
+    {
+        SceneManager.LoadScene("SecretLevel_3");
+    }
     public void Tutorial()
     {
         SceneManager.LoadScene("Tutorial");
