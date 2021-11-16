@@ -10,10 +10,7 @@ public class HazzardSpike : MonoBehaviour
         PlayerManager _playerManager = collision.gameObject.GetComponent<PlayerManager>();
         if (_playerManager != null && !_playerManager.IsBubble)
         {
-            
-            collision.transform.position = new Vector3(GameManager.CurrCheckpoint.x, GameManager.CurrCheckpoint.y, 0);
-            _playerManager.CurrentHealth = _playerManager.MaxHealth;
-            _playerManager.HealthBar.SetHealth(_playerManager.CurrentHealth);
+            _playerManager.TakeDamage(damage);
         }   
     }
 }
