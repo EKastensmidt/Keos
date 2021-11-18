@@ -58,6 +58,15 @@ public class NextLevel : MonoBehaviour
                 case "Tutorial_3":
                     SceneManager.LoadScene("Level_7");
                     break;
+                case "Level_7":
+                    if (isSecret)
+                        SceneManager.LoadScene("SecretLevel_3");
+                    else
+                        SceneManager.LoadScene("Level_8");
+                    break;
+                case "Level_8":
+                    SceneManager.LoadScene("Level_9");
+                    break;
             }
         }
     }
