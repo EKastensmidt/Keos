@@ -5,7 +5,7 @@ using UnityEngine;
 public class MudLine : Powers
 {
     private GameObject prefab;
-    public MudLine() : base(Elements.earth, Elements.water, "SteamCloud")
+    public MudLine() : base(Elements.earth, Elements.water, "Mud Line")
     {
         prefab = Resources.Load("MudLine") as GameObject;
         cooldownTime = 2f;

@@ -52,24 +52,17 @@ public class PlayerController : MonoBehaviour
     {
         if (!isAbleMove)
             return;
+        
         //MOVE
-
-        //Vector2 velocity = _rigidbody.velocity;
-        //velocity.x = Mathf.Lerp(velocity.x, movement * characterSpeed, momentum);
-        //_rigidbody.velocity = velocity;
         movement = Input.GetAxis("Horizontal");
-        if (Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground", "Enemy")))
-        {
-
-        }
-        else
+        if (!Physics2D.Raycast(transform.position, Vector2.right * movement, characterSpeed * Time.deltaTime + _collider.bounds.extents.x, LayerMask.GetMask("Ground", "Enemy")))
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * characterSpeed;
             animator.SetFloat("Speed", Mathf.Abs(movement));
         }
 
-        //Foot Steps Particles
-        if ((movement > 0 || movement < 0) && _groundCheck.OnGround)
+        //FOOT STEPS PARTICLES
+        if (movement != 0 && _groundCheck.OnGround)
         {
             footStepsEmission.rateOverTime = 25f;
         }
@@ -80,24 +73,15 @@ public class PlayerController : MonoBehaviour
 
         //JUMP
 
-        if (Input.GetButtonDown("Jump") && _groundCheck.OnGround && jumpLilTimer < 0f)
+        if (Input.GetButtonDown("Jump") && jumpLilTimer < 0f)
         {
-            groundCheckDelay = false;
-            jumpLilTimer = 0.3f;
-            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            jumped = true;
-            StartCoroutine(jumpedDelay());
-            SoundManagerScript.PlaySound("Jump");
+            Jump();
         }
 
         if (GroundCheck.OnGround && groundCheckDelay)
             jumped = false;
 
         jumpLilTimer -= Time.deltaTime;
-        //if (Input.GetButtonUp("Jump") && _rigidbody.velocity.y > 0)
-        //{
-        //    _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
-        //}
         
         //FLIP
         delta = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -155,5 +139,18 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         groundCheckDelay = true;
+    }
+
+    public void Jump()
+    {
+        if (_groundCheck.OnGround)
+        {
+            groundCheckDelay = false;
+            jumpLilTimer = 0.3f;
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            jumped = true;
+            StartCoroutine(jumpedDelay());
+            SoundManagerScript.PlaySound("Jump");
+        }
     }
 }

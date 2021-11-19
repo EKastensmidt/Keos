@@ -23,7 +23,7 @@ public class PowerManager : MonoBehaviour
     [SerializeField] private List<Sprite> earthMinionSprites;
 
     [SerializeField] TMP_Text powerDisplay;
-    bool isCooldown = false;
+
 
     private void Start()
     {
@@ -67,17 +67,16 @@ public class PowerManager : MonoBehaviour
         if (powers == null)
             return;
         
-        if (isCooldown)
-            return;
-
         foreach (var power in powers)
         {
             if (power.Equals(firstElement,secondElement))
             {
+                if (power.IsCooldown)
+                    break;
                 power.Execute();
                 if (power.CooldownTime > 0)
                 {
-                    StartCoroutine(StartCD(power.CooldownTime));
+                    StartCoroutine(power.StartCD());
                 }
                 break;
             }
@@ -149,12 +148,7 @@ public class PowerManager : MonoBehaviour
             }
         }
     }
-    private IEnumerator StartCD(float cdTime)
-    {
-        isCooldown = true;
-        yield return new WaitForSeconds(cdTime);
-        isCooldown = false;
-    }
+   
 
     //private void AddEarthMinionSprites()
     //{

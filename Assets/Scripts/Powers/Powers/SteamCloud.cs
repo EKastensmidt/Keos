@@ -6,7 +6,7 @@ public class SteamCloud : Powers
 {
     private GameObject prefab;
 
-    public SteamCloud() : base(Elements.fire, Elements.water,"SteamCloud")
+    public SteamCloud() : base(Elements.fire, Elements.water,"Steam Cloud")
     {
         prefab = Resources.Load("SteamCloud") as GameObject;
     }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SnowBallProjectile : Projectile
 {
-    private static float timeScale = 0.2f;
-    private static float maxScale = 0.5f;
-    private static float damageScale = 0.05f;
-    private static int defaultDamage;
-    private static int progressiveDamage;
+    private float timeScale = 0.2f;
+    private float maxScale = 0.5f;
+    private float damageScale = 0.05f;
+    private int defaultDamage;
+    private int progressiveDamage;
     [SerializeField] private float knockbackForce = 2f;
     [SerializeField] private ParticleSystem deathExplotion;
 
