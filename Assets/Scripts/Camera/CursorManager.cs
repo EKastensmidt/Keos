@@ -9,5 +9,6 @@ public class CursorManager : MonoBehaviour
     private void Start()
     {
         Cursor.SetCursor(cursorTexture, new Vector2(cursorTexture.width / 2 ,cursorTexture.height / 2), CursorMode.ForceSoftware);
+        DontDestroyOnLoad(gameObject);
     }
 }
