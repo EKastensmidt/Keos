@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -14,9 +15,13 @@ public class CameraFollow : MonoBehaviour
 
     public GameObject Player { get => player; set => player = value; }
 
+    private PixelPerfectCamera pixelPerfectCamera;
+    private int currentPixels = 0;
+
     void Start()
     {
-        
+        pixelPerfectCamera = GetComponent<PixelPerfectCamera>();
+        currentPixels = pixelPerfectCamera.assetsPPU;
     }
 
     void Update()
@@ -35,6 +40,19 @@ public class CameraFollow : MonoBehaviour
         Vector3 newPos = FollowMouse(mousePosition, playerPosition);
 
         transform.position = Vector3.Lerp(transform.position, Vector3.Lerp(newPos, playerPosition + offset, moveRange), smoothSpeed);
+
+        if (GameManager.IsEarthUnlocked)
+        {
+            if(Input.GetAxis("Mouse ScrollWheel") > 0f && currentPixels < 32)
+            {
+                currentPixels++;
+            }
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f && currentPixels > 20)
+            {
+                currentPixels--;
+            }
+        }
+        pixelPerfectCamera.assetsPPU = currentPixels;
     }
 
     private Vector3 FollowMouse(Vector3 a, Vector3 b) {
