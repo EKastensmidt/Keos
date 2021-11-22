@@ -1959,7 +1959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419747665}
-  m_Layer: 15
+  m_Layer: 23
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2054,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
@@ -3678,7 +3678,7 @@ GameObject:
   - component: {fileID: 745857058}
   - component: {fileID: 745857057}
   - component: {fileID: 745857056}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4236,7 +4236,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
@@ -6652,7 +6652,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
@@ -15792,7 +15792,7 @@ PrefabInstance:
     - target: {fileID: 2534386047413574223, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3879771333453024047, guid: 704e39a07f4d2014ea9dbcd554d6880d,
         type: 3}
