@@ -9,6 +9,8 @@ public class FlyingEnemyProjectile : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 direction;
 
+    [SerializeField] private ParticleSystem deathExplotion;
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -30,6 +32,12 @@ public class FlyingEnemyProjectile : MonoBehaviour
                 player.TakeDamage(damage);
             }
         }
+        Ondeath();
+    }
+
+    void Ondeath()
+    {
+        Instantiate(deathExplotion, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 }

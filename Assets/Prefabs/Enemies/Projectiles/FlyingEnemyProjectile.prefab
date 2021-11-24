@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -9149924751671296380}
   - component: {fileID: -1693092557467645645}
   - component: {fileID: 4972018445374177047}
+  - component: {fileID: 625402886810947022}
   m_Layer: 11
   m_Name: FlyingEnemyProjectile
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1550296294153564376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,12 +74,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 724a32fb2b886374cbbeb72dbfcc236a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -135,3 +136,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   damage: 20
+  deathExplotion: {fileID: 8688425769550793400, guid: ddf166a2ace18fa43b41d016ee0b4409,
+    type: 3}
+--- !u!114 &625402886810947022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550296294153564376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418a4daa38fe2a24297a6fbd3f243652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleSpin: 15

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour
 {
     [SerializeField] private int damage;
-
+    [SerializeField] private ParticleSystem deathExplotion;
     public int Damage { get => damage; set => damage = value; }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +18,12 @@ public class EnemyProjectile : MonoBehaviour
                 player.TakeDamage(damage);
             }
         }
+        OnDeath();
+    }
+
+    private void OnDeath()
+    {
+        Instantiate(deathExplotion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
