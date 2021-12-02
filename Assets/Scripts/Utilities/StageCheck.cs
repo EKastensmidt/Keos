@@ -46,6 +46,11 @@ public class StageCheck
                 GameManager.IsWaterUnlocked = true;
                 GameManager.IsEarthUnlocked = true;
                 break;
+            case "BossFight_3":
+                GameManager.IsBossFight = true;
+                GameManager.IsWaterUnlocked = true;
+                GameManager.IsEarthUnlocked = true;
+                break;
         }
     }
 

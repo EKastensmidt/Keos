@@ -26,7 +26,6 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        //transform.position = Vector3.Lerp(transform.position, target.position + offset, smoothSpeed);
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (player == null)
         {
@@ -41,7 +40,7 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, Vector3.Lerp(newPos, playerPosition + offset, moveRange), smoothSpeed);
 
-        if (GameManager.IsEarthUnlocked)
+        if (GameManager.IsEarthUnlocked && !GameManager.IsBossFight)
         {
             if(Input.GetAxis("Mouse ScrollWheel") > 0f && currentPixels < 32)
             {
