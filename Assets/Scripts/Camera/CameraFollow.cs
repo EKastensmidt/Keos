@@ -50,8 +50,8 @@ public class CameraFollow : MonoBehaviour
             {
                 currentPixels--;
             }
+            pixelPerfectCamera.assetsPPU = currentPixels;
         }
-        pixelPerfectCamera.assetsPPU = currentPixels;
     }
 
     private Vector3 FollowMouse(Vector3 a, Vector3 b) {

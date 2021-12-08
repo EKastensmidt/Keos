@@ -34,7 +34,7 @@ public class RockBallBehaviour : Projectile
             OnDeath();
         }
 
-        if (collision.gameObject.layer == 10)
+        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 16)
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (enemy != null)

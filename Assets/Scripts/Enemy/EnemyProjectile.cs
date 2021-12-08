@@ -23,7 +23,8 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnDeath()
     {
-        Instantiate(deathExplotion, transform.position, Quaternion.identity);
+        if (deathExplotion != null)
+            Instantiate(deathExplotion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
