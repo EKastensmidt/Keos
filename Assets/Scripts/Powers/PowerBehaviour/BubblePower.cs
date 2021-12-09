@@ -7,6 +7,11 @@ public class BubblePower : MonoBehaviour
     private GameObject _player;
     private PlayerController _playerController;
     private PlayerManager _playerManager;
+
+    [SerializeField] private static float health;
+
+    public static float Health { get => health; set => health = value; }
+
     private void Start()
     {
         _player = GameObject.Find("Maguito");
