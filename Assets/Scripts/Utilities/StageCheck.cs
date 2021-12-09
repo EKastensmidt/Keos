@@ -60,7 +60,7 @@ public class StageCheck
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                SceneManager.LoadScene("Tutorial_3");
+                SceneManager.LoadScene("BossFight_2");
             }
             else
                 SceneManager.LoadScene("Tutorial");
@@ -69,38 +69,58 @@ public class StageCheck
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                SceneManager.LoadScene("Level_7");
+                SceneManager.LoadScene("Tutorial_3");
             }
             else
                 SceneManager.LoadScene("Level_1");
         }
         else if (Input.GetKeyDown(KeyCode.F3))
         {
-            SceneManager.LoadScene("Level_2");
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                SceneManager.LoadScene("Level_7");
+            }
+            else
+                SceneManager.LoadScene("Level_2");
         }
         else if (Input.GetKeyDown(KeyCode.F4))
         {
-            SceneManager.LoadScene("Level_3");
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                SceneManager.LoadScene("Level_8");
+            }
+            else
+                SceneManager.LoadScene("Level_3");
         }
         else if (Input.GetKeyDown(KeyCode.F5))
         {
-            SceneManager.LoadScene("BossFight_1");
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                SceneManager.LoadScene("Level_9");
+            }
+            else
+                SceneManager.LoadScene("BossFight_1");
         }
         else if (Input.GetKeyDown(KeyCode.F6))
         {
-            SceneManager.LoadScene("Level_4");
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                SceneManager.LoadScene("BossFight_3");
+            }
+            else
+                SceneManager.LoadScene("Tutorial_2");
         }
         else if (Input.GetKeyDown(KeyCode.F7))
         {
-            SceneManager.LoadScene("Level_5");
+            SceneManager.LoadScene("Level_4");
         }
         else if (Input.GetKeyDown(KeyCode.F8))
         {
-            SceneManager.LoadScene("Level_6");
+            SceneManager.LoadScene("Level_5");
         }
         else if (Input.GetKeyDown(KeyCode.F9))
         {
-            SceneManager.LoadScene("BossFight_2");
+            SceneManager.LoadScene("Level_6");
         }
     }
 }

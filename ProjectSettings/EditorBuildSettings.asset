@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecretLevel_3.unity
     guid: 89814d007ddb6364c8363576f42c70b0
+  - enabled: 1
+    path: Assets/Scenes/BossFight_3.unity
+    guid: beb3b2b766f3b5d4fb746053ad49c267
   m_configObjects: {}

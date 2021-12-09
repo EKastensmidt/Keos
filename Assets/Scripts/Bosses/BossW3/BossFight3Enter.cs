@@ -50,6 +50,8 @@ public class BossFight3Enter : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             gate.transform.position = new Vector3(gate.transform.position.x, gate.transform.position.y - 3f, gate.transform.position.z);
+            BGMusic.SetActive(true);
+            healthBar.gameObject.SetActive(true);
             collider.enabled = false;
             isStarted = true;
         }

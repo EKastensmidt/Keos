@@ -5110,7 +5110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &962601542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5898,6 +5898,7 @@ GameObject:
   - component: {fileID: 1179334935}
   - component: {fileID: 1179334934}
   - component: {fileID: 1179334936}
+  - component: {fileID: 1179334937}
   m_Layer: 16
   m_Name: FinalBoss
   m_TagString: Untagged
@@ -6031,6 +6032,22 @@ MonoBehaviour:
   groundAttack: {fileID: 1574926880}
   particleAttackSystem: {fileID: 1234195586}
   attackTimer: 4
+--- !u!111 &1179334937
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179334931}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ee1db2634d77a9d438a163fe9bccaf1b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ee1db2634d77a9d438a163fe9bccaf1b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1181526538
 GameObject:
   m_ObjectHideFlags: 0
@@ -28923,11 +28940,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1925870497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea3276faa579a24096f8dff02dc977d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2db888c5e7dba3043a38e5d873fbd3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
-  deathExplotion: {fileID: 0}
 --- !u!61 &1925870499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28962,7 +28977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925870497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6338117, y: -5.1986136, z: -146.96484}
+  m_LocalPosition: {x: -1.6338117, y: -6.69, z: -146.96484}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
