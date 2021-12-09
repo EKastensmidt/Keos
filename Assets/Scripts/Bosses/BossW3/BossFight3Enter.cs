@@ -41,7 +41,7 @@ public class BossFight3Enter : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isStarted && pp.assetsPPU > 20) pp.assetsPPU--;
+        if (isStarted && pp.assetsPPU > 16) pp.assetsPPU--;
         else if (!isStarted && pp.assetsPPU < 32) pp.assetsPPU++;
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossW3 : Enemy
 {
-    [SerializeField] private GameObject projectileAttack;
+    [SerializeField] private GameObject projectileAttack, groundAttack;
     [SerializeField] private ParticleSystem particleAttackSystem;
 
     [SerializeField] private float attackTimer;
@@ -51,7 +51,6 @@ public class BossW3 : Enemy
 
     private void ActivateAttack(int currentAttack)
     {
-        Debug.Log(currentAttack);
         switch (currentAttack)
         {
             case 1:
@@ -63,6 +62,7 @@ public class BossW3 : Enemy
                 projectileAttack.SetActive(true);
                 break;
             case 3:
+                groundAttack.SetActive(true);
                 break;
         }
     }
@@ -78,6 +78,9 @@ public class BossW3 : Enemy
                 break;
             case 2:
                 projectileAttack.SetActive(false);
+                break;
+            case 3:
+                groundAttack.SetActive(false);
                 break;
         }
     }
