@@ -15,6 +15,8 @@ public class PlayerManager : MonoBehaviour
     private float invincibilty = 0f;
     private SpriteRenderer renderer;
 
+    private float bubbleRechargeTimer = 2.5f;
+
     public int MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
     public HealthBar HealthBar { get => healthBar; set => healthBar = value; }
@@ -22,6 +24,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        BubblePower.Health = 3;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         rb = GetComponent<Rigidbody2D>();
@@ -30,6 +33,20 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(BubblePower.Health + "     " + bubbleRechargeTimer);
+        //BUBBLE HEALTH TIMER RESTORE
+        if (isBubble || BubblePower.Health == 3)
+            bubbleRechargeTimer = 2.5f;
+        else
+            bubbleRechargeTimer -= Time.deltaTime;
+
+        if(BubblePower.Health < 3 && bubbleRechargeTimer < 0)
+        {
+            BubblePower.HealthRestore();
+            bubbleRechargeTimer = 2.5f;
+        }
+
+        //INVINCIBILITY FRAMES
         if(invincibilty > 0f)
         {
             invincibilty -= Time.deltaTime;
@@ -43,6 +60,11 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isBubble)
+        {
+            BubblePower.TakeDamage(damage);
+        }
+
         if (!IsBubble && invincibilty <= 0f && damage > 0)
         {
             invincibilty = hitTimer;

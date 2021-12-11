@@ -16,8 +16,11 @@ public class Bubble : Powers
 
     public override void Execute()
     {
-        _playerController.Jump();
-        GameObject bubble = Instantiate(prefab, _player.transform.position, Quaternion.identity,_player.transform);
-        SoundManagerScript.PlaySound("Bubble");
+        if (BubblePower.Health > 0)
+        {
+            _playerController.Jump();
+            GameObject bubble = Instantiate(prefab, _player.transform.position, Quaternion.identity, _player.transform);
+            SoundManagerScript.PlaySound("Bubble");
+        }
     }
 }
